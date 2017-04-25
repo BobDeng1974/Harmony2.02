@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TargetBoardInfo>
+    <TargetBoardName>ATSAMV71 Xplained Ultra</TargetBoardName>
+    <TargetDeviceName>ATSAMV71Q21A-AABT</TargetDeviceName>
+    <DefaultBoardConfigurationPath>$HARMONY_VERSION_PATH/bsp/atsamv71_xult/config/default.mhc</DefaultBoardConfigurationPath>
+    <HelpText>IDH_HTML_Board_Support_Package_Help</HelpText>
+</TargetBoardInfo>

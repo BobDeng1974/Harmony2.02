@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- Hand Generated pin file. -->
+<pinfile family="ATSAMV71">
+	<packages>
+		<package diagram="MZ_144_LQFP_TQFP" id="1" name="LQFP" />
+	</packages>
+	<pins>
+		<pin name="none1">
+			<number package="1" pin="1" />
+		</pin>
+		<pin name="none2">
+			<number package="1" pin="2" />
+		</pin>
+	</pins>
+</pinfile>

@@ -1,0 +1,5 @@
+# Default BSP Configuration
+#     Harmony version: 1.07
+#
+CONFIG_USE_BSP=y
+CONFIG_BSP_PIC32MZ_EF_PIM_BT_AUDIO_DK=y

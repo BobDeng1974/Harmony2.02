@@ -1,0 +1,409 @@
+#include "gfx/utils/inc/gfxu_image.h"
+
+#include <stdlib.h>
+#include <string.h>
+
+#include "gfx/utils/inc/gfxu_palette.h"
+#include "gfx/utils/inc/gfxu_image_utils.h"
+
+#define RLE_HEADER_SIZE 2
+#define RLE_BLOCK_SIZE_MAX 8
+
+typedef enum imageReaderState_t
+{
+    ATTEMPT_RLE_HEADER_DATA_REQUEST,
+    WAITING_FOR_RLE_HEADER_DATA,
+    PREPARE_RLE_DATA_REQUEST,
+    ATTEMPT_RLE_DATA_REQUEST,
+    WAITING_FOR_RLE_DATA,
+    DRAW_RLE_DATA,
+    PREPARE_PALETTE_DATA_REQUEST,
+    ATTEMPT_PALETTE_DATA_REQUEST,
+    WAITING_FOR_PALETTE_DATA,
+    DRAW_PALETTE_DATA,
+    DONE
+} drawState;
+
+typedef struct GFXU_RLEAssetReader_t
+{
+    GFXU_ExternalAssetReader header;
+    
+    GFXU_ImageAsset* img;
+    
+    GFX_Rect sourceRect;
+    GFX_Point destPoint;
+    
+    uint32_t row_max;
+    uint32_t col_max;
+    
+    uint32_t row;
+    uint32_t col;
+    
+    uint32_t rleLengthSize;
+    uint32_t rleDataSize;
+    
+    //uint32_t addressOffset;
+    
+    uint8_t rleBlock[RLE_BLOCK_SIZE_MAX];
+    
+    uint32_t rleLength;
+    uint32_t rleData;
+    uint32_t rleIndexOffset;
+    uint32_t rleBlockOffset;
+    uint32_t rleCache;
+    
+    //GFX_BitsPerPixel imageBPPOrdinal;
+    uint32_t imageIndex;
+    //uint32_t imageIndexSize;
+    //uint32_t imageReadSize;
+    
+    //GFX_BitsPerPixel paletteBPPOrdinal;
+    uint32_t paletteIndex;
+    uint32_t paletteCache;
+    //uint32_t paletteIndexSize;
+    //uint32_t paletteReadSize;
+    GFX_Color paletteColor;
+    
+} GFXU_RLEAssetReader;
+
+static void headerReadRequestCompleted(GFXU_RLEAssetReader* imgReader)
+{
+    imgReader->rleDataSize = (imgReader->rleLengthSize & 0xFF00) >> 8;
+    imgReader->rleLengthSize = (imgReader->rleLengthSize & 0xFF);
+    
+    //imgReader->addressOffset = RLE_HEADER_SIZE;
+
+    imgReader->header.status = GFXU_READER_STATUS_READY;
+    imgReader->header.state = PREPARE_RLE_DATA_REQUEST;
+}
+
+static GFX_Result requestHeaderData(GFXU_RLEAssetReader* imgReader)
+{
+    if(imgReader->header.memIntf->read((GFXU_ExternalAssetReader*)imgReader,
+                                       imgReader->img->header.dataLocation,
+                                       imgReader->img->header.dataAddress,
+                                       RLE_HEADER_SIZE,
+                                       (uint8_t*)&imgReader->rleLengthSize,
+                                       (GFXU_MemoryReadRequestCallback_FnPtr)&headerReadRequestCompleted) == GFX_FAILURE)
+    {
+        return GFX_FAILURE;
+    }
+        
+    imgReader->header.status = GFXU_READER_STATUS_WAITING;
+    imgReader->header.state = WAITING_FOR_RLE_HEADER_DATA; 
+    
+    return GFX_SUCCESS;                             
+}
+
+static GFX_Result calculateImageIndex(GFXU_RLEAssetReader* imgReader)
+{
+    imgReader->imageIndex = imgReader->sourceRect.x + imgReader->col + 
+                           ((imgReader->sourceRect.y + imgReader->row) * imgReader->img->width);
+
+    imgReader->header.state = ATTEMPT_RLE_DATA_REQUEST;
+    
+    return GFX_SUCCESS;
+}
+
+static void rleReadRequestCompleted(GFXU_RLEAssetReader* imgReader)
+{
+    uint32_t i, offs;
+    
+    imgReader->rleLength = 0;
+    imgReader->rleData = 0;
+    
+    for(i = 0; i < imgReader->rleLengthSize; i++)
+        imgReader->rleLength |= imgReader->rleBlock[i] << (i * 8);
+        
+    for(i = 0; i < imgReader->rleDataSize; i++)
+        imgReader->rleData |= imgReader->rleBlock[i+imgReader->rleLengthSize] << (i * 8);
+        
+    offs = getOffsetFromIndexAndBPP(imgReader->imageIndex, 
+                                    GFX_ColorModeInfoGet(imgReader->img->colorMode).bppOrdinal);
+        
+    // index was not in this RLE block, request the next block
+    if(offs >= imgReader->rleIndexOffset + imgReader->rleLength)
+    {
+        imgReader->rleIndexOffset += imgReader->rleLength;
+        imgReader->rleBlockOffset += 1;//imgReader->rleLength;
+        
+        imgReader->header.status = GFXU_READER_STATUS_READY;
+        imgReader->header.state = PREPARE_RLE_DATA_REQUEST;
+        
+        return;
+    }
+    
+    if(imgReader->img->palette != NULL)
+    {    
+        imgReader->paletteIndex = getDiscreteValueAtIndex(imgReader->imageIndex,
+                                                          imgReader->rleData,
+                                                          imgReader->img->colorMode);
+ 
+        imgReader->header.state = ATTEMPT_PALETTE_DATA_REQUEST;
+        imgReader->header.status = GFXU_READER_STATUS_READY;
+    }
+    else
+    {
+        imgReader->header.state = DRAW_RLE_DATA;
+        imgReader->header.status = GFXU_READER_STATUS_DRAWING;
+    }
+}
+
+static GFX_Result requestRLEData(GFXU_RLEAssetReader* imgReader)
+{
+    void* address;
+    uint32_t offs;
+           
+    offs = getOffsetFromIndexAndBPP(imgReader->imageIndex, 
+                                    GFX_ColorModeInfoGet(imgReader->img->colorMode).bppOrdinal);
+    
+    if(offs < imgReader->rleIndexOffset + imgReader->rleLength)
+    {
+        rleReadRequestCompleted(imgReader);
+        
+        imgReader->rleCache = 1;
+        
+        return GFX_SUCCESS;
+    }
+    else if(imgReader->rleCache == 1)
+    {
+        imgReader->rleIndexOffset += imgReader->rleLength;
+        imgReader->rleBlockOffset += 1;
+        
+        imgReader->rleCache = 0;
+    }
+    
+    address = imgReader->img->header.dataAddress;
+    address = (void*)(((uint8_t*)address) + 
+                       RLE_HEADER_SIZE +
+                      (imgReader->rleBlockOffset * (imgReader->rleLengthSize + imgReader->rleDataSize)));
+
+    if(imgReader->header.memIntf->read((GFXU_ExternalAssetReader*)imgReader,
+                                       imgReader->img->header.dataLocation,
+                                       address,
+                                       imgReader->rleLengthSize + imgReader->rleDataSize,
+                                       imgReader->rleBlock,
+                                       (GFXU_MemoryReadRequestCallback_FnPtr)&rleReadRequestCompleted) == GFX_FAILURE)
+    {
+        return GFX_FAILURE;
+    }
+        
+    imgReader->header.status = GFXU_READER_STATUS_WAITING;
+    imgReader->header.state = WAITING_FOR_RLE_DATA; 
+    
+    return GFX_SUCCESS;                             
+}
+
+static GFX_Result drawRLEData(GFXU_RLEAssetReader* imgReader)
+{
+    GFX_ColorMode colorMode;
+    
+    if(GFX_Get(GFXF_COLOR_MODE, &colorMode) == GFX_FAILURE)
+        return GFX_FAILURE;
+    
+    if(GFX_Set(GFXF_DRAW_COLOR, GFX_ColorConvert(imgReader->img->colorMode,
+                                                 colorMode,
+                                                 imgReader->rleData) == GFX_FAILURE))
+        return GFX_FAILURE;
+        
+    if(imgReader->img->useMask == GFX_TRUE)
+    {
+        if(GFX_Set(GFXF_DRAW_MASK_VALUE, GFX_ColorConvert(imgReader->img->colorMode,
+                                                          colorMode,
+                                                          imgReader->img->mask)) == GFX_FAILURE)
+            return GFX_FAILURE;
+            
+        GFX_Set(GFXF_DRAW_MASK_ENABLE, GFX_TRUE);
+    }
+        
+    GFX_DrawPixel(imgReader->destPoint.x + imgReader->col, 
+                  imgReader->destPoint.y + imgReader->row);
+        
+    imgReader->col++;
+   
+    if(imgReader->col == imgReader->col_max)
+    {
+        imgReader->row++;
+        imgReader->col = 0;
+    }
+    
+    if(imgReader->row == imgReader->row_max)
+    {
+        imgReader->header.status = GFXU_READER_STATUS_FINISHED;
+        imgReader->header.state = DONE;
+    }
+    else
+    {
+        imgReader->header.state = PREPARE_RLE_DATA_REQUEST;   
+    }
+
+    return GFX_SUCCESS;
+}
+
+static void paletteReadRequestCompleted(GFXU_RLEAssetReader* imgReader)
+{
+    imgReader->header.state = DRAW_PALETTE_DATA;
+    imgReader->header.status = GFXU_READER_STATUS_DRAWING;
+}
+
+static GFX_Result requestPaletteData(GFXU_RLEAssetReader* imgReader)
+{
+    void* address;
+    uint32_t offs;
+    
+    // already have the requested data from previous read
+    if(imgReader->paletteIndex == imgReader->paletteCache)
+    {
+        imgReader->header.state = DRAW_PALETTE_DATA;
+        imgReader->header.status = GFXU_READER_STATUS_DRAWING;
+    
+        return GFX_SUCCESS;
+    }
+    
+    imgReader->paletteCache = imgReader->paletteIndex;
+    
+    offs = getOffsetFromIndexAndBPP(imgReader->paletteIndex,
+                                    GFX_ColorModeInfoGet(imgReader->img->palette->colorMode).bppOrdinal);
+    
+    address = imgReader->img->palette->header.dataAddress;
+    address = (void*)(((uint8_t*)address) + offs);
+
+    imgReader->paletteColor = 0;
+
+    if(imgReader->header.memIntf->read((GFXU_ExternalAssetReader*)imgReader,
+                                       imgReader->img->palette->header.dataLocation,
+                                       address,
+                                       GFX_ColorModeInfoGet(imgReader->img->palette->colorMode).size,
+                                       (uint8_t*)&imgReader->paletteColor,
+                                       (GFXU_MemoryReadRequestCallback_FnPtr)&paletteReadRequestCompleted) == GFX_FAILURE)
+    {
+        return GFX_FAILURE;
+    }
+        
+    imgReader->header.status = GFXU_READER_STATUS_WAITING;
+    imgReader->header.state = WAITING_FOR_PALETTE_DATA;
+    
+    return GFX_SUCCESS;
+}
+
+static GFX_Result drawPaletteData(GFXU_RLEAssetReader* imgReader)
+{       
+    GFX_ColorMode colorMode;
+    
+    if(GFX_Get(GFXF_COLOR_MODE, &colorMode) == GFX_FAILURE)
+        return GFX_FAILURE;
+    
+    if(GFX_Set(GFXF_DRAW_COLOR, GFX_ColorConvert(imgReader->paletteColor,
+                                                 colorMode,
+                                                 imgReader->rleData) == GFX_FAILURE))
+        return GFX_FAILURE;
+        
+    if(imgReader->img->useMask == GFX_TRUE)
+    {
+        if(GFX_Set(GFXF_DRAW_MASK_VALUE, GFX_ColorConvert(imgReader->paletteColor,
+                                                          colorMode,
+                                                          imgReader->img->mask)) == GFX_FAILURE)
+            return GFX_FAILURE;
+            
+        GFX_Set(GFXF_DRAW_MASK_ENABLE, GFX_TRUE);
+    }
+        
+    GFX_DrawPixel(imgReader->destPoint.x + imgReader->col,
+                  imgReader->destPoint.y + imgReader->row);
+        
+    imgReader->col++;
+   
+    if(imgReader->col == imgReader->col_max)
+    {
+        imgReader->row++;
+        imgReader->col = 0;
+    }
+    
+    if(imgReader->row == imgReader->row_max)
+    {
+        imgReader->header.status = GFXU_READER_STATUS_FINISHED;
+        imgReader->header.state = DONE;
+    }
+    else
+    {
+        imgReader->header.status = GFXU_READER_STATUS_READY;
+        imgReader->header.state = PREPARE_RLE_DATA_REQUEST;   
+    }
+
+    return GFX_SUCCESS;
+}
+
+static GFX_Result run(GFXU_ExternalAssetReader* reader)
+{
+    GFXU_RLEAssetReader* imgReader = (GFXU_RLEAssetReader*)reader;
+    
+    if(imgReader == GFX_NULL)
+        return GFX_FAILURE;
+    
+    switch(imgReader->header.state)
+    {
+        case ATTEMPT_RLE_HEADER_DATA_REQUEST:
+            return requestHeaderData(imgReader);
+        case PREPARE_RLE_DATA_REQUEST:
+            return calculateImageIndex(imgReader);
+        case ATTEMPT_RLE_DATA_REQUEST:
+            return requestRLEData(imgReader);
+        case DRAW_RLE_DATA:
+            return drawRLEData(imgReader);
+        case ATTEMPT_PALETTE_DATA_REQUEST:
+            return requestPaletteData(imgReader);
+        case DRAW_PALETTE_DATA:
+            return drawPaletteData(imgReader);
+        case WAITING_FOR_RLE_DATA:
+        case WAITING_FOR_PALETTE_DATA:
+        default:
+            return GFX_SUCCESS;
+    }
+}
+
+GFX_Result GFXU_DrawImageRLEExternal(GFXU_ImageAsset* img,
+                                     int32_t src_x,
+                                     int32_t src_y,
+                                     int32_t src_width,
+                                     int32_t src_height,
+                                     int32_t dest_x,
+                                     int32_t dest_y,
+                                     GFXU_MemoryIntf* memIntf,
+                                     GFXU_ExternalAssetReader** reader)
+{
+    GFXU_RLEAssetReader* imgReader;
+    
+    imgReader = (GFXU_RLEAssetReader*)memIntf->heap.calloc(1, 
+                                             sizeof(GFXU_RLEAssetReader));
+    
+    if(imgReader == GFX_NULL)
+        return GFX_FAILURE;
+    
+    imgReader->header.memIntf = memIntf;
+    imgReader->header.run = &run;
+    imgReader->header.status = GFXU_READER_STATUS_READY;
+    imgReader->header.state = ATTEMPT_RLE_HEADER_DATA_REQUEST;
+    
+    imgReader->img = img;
+    
+    imgReader->sourceRect.x = src_x;
+    imgReader->sourceRect.y = src_y;
+    imgReader->sourceRect.width = src_width;
+    imgReader->sourceRect.height = src_height;
+    
+    imgReader->destPoint.x = dest_x;
+    imgReader->destPoint.y = dest_y;
+    
+    imgReader->row_max = src_height;
+    imgReader->col_max = src_width;
+    
+    if(imgReader->img->palette != GFX_NULL)
+    {
+        imgReader->paletteIndex = 0;
+        imgReader->paletteCache = -1;
+    }
+    
+    *reader = (GFXU_ExternalAssetReader*)imgReader;
+
+    return GFX_SUCCESS;
+}

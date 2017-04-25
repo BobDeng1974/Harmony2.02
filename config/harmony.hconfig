@@ -1,0 +1,87 @@
+config MPLAB_HARMONY_VERSION_STRING
+    string 
+    default "2.02"
+
+config MPLAB_HARMONY_VERSION_NUMBER
+    int
+    default 20200
+
+source "$HARMONY_VERSION_PATH/framework/config/framework.hconfig"
+source "$HARMONY_VERSION_PATH/bsp/config/bsp.hconfig"
+source "$HARMONY_VERSION_PATH/third_party/config/third_party.hconfig"
+menu "Device & Project Configuration"
+menu "$DEVICE Device Configuration"
+
+config DEVICE_CONFIGURATION 
+    bool "Set Configuration Bits?"
+    default y
+    persistent
+
+source "$HARMONY_VERSION_PATH/utilities/mhc/config/$DEVICE.hconfig"
+endmenu
+
+menu "Project Configuration"
+
+config PROJECT_STANDALONE
+    bool "Generate Standalone Project?"
+    default n 
+	depends on !USE_GFX_STACK
+	depends on !USE_DRV_I2S
+    persistent if USE_GFX_STACK || USE_DRV_I2S
+    ---help---
+    Selecting this option will add all necessary files into MPLAB X project,
+    so it can be built and run without MPLAB Harmony framework installed.
+    ---endhelp---
+
+ifblock USE_GFX_STACK || USE_DRV_I2S
+config PROJECT_STANDALONE_GFX_AUDIO
+    default n 
+    persistent
+    bool "Generate Standalone Project?"
+endif
+ifblock USE_GFX_STACK
+comment "*** Note: Standalone Project generation not supported for graphics applications. ***"
+endif
+ifblock USE_DRV_I2S
+comment "*** Note: Standalone Project generation not supported for audio applications. ***"
+endif
+
+
+source "$HARMONY_VERSION_PATH/utilities/mhc/config/project.hconfig"
+source "$HARMONY_VERSION_PATH/utilities/mhc/config/isa.hconfig"
+endmenu
+endmenu
+
+
+template SYSTEM_CONFIG_H      "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/system_config.h.ftl"      to "$PROJECT_HEADER_FILES/app/system_config/$CONFIGURATION/system_config.h"
+template SYSTEM_DEFINITIONS_H "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/system_definitions.h.ftl" to "$PROJECT_HEADER_FILES/app/system_config/$CONFIGURATION/system_definitions.h"
+template SYSTEM_INIT_C        "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/system_init.c.ftl"        to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/system_init.c"
+template SYSTEM_INTERRUPT_C   "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/system_interrupt.c.ftl"   to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/system_interrupt.c"
+
+ifblock (ATSAMV71)
+template HAL_ATOMIC_H         "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/sam/hal_atomic.h.ftl"        to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/sam/hal_atomic.h"
+template STARTUP_SAMV71_C     "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/sam/startup_samv71.c.ftl"    to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/sam/startup_samv71.c"
+template SYSTEM_SAMV71_C      "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/sam/system_samv71.c.ftl"     to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/sam/system_samv71.c"
+template SAMV71_FLASH_LD      "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/sam/samv71_flash.ld.ftl"     to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/sam/samv71_flash.ld"
+template SAMV71_SRAM_LD       "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/sam/samv71_sram.ld.ftl"      to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/sam/samv71_sram.ld"
+template SAMV71Q21_FLASH_LD   "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/sam/samv71q21_flash.ld.ftl"  to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/sam/samv71q21_flash.ld"
+template SAMV71Q21_SRAM_LD    "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/sam/samv71q21_sram.ld.ftl"   to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/sam/samv71q21_sram.ld"
+endif
+
+ifblock (USE_EXCEPTION_HANDLER)
+ifblock !(ATSAMV71)
+template SYSTEM_EXCEPTIONS_C  "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/system_exceptions.c.ftl"  to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/system_exceptions.c"
+endif
+endif
+
+template MAIN_C               "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/main.c.ftl"                             to "$PROJECT_SOURCE_FILES/app/main.c"
+
+ifblock (!USE_3RDPARTY_RTOS)
+template SYSTEM_TASKS_C       "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/system_tasks.c.ftl"       to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/system_tasks.c"
+endif
+
+ifblock (USE_3RDPARTY_RTOS)
+template SYSTEM_RTOS_TASKS_C     "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/system_tasks_rtos.c.ftl"  to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/system_tasks.c"
+template SYSTEM_RTOS_INTERRUPT_C "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/system_interrupt_a.S.ftl" to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/system_interrupt_a.S"
+template RTOS_HOOKS_C            "$HARMONY_VERSION_PATH/utilities/mhc/templates/app/system_config/rtos_hooks.c.ftl"         to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/rtos_hooks.c"
+endif

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration version="2.0.0.12">
+  <General>
+    <HarmonyPath path="../../../../.."/>
+    <Processor name=""/>
+    <Board name=""/>
+    <ForceOptimization flag="true"/>
+    <MergeStrategy flag="ALL"/>
+  </General>
+  <Manifest>
+    <Files>
+      <File>
+        <Name>osal_impl_basic.h</Name>
+        <Path>Header Files/framework/osal/src</Path>
+      </File>
+      <File>
+        <Name>driver_common.h</Name>
+        <Path>Header Files/framework/driver</Path>
+      </File>
+      <File>
+        <Name>sys_devcon.c</Name>
+        <Path>Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File>
+        <Name>sys_dma.h</Name>
+        <Path>Header Files/framework/system/dma</Path>
+      </File>
+      <File>
+        <Name>osal.h</Name>
+        <Path>Header Files/framework/osal</Path>
+      </File>
+      <File>
+        <Name>sys_ports.h</Name>
+        <Path>Header Files/framework/system/ports</Path>
+      </File>
+      <File>
+        <Name>drv_spi.h</Name>
+        <Path>Header Files/framework/driver/spi</Path>
+      </File>
+      <File>
+        <Name>drv_spi_sys_queue_local_fifo.h</Name>
+        <Path>Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File>
+        <Name>driver.h</Name>
+        <Path>Header Files/framework/driver</Path>
+      </File>
+      <File>
+        <Name>sys_common.h</Name>
+        <Path>Header Files/framework/system/common</Path>
+      </File>
+      <File>
+        <Name>sys_buffer.h</Name>
+        <Path>Header Files/framework/system/common</Path>
+      </File>
+      <File>
+        <Name>sys_clk_compatibility.h</Name>
+        <Path>Header Files/framework/system/clk</Path>
+      </File>
+      <File>
+        <Name>sys_clk.h</Name>
+        <Path>Header Files/framework/system/clk</Path>
+      </File>
+      <File>
+        <Name>drv_spi_sys_queue.h</Name>
+        <Path>Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File>
+        <Name>osal_impl_none.h</Name>
+        <Path>Header Files/framework/osal/src</Path>
+      </File>
+      <File>
+        <Name>sys_clk_mapping.h</Name>
+        <Path>Header Files/framework/system/clk</Path>
+      </File>
+      <File>
+        <Name>sys_int_mapping.h</Name>
+        <Path>Header Files/framework/system/int</Path>
+      </File>
+      <File>
+        <Name>osal_definitions.h</Name>
+        <Path>Header Files/framework/osal</Path>
+      </File>
+      <File>
+        <Name>drv_spi_internal.h</Name>
+        <Path>Header Files/framework/driver/spi/src/dynamic</Path>
+      </File>
+      <File>
+        <Name>sys_devcon.h</Name>
+        <Path>Header Files/framework/system/devcon</Path>
+      </File>
+      <File>
+        <Name>system.h</Name>
+        <Path>Header Files/framework/system</Path>
+      </File>
+      <File>
+        <Name>sys_debug.h</Name>
+        <Path>Header Files/framework/system/debug</Path>
+      </File>
+      <File>
+        <Name>sys_module.h</Name>
+        <Path>Header Files/framework/system/common</Path>
+      </File>
+      <File>
+        <Name>drv_spi_variant_mapping.h</Name>
+        <Path>Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File>
+        <Name>sys_devcon_local.h</Name>
+        <Path>Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File>
+        <Name>sys_queue.h</Name>
+        <Path>Header Files/framework/system/common</Path>
+      </File>
+      <File>
+        <Name>sys_int.h</Name>
+        <Path>Header Files/framework/system/int</Path>
+      </File>
+    </Files>
+    <Templates>
+      <Template>
+        <Name>drv_spi_static_local.h</Name>
+        <Path>Header Files/app/system_config/pic32wk_sk/framework/driver/spi/static/src</Path>
+        <Checksum>70055803006A2C67E983956B3B3ABD25</Checksum>
+        <ProjectFileChecksum>ECC5B21369B97156AD967F87330AFB82</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>main.c</Name>
+        <Path>Source Files/app</Path>
+      </Template>
+      <Template>
+        <Name>system_definitions.h</Name>
+        <Path>Header Files/app/system_config/pic32wk_sk</Path>
+        <Checksum>EEE449B98A9214312E8A2A1E595D5D28</Checksum>
+        <ProjectFileChecksum>4C176ED9DC64E3AF4B2B996890F740E8</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>drv_spi_static.c</Name>
+        <Path>Source Files/app/system_config/pic32wk_sk/framework/driver/spi/static/src</Path>
+        <Checksum>40B11D2F650FDCF7F9A51A4282EE5170</Checksum>
+        <ProjectFileChecksum>8272D362A101CCCEA33FF680B19EB8A6</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>sys_ports_static.c</Name>
+        <Path>Source Files/app/system_config/pic32wk_sk/framework/system/ports/src</Path>
+        <Checksum>A82808EACDF16E35A8260DA1D69B01BA</Checksum>
+        <ProjectFileChecksum>6EAB6CBFEB642EBF3CA61FE62ACB024E</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>drv_spi_static_rm_tasks.c</Name>
+        <Path>Source Files/app/system_config/pic32wk_sk/framework/driver/spi/static/src</Path>
+        <Checksum>BED98A3F5628502709D95341DC70019B</Checksum>
+        <ProjectFileChecksum>977AC6F6CD0BA8392FC0934AD02CC996</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>drv_spi_mapping.c</Name>
+        <Path>Source Files/app/system_config/pic32wk_sk/framework/driver/spi/static/src</Path>
+        <Checksum>ADEEE2519E932B46D44C41B8F44E1F19</Checksum>
+        <ProjectFileChecksum>90DE3E6943AE7A02C3CD3906F25CAA19</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>app.c</Name>
+        <Path>Source Files/app</Path>
+      </Template>
+      <Template>
+        <Name>bsp.h</Name>
+        <Path>Header Files/app/system_config/pic32wk_sk/bsp</Path>
+        <Checksum>2389BE49196862EFBF5B41A90D36E0A1</Checksum>
+        <ProjectFileChecksum>7DBC5EF12EA1DB817712E53851EFDE62</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>system_config.h</Name>
+        <Path>Header Files/app/system_config/pic32wk_sk</Path>
+        <Checksum>317667C184B741963974FD2B7689D0F9</Checksum>
+        <ProjectFileChecksum>0D57B7B985290B314D777E676ACD5A43</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>bsp.c</Name>
+        <Path>Source Files/app/system_config/pic32wk_sk/bsp</Path>
+        <Checksum>038E47188A1E8B34E7A01AF2A9937952</Checksum>
+        <ProjectFileChecksum>4784A041E6F10919E1C8A48F44511DB0</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>drv_spi_static_sys_queue.h</Name>
+        <Path>Header Files/app/system_config/pic32wk_sk/framework/driver/spi/static/src</Path>
+        <Checksum>3D489FB0B5415BB6F80FA34FC0CEE9F7</Checksum>
+        <ProjectFileChecksum>5E69FF336CFBD1FCB0797A4758AA3F6C</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>app.h</Name>
+        <Path>Header Files/app</Path>
+      </Template>
+      <Template>
+        <Name>sys_clk_static.c</Name>
+        <Path>Source Files/app/system_config/pic32wk_sk/framework/system/clk/src</Path>
+        <Checksum>F76079E65D62EE13AC8C93CB3828B299</Checksum>
+        <ProjectFileChecksum>8A0B17BEA83E904D4B512D75484D364A</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>drv_spi_static_sys_queue.c</Name>
+        <Path>Source Files/app/system_config/pic32wk_sk/framework/driver/spi/static/src</Path>
+        <Checksum>E06222D2E5F5F69EE3C77ACD6FCC3059</Checksum>
+        <ProjectFileChecksum>F150663B17DC37EA080DD6D49A682C0F</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>drv_spi_static.h</Name>
+        <Path>Header Files/app/system_config/pic32wk_sk/framework/driver/spi/static</Path>
+        <Checksum>68B5BA023AB90B18D229B6E7CBF0850C</Checksum>
+        <ProjectFileChecksum>A0C90146C5345DE0D44F4D5D4F05D626</ProjectFileChecksum>
+      </Template>
+      <Template>
+        <Name>drv_spi_static_tasks.c</Name>
+        <Path>Source Files/app/system_config/pic32wk_sk/framework/driver/spi/static/src</Path>
+        <Checksum>8D9BDD4F87493B036E9786F53F65EE82</Checksum>
+        <ProjectFileChecksum>EB05005041707429EDC1E37F354D8B20</ProjectFileChecksum>
+      </Template>
+    </Templates>
+    <CompilerItems>
+      <C32>
+        <Include value="F:\CodeBase\GIT\WSG\wsg\apps\examples\peripheral\spi\spi_loopback\firmware\src"/>
+        <Include value="F:\CodeBase\GIT\WSG\wsg\apps\examples\peripheral\spi\spi_loopback\firmware\src\system_config\pic32wk_sk"/>
+        <Include value="F:\CodeBase\GIT\WSG\wsg\framework"/>
+        <Include value="F:\CodeBase\GIT\WSG\wsg\apps\examples\peripheral\spi\spi_loopback\firmware\src\system_config\pic32wk_sk\framework"/>
+        <Include value="../src/system_config/pic32wk_sk/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Libraries>
+      <Library value="../../../../../../../bin/framework/peripheral/PIC32WK2057GPD132_peripherals.a"/>
+    </Libraries>
+  </Manifest>
+</configuration>

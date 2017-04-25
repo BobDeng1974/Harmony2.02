@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name=""/>
+  </General>
+  <MHGC>
+    <GAC dnOrder="0">
+      <Locations dnOrder="0">
+        <Location dnOrder="0" fileName="gfx_assets" index="0"/>
+      </Locations>
+      <Assets dnOrder="1">
+        <StringTable dnOrder="0" encoding="ASCII" location="0" name="stringTable">
+          <Languages default="0" dnOrder="0">
+            <Language dnOrder="0" enabled="true" name="default"/>
+          </Languages>
+        </StringTable>
+      </Assets>
+    </GAC>
+    <State dnOrder="1">
+      <Properties dnOrder="0">
+        <SNAP_TOGGLED dnOrder="0">false</SNAP_TOGGLED>
+        <GRID_TOGGLED dnOrder="1">true</GRID_TOGGLED>
+        <GRID_X dnOrder="2">10</GRID_X>
+        <GRID_Y dnOrder="3">10</GRID_Y>
+        <GRID_COLOR dnOrder="4">2138552974</GRID_COLOR>
+        <CLIP_TOGGLED dnOrder="5">false</CLIP_TOGGLED>
+        <INFO_TOGGLED dnOrder="6">true</INFO_TOGGLED>
+        <PREVIEW_LANGUAGE dnOrder="7">0</PREVIEW_LANGUAGE>
+        <PROJECT_COLOR_MODE dnOrder="8">RGB_565</PROJECT_COLOR_MODE>
+        <EXTERNAL_ASSET_INTERFACE dnOrder="9"/>
+      </Properties>
+    </State>
+    <Screens dnOrder="2" height="272" width="480">
+      <Screen dnOrder="0">
+        <Properties dnOrder="0">
+          <Name dnOrder="0">default</Name>
+          <Size dnOrder="1">
+            <Width dnOrder="0">480</Width>
+            <Height dnOrder="1">272</Height>
+          </Size>
+          <Orientation dnOrder="2">DEGREES_0</Orientation>
+          <Mirror dnOrder="3">false</Mirror>
+          <Persistent dnOrder="4">false</Persistent>
+          <CreateAtStartup dnOrder="5">false</CreateAtStartup>
+          <ShowEvent dnOrder="6">false</ShowEvent>
+          <HideEvent dnOrder="7">false</HideEvent>
+          <Export dnOrder="8">true</Export>
+          <Primary dnOrder="9">true</Primary>
+          <Active dnOrder="10">true</Active>
+          <Visible dnOrder="11">true</Visible>
+        </Properties>
+        <Events dnOrder="1">
+          <Event dnOrder="0" enabled="false" name="ShowEvent" pretty_name="On Show"/>
+          <Event dnOrder="1" enabled="false" name="HideEvent" pretty_name="On Hide"/>
+        </Events>
+        <Layers dnOrder="2">
+          <Layer dnOrder="0">
+            <Properties dnOrder="0">
+              <Locked dnOrder="0">false</Locked>
+              <Hidden dnOrder="1">false</Hidden>
+              <Active dnOrder="2">true</Active>
+              <LockedToScreen dnOrder="3">true</LockedToScreen>
+              <Name dnOrder="4">Layer0</Name>
+              <Position dnOrder="5">
+                <X dnOrder="0">0</X>
+                <Y dnOrder="1">0</Y>
+              </Position>
+              <Size dnOrder="6">
+                <Width dnOrder="0">480</Width>
+                <Height dnOrder="1">272</Height>
+              </Size>
+              <Enabled dnOrder="7">true</Enabled>
+              <Visible dnOrder="8">true</Visible>
+              <BorderType dnOrder="9">Bevel</BorderType>
+              <MarginLeft dnOrder="10">4</MarginLeft>
+              <MarginTop dnOrder="11">4</MarginTop>
+              <MarginRight dnOrder="12">4</MarginRight>
+              <MarginBottom dnOrder="13">4</MarginBottom>
+              <Scheme dnOrder="14" meta="scheme"/>
+              <DrawBackground dnOrder="15">true</DrawBackground>
+              <AlphaEnable dnOrder="16">false</AlphaEnable>
+              <AlphaAmount dnOrder="17">255</AlphaAmount>
+              <LocalRedraw dnOrder="18">false</LocalRedraw>
+              <BufferCount dnOrder="19">1</BufferCount>
+              <Buffer0CreateMethod dnOrder="20">Auto</Buffer0CreateMethod>
+              <Buffer0Address dnOrder="21">0</Buffer0Address>
+              <Buffer0VariableName dnOrder="22"/>
+              <Buffer1CreateMethod dnOrder="23">Auto</Buffer1CreateMethod>
+              <Buffer1Address dnOrder="24">0</Buffer1Address>
+              <Buffer1VariableName dnOrder="25"/>
+              <ColorMask dnOrder="26">false</ColorMask>
+              <MaskColor dnOrder="27">
+                <ColorSource dnOrder="0">Manual</ColorSource>
+                <ColorScheme dnOrder="1" meta="scheme"/>
+                <Gray dnOrder="2">0.0</Gray>
+                <Red dnOrder="3">0.0</Red>
+                <Green dnOrder="4">0.0</Green>
+                <Blue dnOrder="5">0.0</Blue>
+                <Alpha dnOrder="6">255.0</Alpha>
+              </MaskColor>
+              <VSync dnOrder="28">false</VSync>
+            </Properties>
+          </Layer>
+        </Layers>
+        <Macros dnOrder="3"/>
+      </Screen>
+    </Screens>
+    <Schemes dnOrder="3">
+      <Scheme dnOrder="0">
+        <Properties dnOrder="0">
+          <Name dnOrder="0">defaultScheme</Name>
+          <Base dnOrder="1">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.78431374</Red>
+            <Green dnOrder="2">0.8156863</Green>
+            <Blue dnOrder="3">0.83137256</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Base>
+          <Highlight dnOrder="2">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.78431374</Red>
+            <Green dnOrder="2">0.8156863</Green>
+            <Blue dnOrder="3">0.83137256</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Highlight>
+          <HighlightLight dnOrder="3">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </HighlightLight>
+          <Shadow dnOrder="4">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Shadow>
+          <ShadowDark dnOrder="5">
+            <Gray dnOrder="0">0.2509804</Gray>
+            <Red dnOrder="1">0.2509804</Red>
+            <Green dnOrder="2">0.2509804</Green>
+            <Blue dnOrder="3">0.2509804</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ShadowDark>
+          <Foreground dnOrder="6">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Foreground>
+          <ForegroundInactive dnOrder="7">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundInactive>
+          <ForegroundDisabled dnOrder="8">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundDisabled>
+          <Background dnOrder="9">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Background>
+          <BackgroundInactive dnOrder="10">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundInactive>
+          <BackgroundDisabled dnOrder="11">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.78431374</Red>
+            <Green dnOrder="2">0.8156863</Green>
+            <Blue dnOrder="3">0.83137256</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundDisabled>
+          <Text dnOrder="12">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Text>
+          <TextHighlight dnOrder="13">
+            <Gray dnOrder="0">0.0722</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlight>
+          <TextHighlightText dnOrder="14">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlightText>
+          <TextInactive dnOrder="15">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextInactive>
+          <TextDisabled dnOrder="16">
+            <Gray dnOrder="0">0.56811297</Gray>
+            <Red dnOrder="1">0.54901963</Red>
+            <Green dnOrder="2">0.57254905</Green>
+            <Blue dnOrder="3">0.5803922</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextDisabled>
+        </Properties>
+      </Scheme>
+    </Schemes>
+  </MHGC>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="E:\Microchip\harmony\repo\git\gfx\apps\gfx\emwin_quickstart\firmware\src"/>
+        <Include dnOrder="1" value="E:\Microchip\harmony\repo\git\gfx\apps\gfx\emwin_quickstart\firmware\src\system_config\pic32mz_ef_sk_meb2"/>
+        <Include dnOrder="2" value="E:\Microchip\harmony\repo\git\gfx\framework"/>
+        <Include dnOrder="3" value="E:\Microchip\harmony\repo\git\gfx\apps\gfx\emwin_quickstart\firmware\src\system_config\pic32mz_ef_sk_meb2\framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32mz_ef_sk_meb2/bsp"/>
+        <Include dnOrder="5" value="../src/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/config"/>
+        <Include dnOrder="6" value="../../../../../bin/framework/gfx/segger_emwin/inc"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">drv_tmr_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">drv_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">sys_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">drv_mtch6301.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/touch/mtch6301/src</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">drv_mtch6301.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/touch/mtch6301</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">sys_devcon_cache.h</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">gfx_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/gfx</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_msg.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/msg/src</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">sys_touch.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/touch/src</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">drv_touch.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/touch</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">drv_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/tmr/src/dynamic</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">drv_tmr_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">drv_i2c.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">drv_gfx_controller.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/gfx/controller</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">drv_i2c_bb_a.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">sys_dma.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">sys_msg_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/msg/src</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">sys_touch_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/touch/src</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">drv_tmr_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">drv_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">drv_i2c_bb.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">sys_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">sys_dma_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma/src</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">sys_touch.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/touch</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">drv_i2c_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="38">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="39">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="40">
+        <Name dnOrder="0">drv_i2c_bb_a.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/i2c/src/dynamic</Path>
+      </File>
+      <File dnOrder="41">
+        <Name dnOrder="0">drv_i2c_bb.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/i2c/src/dynamic</Path>
+      </File>
+      <File dnOrder="42">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="43">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="44">
+        <Name dnOrder="0">drv_i2c_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c/src</Path>
+      </File>
+      <File dnOrder="45">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="46">
+        <Name dnOrder="0">sys_devcon_cache_pic32mz.S</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="47">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="48">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="49">
+        <Name dnOrder="0">sys_msg.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/msg</Path>
+      </File>
+      <File dnOrder="50">
+        <Name dnOrder="0">drv_i2c_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c/src</Path>
+      </File>
+      <File dnOrder="51">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="52">
+        <Name dnOrder="0">sys_msg_config.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/msg/config</Path>
+      </File>
+      <File dnOrder="53">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="54">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="55">
+        <Name dnOrder="0">drv_i2c_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="56">
+        <Name dnOrder="0">drv_i2c_local_bb.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c/src</Path>
+      </File>
+      <File dnOrder="57">
+        <Name dnOrder="0">sys_devcon_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="58">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="59">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="60">
+        <Name dnOrder="0">drv_i2c_bb_a_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../bin/framework/peripheral/PIC32MZ2048EFM144_peripherals.a"/>
+      <Library dnOrder="1" value="../../../../../bin/framework/gfx/segger_emwin/lib/emWin.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">7FB59FECFF28D18A7D5D02ED74D4B999</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">3FA0284D4F4103A02942E9697AABA529</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">DBD59E40C4359953B9FC5D87F8883507</Checksum>
+        <Name dnOrder="1">emwin_touch_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/touch</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">43202FF875E91AE678E480419B7F819E</Checksum>
+        <Name dnOrder="1">drv_gfx_lcc_generic.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/framework/driver/gfx/controller/lcc</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">0BEC410CC6A0AAB3E1F0C1731F2874F9</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">21B99B86FD171C2E76E1D9F64DCB9E3A</Checksum>
+        <Name dnOrder="1">GUIConf.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/config</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">0CE14BBEB78DCA8EA4AE6AABF57ACD8D</Checksum>
+        <Name dnOrder="1">sys_dma_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/framework/system/dma</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">B71BE31DB477885F71A201C5D1612DBE</Checksum>
+        <Name dnOrder="1">GUI_X_Ex.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/config</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">EDC4BBD877FD60415177E72114654002</Checksum>
+        <Name dnOrder="1">drv_gfx_lcc_generic.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/framework/driver/gfx/controller/lcc</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">42B836D69ED84635BEC822EB6A0E95FD</Checksum>
+        <Name dnOrder="1">emwin_gui_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/gui/src</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">4F9BA9F9C23903F68CA8915F5585B73F</Checksum>
+        <Name dnOrder="1">emwin_touch_static_local.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/touch/src</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">8D1FF1B068EDDCF6E776DB7E3E985BA1</Checksum>
+        <Name dnOrder="1">emwin_gui_static_local.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/gui/src</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">A8A6EDA5CF1727C2683757B1D2BE6E55</Checksum>
+        <Name dnOrder="1">GUIConf.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/config</Path>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">99E60C4F701E04BB419E60045340C732</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="15">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="16">
+        <Checksum dnOrder="0">9EED9D4DD97BA9076152C68F0D6B7DAA</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/framework/system/ports/src</Path>
+      </Template>
+      <Template dnOrder="17">
+        <Checksum dnOrder="0">6CAA814FB5BEFA546565BEBF5A57A328</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="18">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="19">
+        <Checksum dnOrder="0">4DBBF79426533A601201E0D47AABA19D</Checksum>
+        <Name dnOrder="1">emwin_gui_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/gui</Path>
+      </Template>
+      <Template dnOrder="20">
+        <Checksum dnOrder="0">E25CE2E8561A30622F0189580F28A92A</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/bsp</Path>
+      </Template>
+      <Template dnOrder="21">
+        <Checksum dnOrder="0">53FDC60165C5AAC955B5FCB751C95580</Checksum>
+        <Name dnOrder="1">LCDConf.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/config</Path>
+      </Template>
+      <Template dnOrder="22">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="23">
+        <Checksum dnOrder="0">4E4FE6AEFB594B25DF8426B8D55B5C48</Checksum>
+        <Name dnOrder="1">emwin_touch_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/touch/src</Path>
+      </Template>
+      <Template dnOrder="24">
+        <Checksum dnOrder="0">CC45A61DC821F2A45FBFD5EB0F76DD59</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/framework/system/clk/src</Path>
+      </Template>
+      <Template dnOrder="25">
+        <Checksum dnOrder="0">95EC06A9706D05EC5589F09B4F38FC5D</Checksum>
+        <Name dnOrder="1">LCDConf.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/third_party/gfx/emwin/config</Path>
+      </Template>
+      <Template dnOrder="26">
+        <Checksum dnOrder="0">9AFAF3F6210EF658384438E21E6E4724</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/bsp</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

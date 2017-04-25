@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name="PIC32MX360F512L"/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="E:/official/git/core/apps/driver/spi/serial_eeprom/firmware/src"/>
+        <Include dnOrder="1" value="E:/official/git/core/apps/driver/spi/serial_eeprom/firmware/src/system_config/pic32mx360_pim_e16"/>
+        <Include dnOrder="2" value="E:/official/git/core/framework"/>
+        <Include dnOrder="3" value="E:/official/git/core/apps/driver/spi/serial_eeprom/firmware/src/system_config/pic32mx360_pim_e16/framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32mx360_pim_e16/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">drv_spi.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/spi/src/dynamic</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">drv_spi_sys_queue_fifo.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">drv_spi.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">drv_spi_sys_queue_local_fifo.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">drv_spi_sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">drv_spi_internal.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src/dynamic</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">sys_devcon_pic32mx.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">drv_spi_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../../bin/framework/peripheral/PIC32MX360F512L_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">83E28A9509BFB1178054925FE7ED2D75</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx360_pim_e16/framework/system/ports/src</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">7023AAE2CD6AC676F2592AF882ABD641</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx360_pim_e16/bsp</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx360_pim_e16</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">BE644D0142ACA48D9CA2E6255A02CDBA</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx360_pim_e16</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">446C0640C45D77DC92EF9B40EBDA1DFF</Checksum>
+        <Name dnOrder="1">drv_spi_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx360_pim_e16/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">F65FEAB721E68F2679A60E816B77D31E</Checksum>
+        <Name dnOrder="1">drv_spi_master_rm_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx360_pim_e16/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">B4BFA16801379B654AE102AAA49120C1</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx360_pim_e16</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">75AB2A19D765B123D5ED6B990D42C619</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx360_pim_e16</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">8773FA38DC54C39EF51D4CB92B5576E9</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx360_pim_e16</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">279268E87A8F3A911299DDE608943E2E</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx360_pim_e16/bsp</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">0DFBA3441E6B20D83D1F1F70929ED205</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx360_pim_e16</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">FDF6C8068CFFAEEC5F8537A8D6514230</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx360_pim_e16/framework/system/clk/src</Path>
+      </Template>
+      <Template dnOrder="14">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="15">
+        <Checksum dnOrder="0">8AB6BB7815E0B4A2A788E370FADCDCE5</Checksum>
+        <Name dnOrder="1">drv_spi_api.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx360_pim_e16/framework/driver/spi/dynamic</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

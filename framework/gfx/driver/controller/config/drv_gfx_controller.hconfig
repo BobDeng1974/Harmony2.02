@@ -1,0 +1,85 @@
+enum DRV_GFX_CONTROLLER_LAYERS
+    "1"
+    || "2"
+    || "3"
+
+enum DRV_GFX_CONTROLLER_BUFFERS
+    "1"
+    || "2"
+    || "3"	
+
+config USE_DRV_GFX_LCC_NEEDED
+    bool
+
+config USE_DRV_GFX_S1D13517_NEEDED
+	bool
+
+config USE_DRV_GFX_SSD1926_NEEDED
+	bool
+
+config USE_DRV_GFX_OTM2201A_NEEDED
+	bool
+
+config USE_DRV_GFX_GLCD_NEEDED
+	bool
+
+config DRV_GFX_CONTROLLER_TYPE
+    string "Select Controller Type"
+    range DRV_GFX_CONTROLLER_LIST
+	default "GLCD" if USE_DRV_GFX_GLCD_NEEDED
+    default "Low Cost Controllerless" if USE_DRV_GFX_LCC_NEEDED
+	default "Low Cost Controllerless"
+    ---help---
+     IDH_HTML_Graphics_Driver_Library
+    ---endhelp---
+
+comment "WARNING: This device does not support GLCD"
+	depends on !HAVE_GLCD && DRV_GFX_CONTROLLER_TYPE = "GLCD"
+
+config DRV_GFX_CONTROLLER_LAYER_SELECT
+	string "Number of Layers"
+	range DRV_GFX_CONTROLLER_LAYERS
+	default "1"
+	persistent
+
+config DRV_GFX_CONTROLLER_LAYER_COUNT
+	int
+	default 1 if DRV_GFX_CONTROLLER_LAYER_SELECT = 1
+	default 2 if DRV_GFX_CONTROLLER_LAYER_SELECT = 2
+	default 3 if DRV_GFX_CONTROLLER_LAYER_SELECT = 3
+	default 1
+	
+comment "WARNING: LCC does not support multiple layers"
+	depends on DRV_GFX_CONTROLLER_LAYER_COUNT != 1 && DRV_GFX_CONTROLLER_TYPE = "Low Cost Controllerless"
+
+config DRV_GFX_CONTROLLER_MAX_BUFFERS
+	string "Maximum number of frame buffers in any given layer"
+	range DRV_GFX_CONTROLLER_BUFFERS
+	default "1"
+	persistent
+	
+comment "WARNING: LCC does not support 3 buffers per layer"
+	depends on DRV_GFX_CONTROLLER_MAX_BUFFERS = 3 && DRV_GFX_CONTROLLER_TYPE = "Low Cost Controllerless"
+
+config USE_DRV_GFX_LCC
+    bool
+    select DRIVER
+    select USE_SYS_DMA_NEEDED
+    select USE_SYS_INT_NEEDED
+    default y if DRV_GFX_CONTROLLER_TYPE = "Low Cost Controllerless"
+	default n
+
+menu "Low Cost Controllerless" depends on USE_DRV_GFX_LCC
+source "$HARMONY_VERSION_PATH/framework/gfx/driver/controller/lcc/config/drv_gfx_lcc.hconfig"
+endmenu
+
+config USE_DRV_GFX_GLCD
+    bool
+    select DRIVER
+    default y if DRV_GFX_CONTROLLER_TYPE = "GLCD"
+	default n
+
+menu "GLCD" depends on USE_DRV_GFX_GLCD
+source "$HARMONY_VERSION_PATH/framework/gfx/driver/controller/glcd/config/drv_gfx_glcd.hconfig"
+endmenu
+#source "$HARMONY_VERSION_PATH/framework/gfx/driver/controller/s1d13517/config/drv_gfx_s1d13517.hconfig"

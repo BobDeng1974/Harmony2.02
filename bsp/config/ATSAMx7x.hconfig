@@ -1,0 +1,30 @@
+ifblock ATSAMx7x
+
+config BSP_ATSAMx7x_COMMON
+    depends on USE_BSP
+    bool
+    default y if USE_BSP
+
+choice
+    prompt "Select BSP To Use For $DEVICE Device"
+    depends on USE_BSP
+    default BSP_ATSAMV71_XULT
+    ---help---
+    IDH_HTML_BSP_Board_Support_Packages
+    ---endhelp---
+
+
+config BSP_ATSAMV71_XULT
+    depends on USE_BSP
+    bool "ATSAMV71 Xplained Ultra"
+    ---help---
+    IDH_HTML_BSP_atsamx71_xult
+    ---endhelp---
+
+endchoice
+
+
+source "$HARMONY_VERSION_PATH/bsp/atsamv71_xult/config/bsp.hconfig"
+
+endif
+

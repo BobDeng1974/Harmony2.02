@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration>
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name="PIC32WK Starter Kit"/>
+    <HarmonyPath dnOrder="1" path="../../.."/>
+    <Processor dnOrder="2" name="PIC32WK2057GPD132"/>
+  </General>
+</Configuration>

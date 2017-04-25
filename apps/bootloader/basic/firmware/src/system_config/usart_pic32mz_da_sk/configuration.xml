@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name="PIC32MZ2064DAB288"/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="C:/microchip/harmony/core_v2xx/apps/bootloader/basic/firmware/src"/>
+        <Include dnOrder="1" value="C:/microchip/harmony/core_v2xx/apps/bootloader/basic/firmware/src/system_config/usart_pic32mz_da_sk"/>
+        <Include dnOrder="2" value="C:/microchip/harmony/core_v2xx/framework"/>
+        <Include dnOrder="3" value="C:/microchip/harmony/core_v2xx/apps/bootloader/basic/firmware/src/system_config/usart_pic32mz_da_sk/framework"/>
+        <Include dnOrder="4" value="../src/system_config/usart_pic32mz_da_sk/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">sys_reset.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/reset</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">sys_reset_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/reset/src</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_reset.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/reset/src</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">nvm.c</Name>
+        <Path dnOrder="1">Source Files/framework/bootloader/src</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">sys_fs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">sys_reset_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/reset/src</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">datastream.c</Name>
+        <Path dnOrder="1">Source Files/framework/bootloader/src/datastream</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">sys_devcon_cache.h</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">sys_devcon_cache_pic32mz.S</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">bootloader.c</Name>
+        <Path dnOrder="1">Source Files/framework/bootloader/src</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">drv_usart.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">drv_usart_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">sys_devcon_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">datastream_usart.c</Name>
+        <Path dnOrder="1">Source Files/framework/bootloader/src/datastream</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../bin/framework/peripheral/PIC32MZ2064DAB288_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">AE37BD63B6EC9F6ADD6B8006CE192FCB</Checksum>
+        <Name dnOrder="1">drv_usart_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/usart_pic32mz_da_sk/framework/driver/usart</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">F41C7EDE68546FCD210EA9CD15FBB2AE</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/usart_pic32mz_da_sk</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">89F74A34367F033B72BD3022FF1F60F3</Checksum>
+        <Name dnOrder="1">drv_usart_static_byte_model.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/usart_pic32mz_da_sk/framework/driver/usart/src</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">AA48C72581C7A76021FFEC8DAD847FDC</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/usart_pic32mz_da_sk</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">5DEC6FBF578D0F2E0CFD7A4E273CFADC</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/usart_pic32mz_da_sk/framework/system/clk/src</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">62F7F49D6A443F111DA38971475472FD</Checksum>
+        <Name dnOrder="1">drv_usart_static_local.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/usart_pic32mz_da_sk/framework/driver/usart/src</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">018D32CE8E3A3DAB4E198AC0EF77984D</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/usart_pic32mz_da_sk/bsp</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">6D0961160B9CA04B50D20493874A5D26</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/usart_pic32mz_da_sk/bsp</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">8EAEA82B96231F144906CEC3F37E732F</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/usart_pic32mz_da_sk</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">F80AC35235A8BFA497E664A1AAC24EDA</Checksum>
+        <Name dnOrder="1">drv_usart_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/usart_pic32mz_da_sk/framework/driver/usart/src</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">3E047B749E18C0FF465A0E32DFEAD3BB</Checksum>
+        <Name dnOrder="1">btl_mz.ld</Name>
+        <Path dnOrder="2">Linker Files/system_config/usart_pic32mz_da_sk</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/usart_pic32mz_da_sk</Path>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">C934CFD980878E57EE336D976F540A07</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/usart_pic32mz_da_sk</Path>
+      </Template>
+      <Template dnOrder="15">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="16">
+        <Checksum dnOrder="0">99B1234D6368258201525EBAE6D7FADE</Checksum>
+        <Name dnOrder="1">drv_usart_mapping.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/usart_pic32mz_da_sk/framework/driver/usart/src</Path>
+      </Template>
+      <Template dnOrder="17">
+        <Checksum dnOrder="0">D3BE970479871DBD6BEF24C097D6D1A1</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/usart_pic32mz_da_sk</Path>
+      </Template>
+      <Template dnOrder="18">
+        <Checksum dnOrder="0">413A1E673F98977034171F80BD1B870B</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/usart_pic32mz_da_sk/framework/system/ports/src</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

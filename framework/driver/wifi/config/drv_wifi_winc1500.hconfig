@@ -1,0 +1,255 @@
+enum WINC1500_NETWORK_TYPE_LIST
+    "Infrastructure" || "Soft AP"
+
+enum WINC1500_INFRASTRUCTURE_SECURITY_MODE_LIST
+    "Open" || "WEP-40 (64-bit)" || "WEP-104 (128-bit)" || "WPA-PSK/WPA2-PSK Auto" || "WPS Push Button" || "WPS PIN"
+
+enum WINC1500_SOFTAP_SECURITY_MODE_LIST
+    "Open" || "WEP-40 (64-bit)" || "WEP-104 (128-bit)" || "WPA-PSK/WPA2-PSK Auto"
+
+config WINC1500_FW_UPDATE_OVER_SERIAL
+    bool "Update Wi-Fi Module Firmware over Serial Port"
+    depends on USE_DRV_WIFI
+    default n
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+menu "RTOS Configuration"
+    depends on USE_DRV_WIFI
+    depends on USE_3RDPARTY_RTOS
+
+comment "For WINC1500, all RTOS Tasks must be Standalone."
+
+config WINC1500_RTOS_TASK
+    string "Run Wi-Fi Driver RTOS Task As"
+    depends on 3RDPARTY_RTOS_USED = "FreeRTOS"
+    range 3RDPARTY_RTOS_SYS_TASKS_OPTIONS
+    default "Standalone"
+
+config WINC1500_RTOS_TASK_SIZE
+    int "Task Size"
+    depends on WINC1500_RTOS_TASK = "Standalone"
+    default 2048
+
+config WINC1500_RTOS_TASK_PRIORITY
+    int "Task Priority"
+    depends on WINC1500_RTOS_TASK = "Standalone"
+    default 2
+
+endmenu
+
+config WINC1500_CHIP_EN_PORT_CHANNEL
+    string "WINC1500 Chip Enable Pin Port Channel"
+    depends on USE_DRV_WIFI
+    range DRV_WIFI_PORT_CHANNEL_LIST
+    default 'A'
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_CHIP_EN_BIT_POS
+    int "WINC1500 Chip Enable Pin Bit Position"
+    depends on USE_DRV_WIFI
+    range 0 15
+    default 0
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_IRQ_PORT_CHANNEL
+    string "WINC1500 IRQ Pin Port Channel"
+    depends on USE_DRV_WIFI
+    range DRV_WIFI_PORT_CHANNEL_LIST
+    default 'A'
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_IRQ_BIT_POS
+    int "WINC1500 IRQ Pin Bit Position"
+    depends on USE_DRV_WIFI
+    range 0 15
+    default 0
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_RESET_PORT_CHANNEL
+    string "WINC1500 Reset Pin Port Channel"
+    depends on USE_DRV_WIFI
+    range DRV_WIFI_PORT_CHANNEL_LIST
+    default 'A'
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_RESET_BIT_POS
+    int "WINC1500 Reset Pin Bit Position"
+    depends on USE_DRV_WIFI
+    range 0 15
+    default 0
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_SPI_SS_PORT_CHANNEL
+    string "WINC1500 SPI Slave Select Pin Port Channel"
+    depends on USE_DRV_WIFI
+    range DRV_WIFI_PORT_CHANNEL_LIST
+    default 'A'
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_SPI_SS_BIT_POS
+    int "WINC1500 SPI Slave Select Pin Bit Position"
+    depends on USE_DRV_WIFI
+    range 0 15
+    default 0
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_NETWORK_TYPE
+    string "Wi-Fi Network Type"
+    depends on USE_DRV_WIFI
+    range WINC1500_NETWORK_TYPE_LIST
+    default "Infrastructure"
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_SOFTAP_OPERATING_CHANNEL
+    int "Wi-Fi Operating Channel"
+    depends on USE_DRV_WIFI && WINC1500_NETWORK_TYPE = "Soft AP"
+    range 1 11
+    default 6
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_INFRASTRUCTURE_SECURITY_MODE
+    string "Wi-Fi Security Mode"
+    depends on USE_DRV_WIFI && WINC1500_NETWORK_TYPE = "Infrastructure"
+    range WINC1500_INFRASTRUCTURE_SECURITY_MODE_LIST
+    default "Open"
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_SOFTAP_SECURITY_MODE
+    string "Wi-Fi Security Mode"
+    depends on USE_DRV_WIFI && WINC1500_NETWORK_TYPE = "Soft AP"
+    range WINC1500_SOFTAP_SECURITY_MODE_LIST
+    default "Open"
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config WINC1500_SSID
+    string "Wi-Fi SSID"
+    depends on USE_DRV_WIFI && WINC1500_INFRASTRUCTURE_SECURITY_MODE != "WPS Push Button"
+    default "MicrochipDemoApp" if WINC1500_NETWORK_TYPE = "Infrastructure"
+    default "MCHPSoftAP" if WINC1500_NETWORK_TYPE = "Soft AP"
+    ---help---
+The SSID should not contain more than 32 ASCII characters. Usually, the SSID can contain space charactcter.
+But in this demo, you should not put space character in the SSID.
+    ---endhelp---
+
+config WINC1500_WEP_KEY_40
+    string "Wi-Fi WEP-40 (64-bit) Key"
+    depends on USE_DRV_WIFI &&
+        (WINC1500_INFRASTRUCTURE_SECURITY_MODE = "WEP-40 (64-bit)" ||
+         WINC1500_SOFTAP_SECURITY_MODE = "WEP-40 (64-bit)")
+    default "5AFB6C8E77"
+    ---help---
+Please visit http://www.wepkey.com/ to generate the key. For 64-bit key, please always use the 1st one. Others are not supported.
+The 64-bit key should contain exact 10 ASCII characters.
+    ---endhelp---
+
+config WINC1500_WEP_KEY_104
+    string "Wi-Fi WEP-104 (128-bit) Key"
+    depends on USE_DRV_WIFI &&
+        (WINC1500_INFRASTRUCTURE_SECURITY_MODE = "WEP-104 (128-bit)" ||
+         WINC1500_SOFTAP_SECURITY_MODE = "WEP-104 (128-bit)")
+    default "90E96780C739409DA50034FCAA"
+    ---help---
+Please visit http://www.wepkey.com/ to generate the key. The 128-bit key should contain exact 26 ASCII characters.
+    ---endhelp---
+
+config WINC1500_WPA_PASS_PHRASE
+    string "Wi-Fi WPA-PSK or WPA2-PSK Pass Phrase"
+    depends on USE_DRV_WIFI &&
+        (WINC1500_INFRASTRUCTURE_SECURITY_MODE = "WPA-PSK/WPA2-PSK Auto" ||
+         WINC1500_SOFTAP_SECURITY_MODE = "WPA-PSK/WPA2-PSK Auto")
+    default "Microchip 802.11 Secret PSK Password"
+    ---help---
+The WPA passphrase can go from 8 to 63 ASCII characters.
+    ---endhelp---
+
+config WINC1500_WPS_PIN
+    string "Wi-Fi WPS PIN"
+    depends on USE_DRV_WIFI && WINC1500_INFRASTRUCTURE_SECURITY_MODE = "WPS PIN"
+    default "12390212"
+    ---help---
+An example PIN.
+The last digit is the checksum of first 7 digits.
+    ---endhelp---
+
+add "<#include \"/framework/driver/wifi/templates/drv_wifi.h.ftl\">" to list SYSTEM_CONFIG_H_DRIVER_CONFIGURATION
+add "<#include \"/framework/driver/wifi/templates/drv_wifi_init.c.ftl\">" to list SYSTEM_INIT_C_SYS_INITIALIZE_DRIVERS
+
+file WDRV_WINC1500_API_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/include/wdrv_winc1500_api.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/include/wdrv_winc1500_api.h"
+file WDRV_WINC1500_COMMON_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/include/wdrv_winc1500_common.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/include/wdrv_winc1500_common.h"
+file WDRV_WINC1500_IWPRIV_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/include/wdrv_winc1500_iwpriv.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver/include/wdrv_winc1500_iwpriv.h"
+file WDRV_WINC1500_MAIN_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/include/wdrv_winc1500_main.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver/include/wdrv_winc1500_main.h"
+file WDRV_WINC1500_SCAN_HELPER_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/include/wdrv_winc1500_scan_helper.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver/include/wdrv_winc1500_scan_helper.h"
+file WINC1500_TASK_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/winc1500_task.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/winc1500_task.h"
+file NM_COMMON_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/common/include/nm_common.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/common/include/nm_common.h"
+file NM_DEBUG_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/common/include/nm_debug.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/common/include/nm_debug.h"
+file M2M_OTA_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/include/m2m_ota.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/include/m2m_ota.h"
+file M2M_PERIPH_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/include/m2m_periph.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/include/m2m_periph.h"
+file M2M_TYPES_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/include/m2m_types.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/include/m2m_types.h"
+file M2M_WIFI_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/include/m2m_wifi.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/include/m2m_wifi.h"
+file M2M_HIF_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/m2m_hif.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/m2m_hif.h"
+file NMASIC_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmasic.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmasic.h"
+file NMBUS_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmbus.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmbus.h"
+file NMDRV_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmdrv.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmdrv.h"
+file NMSPI_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmspi.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmspi.h"
+file SPI_FLASH_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/spi_flash/include/spi_flash.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/spi_flash/include/spi_flash.h"
+file SPI_FLASH_MAP_H "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/spi_flash/include/spi_flash_map.h" to "$PROJECT_HEADER_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/spi_flash/include/spi_flash_map.h"
+
+file WDRV_WINC1500_GPIO_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/dev/gpio/wdrv_winc1500_gpio.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/dev/gpio/wdrv_winc1500_gpio.c"
+file WDRV_WINC1500_SPI_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/dev/spi/wdrv_winc1500_spi.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/dev/spi/wdrv_winc1500_spi.c"
+file WDRV_WINC1500_CLI_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_cli.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_cli.c"
+file WDRV_WINC1500_CONFIG_DATA_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_config_data.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_config_data.c"
+file WDRV_WINC1500_CONNMGR_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_connmgr.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_connmgr.c"
+file WDRV_WINC1500_EVENTS_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_events.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_events.c"
+file WDRV_WINC1500_IWPRIV_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_iwpriv.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_iwpriv.c"
+file WDRV_WINC1500_MAIN_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_main.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_main.c"
+file WDRV_WINC1500_MISC_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_misc.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_misc.c"
+file WDRV_WINC1500_OSAL_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_osal.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_osal.c"
+file WDRV_WINC1500_SCAN_HELPER_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_scan_helper.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver/wdrv_winc1500_scan_helper.c"
+file WDRVEXT_WINC1500_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/wdrvext_winc1500.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/wdrvext_winc1500.c"
+file WINC1500_TASK_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/winc1500_task.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/winc1500_task.c"
+file NM_COMMON_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/common/source/nm_common.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/common/source/nm_common.c"
+file M2M_HIF_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/m2m_hif.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/m2m_hif.c"
+file M2M_OTA_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/m2m_ota.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/m2m_ota.c"
+file M2M_PERIPH_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/m2m_periph.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/m2m_periph.c"
+file M2M_WIFI_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/m2m_wifi.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/m2m_wifi.c"
+file NMASIC_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmasic.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmasic.c"
+file NMBUS_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmbus.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmbus.c"
+file NMDRV_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmdrv.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmdrv.c"
+file NMSPI_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmspi.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source/nmspi.c"
+file SPI_FLASH_C "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/spi_flash/source/spi_flash.c" to "$PROJECT_SOURCE_FILES/framework/driver/wifi/winc1500/wireless_driver_extension/spi_flash/source/spi_flash.c"
+
+compiler WDRV_WINC1500_COMPILER_INCLUDEPATH_1 includepath "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/include"
+compiler WDRV_WINC1500_COMPILER_INCLUDEPATH_2 includepath "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver/include"
+compiler WDRV_WINC1500_COMPILER_INCLUDEPATH_3 includepath "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension"
+compiler WDRV_WINC1500_COMPILER_INCLUDEPATH_4 includepath "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/bsp/include"
+compiler WDRV_WINC1500_COMPILER_INCLUDEPATH_5 includepath "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/bus_wrapper/include"
+compiler WDRV_WINC1500_COMPILER_INCLUDEPATH_6 includepath "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/common/include"
+compiler WDRV_WINC1500_COMPILER_INCLUDEPATH_7 includepath "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/include"
+compiler WDRV_WINC1500_COMPILER_INCLUDEPATH_8 includepath "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/driver/source"
+compiler WDRV_WINC1500_COMPILER_INCLUDEPATH_9 includepath "$HARMONY_VERSION_PATH/framework/driver/wifi/winc1500/wireless_driver_extension/spi_flash/include"

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name="PIC32MZ2064DAH169"/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="/home/vikasnan/GIT_Coredev/core/apps/examples/peripheral/ddr/write_read_ddr2/firmware/src"/>
+        <Include dnOrder="1" value="/home/vikasnan/GIT_Coredev/core/apps/examples/peripheral/ddr/write_read_ddr2/firmware/src/system_config/pic32mz_da_sk_169lfbga_cpu"/>
+        <Include dnOrder="2" value="/home/vikasnan/GIT_Coredev/core/framework"/>
+        <Include dnOrder="3" value="/home/vikasnan/GIT_Coredev/core/apps/examples/peripheral/ddr/write_read_ddr2/firmware/src/system_config/pic32mz_da_sk_169lfbga_cpu/framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32mz_da_sk_169lfbga_cpu/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">sys_devcon_cache_pic32mz.S</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">sys_devcon_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_devcon_cache.h</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">sys_memory.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/memory</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../../../bin/framework/peripheral/PIC32MZ2064DAH169_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">97C65C09BCB9C851261D694FFBCDD5EF</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk_169lfbga_cpu</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">2C60249BFF09365D771D48CAF57FF568</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_169lfbga_cpu</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">272FE393980B03552C2DBB79E673F716</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk_169lfbga_cpu/bsp</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">BE644D0142ACA48D9CA2E6255A02CDBA</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_169lfbga_cpu</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">FFCE7D3568405DC9BF516144E1781872</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_169lfbga_cpu/framework/system/clk/src</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">9D1EC05B9759823C1DA8C3869E12E4ED</Checksum>
+        <Name dnOrder="1">sys_memory_ddr_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_169lfbga_cpu/framework/system/memory/ddr/src</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">3A20E01B233ECFB1843F1B6951C60A9A</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_169lfbga_cpu/bsp</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">45AAE76DAF98E14B252A1CC7D357A4D1</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk_169lfbga_cpu</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">03FB6BC6017AA5BC1C92A1D40B5C575B</Checksum>
+        <Name dnOrder="1">sys_memory_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_169lfbga_cpu/framework/system/memory/src</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_169lfbga_cpu</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">8E16BFB282FBA87B4A5DA7ABC33C4306</Checksum>
+        <Name dnOrder="1">sys_memory_ddr_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk_169lfbga_cpu/framework/system/memory/ddr</Path>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">3DFB0BC56732FDD6D5377CC83C754517</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_169lfbga_cpu/framework/system/ports/src</Path>
+      </Template>
+      <Template dnOrder="15">
+        <Checksum dnOrder="0">C934CFD980878E57EE336D976F540A07</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_169lfbga_cpu</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

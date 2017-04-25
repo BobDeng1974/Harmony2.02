@@ -1,1 +1,2 @@
-# Harmony2.02
+# Harmony
+MPLabX Harmony from Microchip

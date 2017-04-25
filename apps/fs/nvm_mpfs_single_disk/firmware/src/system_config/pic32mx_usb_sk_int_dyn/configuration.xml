@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name="PIC32MX795F512L"/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="D:\trunk_sbx\apps\fs\nvm_mpfs_single_disk\firmware\src"/>
+        <Include dnOrder="1" value="D:\trunk_sbx\apps\fs\nvm_mpfs_single_disk\firmware\src\system_config\pic32mx_usb_sk_int_dyn"/>
+        <Include dnOrder="2" value="D:\trunk_sbx\framework"/>
+        <Include dnOrder="3" value="D:\trunk_sbx\apps\fs\nvm_mpfs_single_disk\firmware\src\system_config\pic32mx_usb_sk_int_dyn\framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32mx_usb_sk_int_dyn/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">sys_fs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/src</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">ff.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/file_system</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_fs_media_manager.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs/src/dynamic</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">mpfs.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">sys_fs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">diskio.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/hardware_access</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">mpfs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/mpfs</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">drv_nvm.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/nvm/src/dynamic</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">ffconf.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/file_system</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">drv_nvm.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/nvm</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">mpfs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/mpfs/src</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">sys_fs.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs/src/dynamic</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">sys_fs_media_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">sys_devcon_pic32mx.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">sys_fs_media_manager_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/src</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">drv_nvm_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/nvm/src</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="38">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="39">
+        <Name dnOrder="0">drv_nvm_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/nvm/src</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../bin/framework/peripheral/PIC32MX795F512L_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">FDF6C8068CFFAEEC5F8537A8D6514230</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk_int_dyn/framework/system/clk/src</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">B00B90E021F15FFD6B0B1B7F2D0650A5</Checksum>
+        <Name dnOrder="1">nvm_disk_images.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_usb_sk_int_dyn/framework/system/fs</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">83E28A9509BFB1178054925FE7ED2D75</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk_int_dyn/framework/system/ports/src</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">3653F9BE226E0A57AE56D7AACE8D6CE2</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk_int_dyn</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">ED913BBB5853AC1DC04F5C22F2395B5C</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk_int_dyn</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">92D5F36B9445A921B6262CA624EECD34</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_usb_sk_int_dyn</Path>
+        <ProjectFileChecksum dnOrder="3">99D4C150026F3844F321981D1A57B892</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">48B745A32D710CA495F0E51A502BBEDC</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk_int_dyn</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk_int_dyn</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">A0108224C3C4EEE7788ED5D0A9AFF415</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_usb_sk_int_dyn/bsp</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">39E17613B39B615BB8EDD13BE7647B97</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk_int_dyn/bsp</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">2D9238A5F39ED37B6DFF9696DCFEC935</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_usb_sk_int_dyn</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../../.."/>
+    <MergeStrategy dnOrder="3" flag="OVERWRITE"/>
+    <Processor dnOrder="4" name=""/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="C:\PLIB_Opt\coredev\apps\examples\system\multi_instance_console\firmware\src"/>
+        <Include dnOrder="1" value="C:\PLIB_Opt\coredev\apps\examples\system\multi_instance_console\firmware\src\system_config\pic32mx795_pim_e16"/>
+        <Include dnOrder="2" value="C:\PLIB_Opt\coredev\apps\examples\system\multi_instance_console\firmware\src\pic32mx795_pim_e16"/>
+        <Include dnOrder="3" value="C:\PLIB_Opt\coredev\framework"/>
+        <Include dnOrder="4" value="C:\PLIB_Opt\coredev\apps\examples\system\multi_instance_console\firmware\src\system_config\pic32mx795_pim_e16\framework"/>
+        <Include dnOrder="5" value="../src/system_config/pic32mx795_pim_e16/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">sys_console.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_console_uart.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">drv_usart_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">drv_usart_read_write.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">drv_usart.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">drv_usart_buffer_queue.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">sys_console_uart.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">sys_console_appio.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">drv_usart.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">sys_console.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">drv_usart_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">sys_console_appio.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">sys_devcon_pic32mx.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">sys_console_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../../bin/framework/peripheral/PIC32MX795F512L_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Name dnOrder="0">app_appio_795_pim_e16.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">FCEB73F32580A53C6FB8117EF589FCDD</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx795_pim_e16</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Name dnOrder="0">app_usart_795_pim_e16.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">EE96DD12865E6C7F0453E07B26BCF042</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx795_pim_e16/bsp</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">7567B3DF8AD82B4BA40BB70A80E7AC51</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx795_pim_e16/bsp</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">16704035D61026477865E4FC298CB25C</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx795_pim_e16</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Name dnOrder="0">app_appio_795_pim_e16.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Name dnOrder="0">app_usart_795_pim_e16.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">83E28A9509BFB1178054925FE7ED2D75</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx795_pim_e16/framework/system/ports/src</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">0F0C9972C3F415C715F8DB1EA021556E</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx795_pim_e16</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx795_pim_e16</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">FDF6C8068CFFAEEC5F8537A8D6514230</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx795_pim_e16/framework/system/clk/src</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">4B41ED90F531D1F028670F526A733BAA</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx795_pim_e16</Path>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">85FDADFABB3C32ACBFCFF53ED0E55502</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx795_pim_e16</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

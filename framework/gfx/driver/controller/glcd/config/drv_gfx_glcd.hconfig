@@ -1,0 +1,62 @@
+enum DRV_GLCD_MODE
+    "STATIC"
+
+enum DRV_GFX_GLCD_LAYER_ID
+    "LAYER_ID_0"
+    || "LAYER_ID_1"
+    || "LAYER_ID_2"
+
+config DRV_GFX_GLCD_MODE
+    string "Driver Implementation"
+    range DRV_GLCD_MODE
+    default "STATIC"
+    ---help---
+    IDH_HTML_DRV_TMR_Timer_Driver_Library
+    ---endhelp---
+
+config DRV_GFX_GLCD_ENABLE_ALL_RGB_PINS
+    bool "Use All RGB Pins?"
+    default y
+    ---help---
+    IDH_HTML_Graphics_Driver_Library
+    ---endhelp---
+
+config DRV_GFX_GLCD_VSYNC_INTERRUPT
+    bool "Vsync Interrupt"
+    select USE_SYS_INT_NEEDED
+    default n
+    ---help---
+    IDH_HTML_Graphics_Driver_Library
+    ---endhelp---
+
+config DRV_GFX_GLCD_BACKGROUND_COLOR
+    string "Background Color (hex)"
+    default 0xFFFFFF00
+    ---help---
+    IDH_HTML_Graphics_Driver_Library
+    ---endhelp---
+
+config DRV_GFX_GLCD_CURSOR
+    bool "Enable Cursor?"
+    default n
+    ---help---
+    IDH_HTML_Graphics_Driver_Library
+    ---endhelp---
+
+config DRV_GFX_GLCD_LAYERS_NUMBER
+    int "Number of GLCD Layers"
+	persistent
+    default 1 if DRV_GFX_CONTROLLER_LAYER_COUNT = 1
+	default 2 if DRV_GFX_CONTROLLER_LAYER_COUNT = 2
+	default 3 if DRV_GFX_CONTROLLER_LAYER_COUNT = 3
+	default 1
+    ---help---
+    IDH_HTML_Graphics_Driver_Library
+    ---endhelp---
+
+source "$HARMONY_VERSION_PATH/framework/gfx/driver/controller/glcd/config/drv_gfx_glcd_idx.ftl" 3 instances
+
+ifblock USE_DRV_GFX_GLCD
+template DRV_GFX_GLCD_STATIC_C "$HARMONY_VERSION_PATH/framework/gfx/driver/controller/glcd/templates/drv_gfx_glcd_static.c.ftl" to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/framework/gfx/driver/controller/glcd/src/drv_gfx_glcd_static.c"
+template DRV_GFX_GLCD_STATIC_H "$HARMONY_VERSION_PATH/framework/gfx/driver/controller/glcd/templates/drv_gfx_glcd_static.h.ftl" to "$PROJECT_HEADER_FILES/app/system_config/$CONFIGURATION/framework/gfx/driver/controller/glcd/drv_gfx_glcd_static.h"
+endif

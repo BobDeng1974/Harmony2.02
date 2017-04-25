@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name="PIC32MZ2064DAB288"/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="D:\trunk_sbx\apps\fs\sdcard_msd_fat_multi_disk\firmware\src"/>
+        <Include dnOrder="1" value="D:\trunk_sbx\apps\fs\sdcard_msd_fat_multi_disk\firmware\src\system_config\pic32mz_da_sk_meb2"/>
+        <Include dnOrder="2" value="D:\trunk_sbx\framework"/>
+        <Include dnOrder="3" value="D:\trunk_sbx\apps\fs\sdcard_msd_fat_multi_disk\firmware\src\system_config\pic32mz_da_sk_meb2\framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32mz_da_sk_meb2/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">drv_tmr_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">drv_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">drv_sdhc_sdio_device.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdhc</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">usb_host_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">sys_fs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/src</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">sys_console_uart.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">ff.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/file_system</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">drv_usbhs.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usb/usbhs/src/dynamic</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">sys_fs_media_manager.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs/src/dynamic</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">drv_usbhs.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbhs</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">sys_fs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">usb_chapter_9.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">drv_sdhc_sd.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdhc</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">drv_usart_buffer_queue.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_devcon_cache.h</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">drv_sdhc_host.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdhc</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">drv_sdhc_sdio_host.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdhc</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">usb_host.c</Name>
+        <Path dnOrder="1">Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">mpfs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/mpfs</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">drv_usbhs_host.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usb/usbhs/src/dynamic</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">drv_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/tmr/src/dynamic</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">drv_sdhc.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdhc</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">drv_tmr_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">sys_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">drv_usart.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">ffconf.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/file_system</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">sys_console.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">mpfs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/mpfs/src</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">sys_fs.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs/src/dynamic</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">sys_fs_media_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">usb_host_scsi_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="38">
+        <Name dnOrder="0">drv_sdhc_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdhc</Path>
+      </File>
+      <File dnOrder="39">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="40">
+        <Name dnOrder="0">drv_usb.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb</Path>
+      </File>
+      <File dnOrder="41">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="42">
+        <Name dnOrder="0">usb_host_scsi.c</Name>
+        <Path dnOrder="1">Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="43">
+        <Name dnOrder="0">drv_tmr_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="44">
+        <Name dnOrder="0">drv_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="45">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="46">
+        <Name dnOrder="0">usb_host_msd.c</Name>
+        <Path dnOrder="1">Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="47">
+        <Name dnOrder="0">drv_usbhs_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbhs/src</Path>
+      </File>
+      <File dnOrder="48">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="49">
+        <Name dnOrder="0">sys_console.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="50">
+        <Name dnOrder="0">sys_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr</Path>
+      </File>
+      <File dnOrder="51">
+        <Name dnOrder="0">usb_host.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="52">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="53">
+        <Name dnOrder="0">usb_msd.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="54">
+        <Name dnOrder="0">drv_usart_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="55">
+        <Name dnOrder="0">usb_host_hub_interface.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="56">
+        <Name dnOrder="0">usb_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="57">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="58">
+        <Name dnOrder="0">diskio.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/hardware_access</Path>
+      </File>
+      <File dnOrder="59">
+        <Name dnOrder="0">drv_usart_read_write.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="60">
+        <Name dnOrder="0">drv_sdhc.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/sdhc/src</Path>
+      </File>
+      <File dnOrder="61">
+        <Name dnOrder="0">drv_sdhc_host.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/sdhc/src</Path>
+      </File>
+      <File dnOrder="62">
+        <Name dnOrder="0">drv_usart.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="63">
+        <Name dnOrder="0">sys_debug_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug/src</Path>
+      </File>
+      <File dnOrder="64">
+        <Name dnOrder="0">usb_hub.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="65">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="66">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="67">
+        <Name dnOrder="0">usb_host_hub.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="68">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="69">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="70">
+        <Name dnOrder="0">sys_console_uart.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="71">
+        <Name dnOrder="0">usb_host_hub_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="72">
+        <Name dnOrder="0">scsi.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="73">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="74">
+        <Name dnOrder="0">sys_devcon_cache_pic32mz.S</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="75">
+        <Name dnOrder="0">usb_host_scsi.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="76">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="77">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="78">
+        <Name dnOrder="0">drv_usbhs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbhs/src</Path>
+      </File>
+      <File dnOrder="79">
+        <Name dnOrder="0">ff.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="80">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="81">
+        <Name dnOrder="0">drv_sdhc_error_types.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdhc</Path>
+      </File>
+      <File dnOrder="82">
+        <Name dnOrder="0">usb_host_msd.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="83">
+        <Name dnOrder="0">sys_debug.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/debug/src</Path>
+      </File>
+      <File dnOrder="84">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="85">
+        <Name dnOrder="0">drv_usart_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="86">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="87">
+        <Name dnOrder="0">diskio.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="88">
+        <Name dnOrder="0">drv_sdhc_config.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdhc</Path>
+      </File>
+      <File dnOrder="89">
+        <Name dnOrder="0">sys_devcon_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="90">
+        <Name dnOrder="0">sys_fs_media_manager_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/src</Path>
+      </File>
+      <File dnOrder="91">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="92">
+        <Name dnOrder="0">usb_host_msd_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="93">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="94">
+        <Name dnOrder="0">sys_console_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="95">
+        <Name dnOrder="0">usb_host_client_driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../bin/framework/peripheral/PIC32MZ2064DAB288_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">7CCA7CD1966811EA4D95D64D6AD2DB35</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_meb2/bsp</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">3DFB0BC56732FDD6D5377CC83C754517</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_meb2/framework/system/ports/src</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">1C2469902DE8F6FA7C85AA73C4B628FF</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk_meb2/bsp</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">B4FFFBB65A4AA16A68ED85D0B636D3AA</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">0413D70BA3B06137D7B473169B95D6A2</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">0EBBCF03BF140B322C4D11BF25C349A2</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_meb2/framework/system/clk/src</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">B00B90E021F15FFD6B0B1B7F2D0650A5</Checksum>
+        <Name dnOrder="1">nvm_disk_images.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk_meb2/framework/system/fs</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">B678974B2D621ACB69AA31EA1EC0EB7A</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">79FDC59E832CCFD0DFA3BF876617199A</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">7E94C8C3190AD636F39C536CFFECBB43</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk_meb2</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

@@ -1,0 +1,401 @@
+enum EMBOS_MIPSMODE
+	 "MIPS32"
+	 || "MICROMIPS"
+  
+menu "RTOS Configuration"
+menu "embOS Features"
+    ---help---
+    <p><strong>embOS - Features</strong></p>
+<p>The user can define a relatively minimal set of configuration options when building embOS applications.</p>
+<p>For more information, refer to two documents that are supplied with the embOS installation --
+ "CPU-independent User & Reference Guide" (UM01001_EMBOS_Generic.pdf) and 
+ "CPU & Compiler specifics for PIC32 using XC32 compiler" (UM01058_EMBOS_PIC32_XC32.pdf)</p>
+    ---endhelp---
+    
+config EMBOS_OS_FSYS
+    string "CPU clock speed (Hz)"
+    default SYS_CLK_FREQ if USE_SYS_CLK
+    default "200000000" if PIC32MZ && !USE_SYS_CLK
+    default "80000000"  if PIC32MX && !USE_SYS_CLK
+    persistent if USE_SYS_CLK
+        
+    ---help---
+<p><strong>embOS - CPU clock speed (Hz)</strong></p>
+<p>This is the CPU clock speed (SYSCLK), typically obtained from the Clock System Service configuration.</p>
+<p>MHC sets the embOS system frequency preprocessor variable OS_FSYS.</p>
+    ---endhelp---
+
+config EMBOS_OS_PCLK_TIMER
+    string "Peripheral clock speed (Hz)"
+    default SYS_CLK_PBCLK_FREQ if USE_SYS_CLK && PIC32MX
+    default SYS_CLK_PBCLK2_FREQ if USE_SYS_CLK && PIC32MZ
+    default "40000000" if !USE_SYS_CLK
+    persistent if USE_SYS_CLK
+    
+    ---help---
+<p>	<strong>embOS - Peripheral clock speed (Hz)</strong></p>
+<p>	This is the frequency in Hz at which the Timer peripherals are clocked (PBCLK), obtained from the Clock System Service configuration.</p>
+<p>	MHC sets the FreeRTOS preprocessor variable OS_PCLK_TIMER.</p>
+    ---endhelp---
+
+config EMBOS_TICK_INTERRUPT
+    select USE_SYS_INT_NEEDED
+    bool "Tick interrupt"
+    default y
+    persistent
+    
+    ---help---
+<p>	<strong>embOS - Tick Interrupt </strong></p>
+<p>	Enables (when set to 1) or disables (when set to 0) the code generation of the system interrupt services </p>
+<p>	MHC sets the system service preprocessor variable SYS_INT to TRUE.</p>
+    ---endhelp---
+    
+config EMBOS_OS_TICK_FREQ
+    int "Tick rate (Hz)"
+    default 1000
+    ---help---
+<p>	<strong>embOS - Tick rate (Hz)</strong></p>
+<p>	The frequency of the system tick interrupt. </p>
+<p>	MHC sets the embOS preprocessor variable OS_TICK_FREQ.</p>
+    ---endhelp---
+
+config EMBOS_OS_VIEW_ENABLE
+    bool "Use OS-VIEW"
+    default n
+    ---help---
+<p>	<strong>embOS - Use OS-VIEW</strong></p>
+<p>	Indicates whether OS-VIEW will be used.</p>
+<p>	MHC sets the embOS preprocessor variable OS_VIEW_ENABLE.</p>
+    ---endhelp---
+    
+choice EMBOS_BUILD
+    prompt "Build"
+    default EMBOS_BUILD_DEBUG
+    ---help---
+<p><strong>embOS - Build</strong></p>
+<p>embOS comes in different builds, or versions of the libraries. The reason for different
+builds is that requirements vary during development. While developing software, the
+performance (and resource usage) is not as important as in the final version which
+usually goes as release version into the product. But during development, even small
+programming errors should be caught by use of assertions. These assertions are
+compiled into the debug version of the embOS libraries and make the code a bit
+bigger (about 50%) and also slightly slower than the release or stack check version
+used for the final product.
+This concept gives you the best of both worlds: a compact and very efficient build for
+your final product (release or stack check versions of the libraries), and a safer
+(though bigger and slower) version for development which will catch most of the
+common application programming errors. Of course, you may also use the release
+version of embOS during development, but it will not catch these errors.</p>
+<p>MHC defines an embOS preprocessor variable OS_LIBMODE_* according to the type of embOS build.</p>
+    ---endhelp---
+    
+    config EMBOS_BUILD_EXTREME_RELEASE
+        bool "Extreme release"
+        ---help---
+<p><strong>embOS - Extreme release</strong></p>
+<p>The Extreme Release build is the smallest, fastest build.  It excludes code for debug, stack checking,
+profiling, tracing, round-robin scheduling, and task names.</p>
+<p>MHC defines an embOS preprocessor variable OS_LIBMODE_XR for the extreme release build.</p>
+        ---endhelp---
+        
+    config EMBOS_BUILD_RELEASE
+        bool "Release"
+        ---help---
+<p><strong>embOS - Release</strong></p>
+<p>The Release build is a small, fast build, normally used to release the application.  
+It includes code for round-robin scheduling and task names, but excludes code for debug, stack checking,
+profiling, and tracing.</p>
+<p>MHC defines an embOS preprocessor variable OS_LIBMODE_R for the release build.</p>
+        ---endhelp---
+        
+    config EMBOS_BUILD_STACK_CHECKING
+        bool "Stack checking"
+        ---help---
+<p><strong>embOS - Stack checking</strong></p>
+<p>The Stack Checking build is the release build plus stack checking.  Thus, it
+includes code for round-robin scheduling, task names, and stack checking, but excludes code for debug, 
+profiling, and tracing.</p>
+<p>MHC defines an embOS preprocessor variable OS_LIBMODE_S for the stack checking build.</p>
+        ---endhelp---
+
+    config EMBOS_BUILD_STACK_CHECKING_PROFILING
+        bool "Stack checking plus profiling"
+        ---help---
+<p><strong>embOS - Stack check plus profiling</strong></p>
+<p>The Stack Checking Plus Profiling build is the release build plus stack checking and profiling.  Thus, it
+includes code for round-robin scheduling, task names, stack checking, and profiling, but excludes code for debug and tracing.</p>
+<p>MHC defines an embOS preprocessor variable OS_LIBMODE_SP for the stack checking plus profiling build.</p>
+        ---endhelp---
+        
+    config EMBOS_BUILD_DEBUG
+        bool "Debug"
+        ---help---
+<p><strong>embOS - Debug</strong></p>
+<p>The Debug build provides maximum runtime checking.  It
+includes code for round-robin scheduling, task names, stack checking, and debugging, but excludes code for profiling and tracing.</p>
+<p>MHC defines an embOS preprocessor variable OS_LIBMODE_D for the debug build.</p>
+        ---endhelp---
+
+    config EMBOS_BUILD_DEBUG_PROFILING
+        bool "Debug plus profiling"
+        ---help---
+<p><strong>embOS - Debug plus profiling</strong></p>
+<p>The Debug Plus Profiling build provides maximum runtime checking plus profiling.  It
+includes code for round-robin scheduling, task names, stack checking, profiling and debugging, but excludes code for tracing.</p>
+<p>MHC defines an embOS preprocessor variable OS_LIBMODE_DP for the debug plus profiling build.</p>
+        ---endhelp---
+
+    config EMBOS_BUILD_DEBUG_PROFILING_TRACING
+        bool "Debug plus profiling and tracing"
+        ---help---
+<p><strong>embOS - Debug plus profiling and tracing</strong></p>
+<p>The Debug Plus Profiling and Tracing build provides maximum runtime checking plus profiling and tracing.  It
+includes code for round-robin scheduling, task names, stack checking, profiling, tracing, and debugging.</p>
+<p>MHC defines an embOS preprocessor variable OS_LIBMODE_DT for the debug plus profiling and tracing build.</p>
+        ---endhelp---
+        
+   endchoice
+
+config MIPSMODE
+	string "MIPS mode"
+	range EMBOS_MIPSMODE
+	default "MIPS32"
+ persistent if PIC32MX
+	---help---
+	For PIC32MZ devices, the embOS library to be used is based on this MIPS mode selection [MIPS32 (default) or MICROMIPS]
+	---endhelp---
+
+comment "**** Warning: Boot ISA selection (BOOTISA) in Device configuration (DEVCFG0) must be set to MICROMIPS ****"
+	depends on MIPSMODE = "MICROMIPS"
+   
+config EMBOS_USE_PREBUILT_LIBRARIES
+    bool "Use prebuilt libraries"
+    default y
+    ---help---
+<p><strong>embOS - Use prebuild libraries</strong></p>
+<p>embOS is available as library or source code; the source code version includes libraries and the source code of the libraries. 
+Different builds of libraries are also included: Release/stack check build, typically used in the release build of the application program; 
+Debug/profiling build typically used in the development phase. The libraries offer the full functionality of embOS including all supported 
+memory models of the compiler, the debug libraries and the source code for idle task and hardware initialization. 
+However, the libraries do not allow source-level debugging of the library routines and the kernel.</p> 
+<p>The full source version provides the ultimate options: embOS can be recompiled for different data sizes; different compile options 
+give full control of the generated code, making it possible to optimize the system for versatility or minimum memory requirements. 
+The entire system can be debugged and modified.</p> 
+<p>This configuration option indicates whether the prebuilt libraries distributed with embOS should be used instead of recompiling
+all of the embOS source code.  This option must be selected if embOS has been installed without source code.</p> 
+    ---endhelp---
+
+
+
+endmenu # embOS Features    
+
+
+
+compiler EMBOS_COMPILER_DEFINE_1 define "OS_LIBMODE_XR" if EMBOS_BUILD_EXTREME_RELEASE
+compiler EMBOS_COMPILER_DEFINE_2 define "OS_LIBMODE_R"  if EMBOS_BUILD_RELEASE
+compiler EMBOS_COMPILER_DEFINE_3 define "OS_LIBMODE_S"  if EMBOS_BUILD_STACK_CHECKING
+compiler EMBOS_COMPILER_DEFINE_4 define "OS_LIBMODE_SP" if EMBOS_BUILD_STACK_CHECKING_PROFILING
+compiler EMBOS_COMPILER_DEFINE_5 define "OS_LIBMODE_D"  if EMBOS_BUILD_DEBUG
+compiler EMBOS_COMPILER_DEFINE_6 define "OS_LIBMODE_DP" if EMBOS_BUILD_DEBUG_PROFILING
+compiler EMBOS_COMPILER_DEFINE_7 define "OS_LIBMODE_DT" if EMBOS_BUILD_DEBUG_PROFILING_TRACING
+
+
+template EMBOS_RTOS_INIT_C   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/templates/RTOSInit.c.ftl"  to "$PROJECT_SOURCE_FILES/app/rtos_config/$CONFIGURATION/RTOSInit.c"
+
+template EMBOS_RTOS_H   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/templates/RTOS.h.ftl"  to "$PROJECT_HEADER_FILES/app/rtos_config/$CONFIGURATION/RTOS.h"
+
+template EMBOS_OS_ERROR_C   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/templates/OS_Error.c.ftl"  to "$PROJECT_SOURCE_FILES/app/rtos_config/$CONFIGURATION/OS_Error.c"
+ 
+file EMBOS_OSINT_H           "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSInt.h"           to "$PROJECT_HEADER_FILES/embOS/OSInt.h"
+
+file EMBOS_OS_ADJUSTTIME_C           "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_AdjustTime.c"           to "$PROJECT_SOURCE_FILES/embOS/OS_AdjustTime.c"           if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_ALLOC_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_Alloc.c"                to "$PROJECT_SOURCE_FILES/embOS/OS_Alloc.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_CPU_LOAD_C             "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_CPU_Load.c"             to "$PROJECT_SOURCE_FILES/embOS/OS_CPU_Load.c"             if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_CREATETASK_C           "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_CreateTask.c"           to "$PROJECT_SOURCE_FILES/embOS/OS_CreateTask.c"           if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_CREATETASKEX_C         "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_CreateTaskEx.c"         to "$PROJECT_SOURCE_FILES/embOS/OS_CreateTaskEx.c"         if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_CSEMA_SIGNALMAX_C      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_CSEMA_SignalMax.c"      to "$PROJECT_SOURCE_FILES/embOS/OS_CSEMA_SignalMax.c"      if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_DEACTIVATEP_C          "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_DeactivateP.c"          to "$PROJECT_SOURCE_FILES/embOS/OS_DeactivateP.c"          if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_DEACTIVATETP_C         "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_DeactivateTP.c"         to "$PROJECT_SOURCE_FILES/embOS/OS_DeactivateTP.c"         if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_DEACTIVATETV_C         "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_DeactivateTV.c"         to "$PROJECT_SOURCE_FILES/embOS/OS_DeactivateTV.c"         if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_DEBUGINFO_C            "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_DebugInfo.c"            to "$PROJECT_SOURCE_FILES/embOS/OS_DebugInfo.c"            if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_DELAYUS_C              "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_Delayus.c"              to "$PROJECT_SOURCE_FILES/embOS/OS_Delayus.c"              if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_ENTERREGIONFUNC_C      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EnterRegionFunc.c"      to "$PROJECT_SOURCE_FILES/embOS/OS_EnterRegionFunc.c"      if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVAPACKETEX_C          "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EvaPacketEx.c"          to "$PROJECT_SOURCE_FILES/embOS/OS_EvaPacketEx.c"          if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_CREATE_C         "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_Create.c"         to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_Create.c"         if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_CREATEEX_C       "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_CreateEx.c"       to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_CreateEx.c"       if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_DELETE_C         "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_Delete.c"         to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_Delete.c"         if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_GET_C            "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_Get.c"            to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_Get.c"            if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_GETRESETMODE_C   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_GetResetMode.c"   to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_GetResetMode.c"   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_PULSE_C          "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_Pulse.c"          to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_Pulse.c"          if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_RESET_C          "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_Reset.c"          to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_Reset.c"          if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_SET_C            "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_Set.c"            to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_Set.c"            if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_SETRESETMODE_C   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_SetResetMode.c"   to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_SetResetMode.c"   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_WAIT_C           "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_Wait.c"           to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_Wait.c"           if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_EVENT_WAITTIMED_C      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_EVENT_WaitTimed.c"      to "$PROJECT_SOURCE_FILES/embOS/OS_EVENT_WaitTimed.c"      if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_GETNUMIDLETICKS_C      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_GetNumIdleTicks.c"      to "$PROJECT_SOURCE_FILES/embOS/OS_GetNumIdleTicks.c"      if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_GETNUMTASKS_C          "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_GetNumTasks.c"          to "$PROJECT_SOURCE_FILES/embOS/OS_GetNumTasks.c"          if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_GETPRIO_C              "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_GetPrio.c"              to "$PROJECT_SOURCE_FILES/embOS/OS_GetPrio.c"              if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_GETSIZE_C              "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_GetSize.c"              to "$PROJECT_SOURCE_FILES/embOS/OS_GetSize.c"              if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_GETSUSPENDCNT_C        "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_GetSuspendCnt.c"        to "$PROJECT_SOURCE_FILES/embOS/OS_GetSuspendCnt.c"        if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_ININTERRUPT_C          "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_InInterrupt.c"          to "$PROJECT_SOURCE_FILES/embOS/OS_InInterrupt.c"          if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_INTSTACKINFO_C         "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_IntStackInfo.c"         to "$PROJECT_SOURCE_FILES/embOS/OS_IntStackInfo.c"         if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_MEMF_ALLOC_C           "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_MEMF_Alloc.c"           to "$PROJECT_SOURCE_FILES/embOS/OS_MEMF_Alloc.c"           if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_MEMF_ALLOCTIMED_C      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_MEMF_AllocTimed.c"      to "$PROJECT_SOURCE_FILES/embOS/OS_MEMF_AllocTimed.c"      if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_MEMF_CREATE_C          "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_MEMF_Create.c"          to "$PROJECT_SOURCE_FILES/embOS/OS_MEMF_Create.c"          if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_MEMF_DELETE_C          "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_MEMF_Delete.c"          to "$PROJECT_SOURCE_FILES/embOS/OS_MEMF_Delete.c"          if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_MEMF_FREE_C            "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_MEMF_Free.c"            to "$PROJECT_SOURCE_FILES/embOS/OS_MEMF_Free.c"            if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_MEMF_INFO_C            "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_MEMF_Info.c"            to "$PROJECT_SOURCE_FILES/embOS/OS_MEMF_Info.c"            if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_MEMF_INTERNAL_C        "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_MEMF_Internal.c"        to "$PROJECT_SOURCE_FILES/embOS/OS_MEMF_Internal.c"        if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_MEMF_RELEASE_C         "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_MEMF_Release.c"         to "$PROJECT_SOURCE_FILES/embOS/OS_MEMF_Release.c"         if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_MEMF_REQUEST_C         "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_MEMF_Request.c"         to "$PROJECT_SOURCE_FILES/embOS/OS_MEMF_Request.c"         if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_PEEKMAIL_C             "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_PeekMail.c"             to "$PROJECT_SOURCE_FILES/embOS/OS_PeekMail.c"             if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_POWER_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_Power.c"                to "$PROJECT_SOURCE_FILES/embOS/OS_Power.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_RESUMEALLTASKS_C       "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_ResumeAllTasks.c"       to "$PROJECT_SOURCE_FILES/embOS/OS_ResumeAllTasks.c"       if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_SETCSEMAVALUE_C        "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_SetCSemaValue.c"        to "$PROJECT_SOURCE_FILES/embOS/OS_SetCSemaValue.c"        if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_SETRXCALLBACK_C        "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_SetRxCallback.c"        to "$PROJECT_SOURCE_FILES/embOS/OS_SetRxCallback.c"        if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_SETSUSPENDCNT_C        "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_SetSuspendCnt.c"        to "$PROJECT_SOURCE_FILES/embOS/OS_SetSuspendCnt.c"        if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_SETTASKNAME_C          "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_SetTaskName.c"          to "$PROJECT_SOURCE_FILES/embOS/OS_SetTaskName.c"          if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_SUSPEND_C              "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_Suspend.c"              to "$PROJECT_SOURCE_FILES/embOS/OS_Suspend.c"              if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_SUSPENDALLTASKS_C      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_SuspendAllTasks.c"      to "$PROJECT_SOURCE_FILES/embOS/OS_SuspendAllTasks.c"      if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_SYSSTACKINFO_C         "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_SysStackInfo.c"         to "$PROJECT_SOURCE_FILES/embOS/OS_SysStackInfo.c"         if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_SYSTIMER_C             "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_SysTimer.c"             to "$PROJECT_SOURCE_FILES/embOS/OS_SysTimer.c"             if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_TASKINDEX2PTR_C        "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_TaskIndex2Ptr.c"        to "$PROJECT_SOURCE_FILES/embOS/OS_TaskIndex2Ptr.c"        if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_TASKSTACKINFO_C        "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_TaskStackInfo.c"        to "$PROJECT_SOURCE_FILES/embOS/OS_TaskStackInfo.c"        if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_TICK_HANDLE_C          "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_TICK_Handle.c"          to "$PROJECT_SOURCE_FILES/embOS/OS_TICK_Handle.c"          if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_TICK_HANDLEEX_C        "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_TICK_HandleEx.c"        to "$PROJECT_SOURCE_FILES/embOS/OS_TICK_HandleEx.c"        if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_TICK_HANDLENOHOOK_C    "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_TICK_HandleNoHook.c"    to "$PROJECT_SOURCE_FILES/embOS/OS_TICK_HandleNoHook.c"    if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_TICK_HOOK_C            "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_TICK_Hook.c"            to "$PROJECT_SOURCE_FILES/embOS/OS_TICK_Hook.c"            if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_TICKLESS_C             "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_Tickless.c"             to "$PROJECT_SOURCE_FILES/embOS/OS_Tickless.c"             if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_USETIMED_C             "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_UseTimed.c"             to "$PROJECT_SOURCE_FILES/embOS/OS_UseTimed.c"             if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_WAIT_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_Wait.c"                 to "$PROJECT_SOURCE_FILES/embOS/OS_Wait.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_WAITTIMED_C            "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_WaitTimed.c"            to "$PROJECT_SOURCE_FILES/embOS/OS_WaitTimed.c"            if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_YIELD_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OS_Yield.c"                to "$PROJECT_SOURCE_FILES/embOS/OS_Yield.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSBUFFER_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSBuffer.c"                to "$PROJECT_SOURCE_FILES/embOS/OSBuffer.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSCMB_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSCMB.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSCMB.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSCOM_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSCom.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSCom.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSCOM1_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSCom1.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSCom1.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSCOM2_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSCom2.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSCom2.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSCOMRXTX1_C              "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSComRxTx1.c"              to "$PROJECT_SOURCE_FILES/embOS/OSComRxTx1.c"              if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSCSEM_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSCSEM.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSCSEM.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSCSEMGV_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSCSEMGV.c"                to "$PROJECT_SOURCE_FILES/embOS/OSCSEMGV.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSCSEMRQ_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSCSEMRQ.c"                to "$PROJECT_SOURCE_FILES/embOS/OSCSEMRQ.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSCSEMT_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSCSEMT.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSCSEMT.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSDELCS_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSDELCS.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSDELCS.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSDELM_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSDELM.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSDELM.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSDelRS_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSDelRS.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSDelRS.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSDUMMY_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSDummy.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSDummy.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSEVENCL_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSEVENCL.c"                to "$PROJECT_SOURCE_FILES/embOS/OSEVENCL.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSEVENGE_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSEVENGE.c"                to "$PROJECT_SOURCE_FILES/embOS/OSEVENGE.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSEVENS_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSEVENS.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSEVENS.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSEVENT_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSEvenT.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSEvenT.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSEVENW_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSEVENW.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSEVENW.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSEVENWS_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSEVENWS.c"                to "$PROJECT_SOURCE_FILES/embOS/OSEVENWS.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSEVENWST_C               "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSEvenWST.c"               to "$PROJECT_SOURCE_FILES/embOS/OSEvenWST.c"               if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSGLOBAL_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSGLOBAL.c"                to "$PROJECT_SOURCE_FILES/embOS/OSGLOBAL.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSGM_C                    "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSGM.c"                    to "$PROJECT_SOURCE_FILES/embOS/OSGM.c"                    if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSGM1_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSGM1.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSGM1.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSGMC_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSGMC.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSGMC.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSGMC1_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSGMC1.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSGMC1.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSGMT_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSGMT.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSGMT.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSINFO_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSINFO.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSINFO.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSISTASK_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSIsTask.c"                to "$PROJECT_SOURCE_FILES/embOS/OSIsTask.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSKERN_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSKern.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSKern.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSMAIL_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSMAIL.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSMAIL.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSMX_C                    "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSMX.c"                    to "$PROJECT_SOURCE_FILES/embOS/OSMX.c"                    if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSPM_C                    "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSPM.c"                    to "$PROJECT_SOURCE_FILES/embOS/OSPM.c"                    if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSPM1_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSPM1.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSPM1.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSPMC_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSPMC.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSPMC.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSPMC1_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSPMC1.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSPMC1.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSPMF_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSPMF.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSPMF.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSPMF1_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSPMF1.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSPMF1.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSPMFC_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSPMFC.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSPMFC.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSPMFC1_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSPMFC1.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSPMFC1.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQ_C                     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQ.c"                     to "$PROJECT_SOURCE_FILES/embOS/OSQ.c"                     if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQCL_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQCL.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSQCL.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQDEL_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQDEL.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSQDEL.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQGMC_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQGMC.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSQGMC.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQGMS_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQGMS.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSQGMS.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQGPC_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQGPC.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSQGPC.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQGPT_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQGPT.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSQGPT.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQISINUSE_C              "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQIsInUse.c"              to "$PROJECT_SOURCE_FILES/embOS/OSQIsInUse.c"              if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQPB_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQPB.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSQPB.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQPEEK_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQPeek.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSQPeek.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQPT_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQPT.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSQPT.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSQPUT_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSQPut.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSQPut.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSRR_C                    "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSRR.c"                    to "$PROJECT_SOURCE_FILES/embOS/OSRR.c"                    if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSRSEM_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSRSEM.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSRSEM.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSRSEMGO_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSRSEMGO.c"                to "$PROJECT_SOURCE_FILES/embOS/OSRSEMGO.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSRSEMGV_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSRSEMGV.c"                to "$PROJECT_SOURCE_FILES/embOS/OSRSEMGV.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSRSEMRQ_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSRSEMRQ.c"                to "$PROJECT_SOURCE_FILES/embOS/OSRSEMRQ.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSSEND_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSSend.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSSend.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSSETP_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSSETP.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSSETP.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSSTAT_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/osstat.c"                  to "$PROJECT_SOURCE_FILES/embOS/osstat.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSSTATGL_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSStatGL.c"                to "$PROJECT_SOURCE_FILES/embOS/OSStatGL.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTERM_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTERM.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSTERM.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTERME_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTermE.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSTermE.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTIME_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTIME.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSTIME.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTIMED_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTIMED.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSTIMED.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTIMEGP_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTIMEGP.c"                to "$PROJECT_SOURCE_FILES/embOS/OSTIMEGP.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTIMEGS_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTIMEGS.c"                to "$PROJECT_SOURCE_FILES/embOS/OSTIMEGS.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTIMEGV_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTIMEGV.c"                to "$PROJECT_SOURCE_FILES/embOS/OSTIMEGV.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTIMERX_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTIMERX.c"                to "$PROJECT_SOURCE_FILES/embOS/OSTIMERX.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTIMES_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTIMES.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSTIMES.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTIMING_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTiming.c"                to "$PROJECT_SOURCE_FILES/embOS/OSTiming.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTRACE_C                 "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTrace.c"                 to "$PROJECT_SOURCE_FILES/embOS/OSTrace.c"                 if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSTRACE1_C                "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSTrace1.c"                to "$PROJECT_SOURCE_FILES/embOS/OSTrace1.c"                if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSWAKE_C                  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSWAKE.c"                  to "$PROJECT_SOURCE_FILES/embOS/OSWAKE.c"                  if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSWM_C                    "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSWM.c"                    to "$PROJECT_SOURCE_FILES/embOS/OSWM.c"                    if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OSWMT_C                   "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc/OSWMT.c"                   to "$PROJECT_SOURCE_FILES/embOS/OSWMT.c"                   if !EMBOS_USE_PREBUILT_LIBRARIES
+
+
+file EMBOSOS_PRIV_H                      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/CPU/OS_Priv.h"                     to "$PROJECT_HEADER_FILES/embOS/OS_Priv.h"
+
+file EMBOSOS_OSCHIP_H                    "$HARMONY_VERSION_PATH/third_party/rtos/embOS/CPU/OSCHIP.h"                      to "$PROJECT_HEADER_FILES/embOS/OSCHIP.h"
+
+file EMBOS_OS_GETCPUSTATE_C              "$HARMONY_VERSION_PATH/third_party/rtos/embOS/CPU/OSSrcCPU/OS_GetCPUState.c"     to "$PROJECT_SOURCE_FILES/embOS/OS_GetCPUState.c"
+            if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_OS_PRIV_C                     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/CPU/OSSrcCPU/OS_Priv.c"            to "$PROJECT_SOURCE_FILES/embOS/OS_Priv.c"
+            if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOSOS_RTOS_S                      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/CPU/RTOS.S"                        to "$PROJECT_SOURCE_FILES/embOS/RTOS.S"
+            if !EMBOS_USE_PREBUILT_LIBRARIES
+file EMBOS_PIC32MZ_TX_TIMER_INTERRUPT_S  "$HARMONY_VERSION_PATH/third_party/rtos/embOS/CPU/OSSrcCPU/OS_PIC32MZ_Cache.S"   to "$PROJECT_SOURCE_FILES/embOS/pic32mz/OS_PIC32MZ_Cache.S"  if PIC32MZ && !EMBOS_USE_PREBUILT_LIBRARIES
+
+ifblock ( MIPSMODE = "MICROMIPS" )
+library EMBOS_LIB_RTOSMICROMIPSFPUD_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsfpuD.a"      if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG        
+library EMBOS_LIB_RTOSMICROMIPSD_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsD.a"      if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG        
+library EMBOS_LIB_RTOSMICROMIPSFPUDP_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsfpuDP.a"     if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG_PROFILING 
+library EMBOS_LIB_RTOSMICROMIPSDP_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsDP.a"     if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG_PROFILING 
+library EMBOS_LIB_RTOSMICROMIPSFPUDT_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsfpuDT.a"     if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG_PROFILING_TRACING
+library EMBOS_LIB_RTOSMICROMIPSDT_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsDT.a"     if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG_PROFILING_TRACING
+library EMBOS_LIB_RTOSMICROMIPSFPUR_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsfpuR.a"      if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_RELEASE
+library EMBOS_LIB_RTOSMICROMIPSR_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsR.a"      if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_RELEASE
+library EMBOS_LIB_RTOSMICROMIPSFPUS_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsfpuS.a"      if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_STACK_CHECKING 
+library EMBOS_LIB_RTOSMICROMIPSS_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsS.a"      if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_STACK_CHECKING 
+library EMBOS_LIB_RTOSMICROMIPSFPUSP_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsfpuSP.a"     if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_STACK_CHECKING_PROFILING 
+library EMBOS_LIB_RTOSMICROMIPSSP_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsSP.a"     if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_STACK_CHECKING_PROFILING 
+library EMBOS_LIB_RTOSMICROMIPSFPUXR_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsfpuXR.a"     if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_EXTREME_RELEASE 
+library EMBOS_LIB_RTOSMICROMIPSXR_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMicroMipsXR.a"     if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_EXTREME_RELEASE 
+endif
+
+ifblock ( MIPSMODE = "MIPS32" )
+library EMBOS_LIB_RTOSMIPS32FPUD_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32fpuD.a"      if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG        
+library EMBOS_LIB_RTOSMIPS32D_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32D.a"      if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG        
+library EMBOS_LIB_RTOSMIPS32FPUDP_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32fpuDP.a"     if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG_PROFILING 
+library EMBOS_LIB_RTOSMIPS32DP_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32DP.a"     if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG_PROFILING 
+library EMBOS_LIB_RTOSMIPS32FPUDT_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32fpuDT.a"     if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG_PROFILING_TRACING
+library EMBOS_LIB_RTOSMIPS32DT_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32DT.a"     if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_DEBUG_PROFILING_TRACING
+library EMBOS_LIB_RTOSMIPS32FPUR_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32fpuR.a"      if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_RELEASE
+library EMBOS_LIB_RTOSMIPS32R_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32R.a"      if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_RELEASE
+library EMBOS_LIB_RTOSMIPS32FPUS_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32fpuS.a"      if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_STACK_CHECKING 
+library EMBOS_LIB_RTOSMIPS32S_A      "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32S.a"      if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_STACK_CHECKING 
+library EMBOS_LIB_RTOSMIPS32FPUSP_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32fpuSP.a"     if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_STACK_CHECKING_PROFILING 
+library EMBOS_LIB_RTOSMIPS32SP_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32SP.a"     if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_STACK_CHECKING_PROFILING 
+library EMBOS_LIB_RTOSMIPS32FPUXR_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32fpuXR.a"     if DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_EXTREME_RELEASE 
+library EMBOS_LIB_RTOSMIPS32XR_A     "$HARMONY_VERSION_PATH/third_party/rtos/embOS/Start/Lib/RtosMips32XR.a"     if !DS60001320 && EMBOS_USE_PREBUILT_LIBRARIES && EMBOS_BUILD_EXTREME_RELEASE 
+endif
+
+compiler EMBOS_COMPILER_INCLUDEPATH_1       includepath "$HARMONY_VERSION_PATH/third_party/rtos/embOS/GenOSSrc"
+compiler EMBOS_COMPILER_INCLUDEPATH_2       includepath "$HARMONY_VERSION_PATH/third_party/rtos/embOS/CPU"
+compiler EMBOS_COMPILER_INCLUDEPATH_3       includepath "$PROJECT_HEADER_FILES/rtos_config/$CONFIGURATION"
+
+endmenu

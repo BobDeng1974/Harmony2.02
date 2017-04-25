@@ -1,0 +1,2509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <Designer>
+    <Assets dnOrder="0">
+      <Font antialiasing="false" bold="false" compress="false" dnOrder="0" extendedGlyph="false" fileName="Arial" italic="false" location="internal" name="Arial14pt" size="14">
+        <Ranges dnOrder="0">
+          <Range dnOrder="0" end="127" name="default" start="32"/>
+        </Ranges>
+      </Font>
+      <Font antialiasing="false" bold="false" compress="false" dnOrder="1" extendedGlyph="false" fileName="Arial" italic="false" location="internal" name="Arial18pt" size="18">
+        <Ranges dnOrder="0">
+          <Range dnOrder="0" end="94" name="Basic Latin" start="94"/>
+        </Ranges>
+      </Font>
+      <Image compress="false" dnOrder="2" fileName="MCHP_LOGO.bmp" height="30" location="internal" name="MCHP_LOGO" width="122">Qk1WKwAAAAAAADYAAAAoAAAAegAAAB4AAAABABgAAAAAACArAAAAAAAAAAAAAAAAAAAAAAAAPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dOSwfPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0zJycpI0wiH3goJp0rKbIlJbUrKbIpJ6UkIoMtJlcuJCo7LR08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHSohKh0chyIk0SMm6CQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn6iAj1iEhly8nQTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAAPC4dPC4dPC4dPC4dPC4dPC4dNionJCJ+IiXiJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftIybnHyCVKyIqPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh08Lh08Lh08Lh0nHy4jJLgkJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0gIsYuJkg8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHTwuHTwuHSwkNCEjySQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7V5f3GZdUzwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAAPC4dPC4dPC4dRjstxsbMZmjyJCftJCftJCftJCftJCftJCftJCftJCftKy7ti431YWPyJSjtJCftJCftJCftJCftJCftJCftNzru4eL96+vrVExBPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh08Lh2op6T////l5v05PO8kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+2OkPb+/v/v8P5TVvEkJ+0kJ+0kJ+0kJ+0kJ+0kJ+2io/f////////Lyso+MyY8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHWRdVvv7+////////7a4+Sgr7SQn7SQn7SQn7SQn7SQn7UpN8O3t/v///////9LT+ysu7SQn7SQn7SQn7SQn7Vha8ff3/v////////7+/o+LhzwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAAPC4dOzAi0NDO/////////////f3/hYb1JSjtJCftJCftJCftLC/uw8T6////////////////nZ73JSjtJCftJCftMTTu09P7////////////////5ubmTUI2PC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dOi0ePTEiPTEiPTEiPTEiPTEiOy8gOy0dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dOi0dPTEiPTEiPTEiPTEiPTEiOy4fPC4dPC4dPC4dPC4dOy8fRDgpRjorRjorRjorRjorPzMkPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh1nX1X4+Pj////////////////x8f5UVvEkJ+0kJ+0kJ+16fPT+/v/////////////////19f5ZW/EkJ+0lKO2OkPb9/f////////////////////94dX07LR08Lh08Lh08Lh2Wj4XIxL+/u7Y9MyY8Lh08Lh06LR1SSDxSRzs8Lh08Lh08Lh1RRDbAvLfIxL9/eXJMQTS/u7bIxL9gWVA8Lh1dV064t7bJycnJycnJycnJycnJycnFxcV8dm88MCGinpnIxL94c2w8Lh08Lh08Lh08Lh2zrqfIxL9mYFc8Lh1ZUkm2tbTJycnJycnJycnJycnJycm+vbxsZl48Lh48Lh1lXVO/vbrW1tbb29vb29vb29vb29vNzcx/enM5LBytqKLIxL+BeW88Lh08Lh08Lh1DNia4tK/IxL9bUkdbU0rIxL/FwbxeVEhuZ2DIxL+spp88Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHYWBnP7+/////////////////////8PE+iYo7SQn7To87+zs/f////////////////////X1/k5Q8SQn7UpM8PHx/v///////////////////+zs/kNFyjotJDwuHTwuHTwuHaWgmv////X19UxDODwuHTwuHXhya+zs7Ozs7GxlXTwuHTwuHWFVSP///////4OAfVJJPfLy8v///29qZT4zJujo6P///////////////////////////+np6T0xIsrKyv///5COjDwuHTwuHTwuHTksHeHg3v///3dzbjouIOTk5P////////////////////////////Pz80M6MEk+Md/e3v///////////////////////////9ra2kQ4K9nY1////5yWkDwuHTwuHTwuHUY5Kejo6P///2dgWGdiW/////v7+2xjWIF+ev///9jW0jwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAANSkjJym/ycr7////////////////////sLL4JSjtKCvttbb5////////////////////////kZP2JCftKSztxsf6/////////////////////f3/hIb1JCftJyBGPC4dPC4dPC4djIeB////+Pj4X1ZLPC4dPzIj19fX////////yMfFOS0fPC4dXVhR/////v7+gXhuUkk98vLy////b2plb2de////////7+/v4+Pj4+Pj4+Pj4+Pj4+Pj4eHgPTEiysrK////nJqYT0M1T0M1T0M1YlpP7u7u////d3JsZ19V/v7+////8PDw4+Pj4+Pj4+Pj7Ozs////////ioJ5aWJa/v7+////7u7u4uDe4+De4+De4+De4+DeycfFRzwu2djX////nJaQPC4dPC4dPC4dRjkp6Ojo////Z2BYZ2Jb////+/v7bGNYgX56////3tzZWE0+WE0+WE0+WE0+WE0+TkIzPC4ePC4dAAA3KzAhI9dHSfDw8f7////////////q6v1GSfAkJ+1sbvP4+P/////////////////////Y2fwvMu4kJ+17ffT9/f/////////////////////Ky/ssL+4kJ+0sJmg8Lh08Lh08Lh1vamT////8/PxwZ108Lh1eV0/////////////09PRdVEk8Lh1xa2X////7+/toX1VSST3y8vL///9vamWLhHr////39/daVEw9Myc9Myc9Myc9Myc9Myc9Myc9MSLKysr////29vbt7e3t7e3t7e329vb////19fVfVUl9dWv////6+vpiXVU9Myc9Myc9MydYT0Tr6+v///+UkY1vamX////09PReWE87LR08Lh08Lh08Lh08Lh08Lh08Lh3Z2Nf///+clpA8Lh08Lh08Lh1GOSno6Oj///9nYFhnYlv////7+/tsY1iBfnr////////////////////////////p6ellXlc8Lh0AADgsNyMm5yQn7Xp89P39//////39/4OE9SUo7TU47t3d/P////////////////////n5/mNl8iQn7UFD7+bm/f////////////////////j4/1FU8SQn7SMm6DEnQjwuHTwuHTwuHV5XTf///////4J5bjwuHamnpf///////////////5aUkTotHYF8dv////n5+VFIPlJJPfLy8v///29qZZaOhf///97e3kY6KzwuHTwuHTwuHTwuHTwuHTwuHT0xIsrKyv///////////////////////////769vDsvIY6Fe////+Tk5EtAMTwuHTwuHTwuHT8zJMvLy////5eWlG9qZf///+vr6z00KDwuHTwuHTwuHTwuHTwuHTwuHTwuHdnY1/////Hw7+Ti3+Ti3+Ti3+Xj4fz8/P///2dgWGdiW/////v7+2xjWIF+ev///////////////////////////////7y7ujwwIAAAOC05JCfrJCftKSztr7D4////xsb6Ky7uJSjtpKb3/////////////////////v7/pKb4JintKSvtsrP4/////////////////////v7/lpj2JSjtJCftIB6EOy0ePC4dPC4dPC4dXFFE9vb2////hIF+SD0v7+/u////4ODg8fHx////4eHhRDgqmZSO////9vb2OzEmUkk98vLy////b2pllo6F////19fXRDgoPC4dPC4dPC4dPC4dPC4dPC4dPTEiysrK////1dXUrKqnrKqnrKqntrWz+Pj4+/v7bmVajoV7////3d3dRzstPC4dPC4dPC4dPDAhw8PD////l5aUb2pl////6+vrPTQoPC4dPC4dPC4dPC4dPC4dPC4dPC4d2djX////////////////////////////////Z2BYZ2Jb////+/v7bGNYgX56////6enokY6MkY6MkY6MkY6M2NfW////4eHhRzorAAA3LDMiJN0kJ+0kJ+08P+/V1/xMTvAkJ+1YW/H6+v7////////////////////j5P08Pu8kJ+1oa/P7+//////////////////////X2Pw2Oe4kJ+0iI8YvJSo8Lh08Lh08Lh08Lh1ORDbo6Oj///+YlZJ9eXP+/v7///+Pi4ejoJ3///////9wamGtqKH////u7u08Lh1SST3y8vL///9vamWWjoX////f399HOis8Lh08Lh08Lh08Lh08Lh08Lh09MSLKysr///+Qjow8Lh08Lh08Lh06LR3h4N7///93c26OhXv////l5eVMQDI8Lh08Lh08Lh0/MyTLy8v///+XlpRvamX////r6+s9NCg8Lh08Lh08Lh08Lh08Lh08Lh08Lh3Z2Nf////29vbs7Ozs7Ozs7Ozt7e39/f3///9nYFhnYlv////7+/tsY1iBfnr////Y1tI8Lh08Lh08Lh08Lh2DfHP////q6upJPS4AADYqKR8hyiQn7SQn7SQn7Tc67iQn7S8y7tHS+////////////////////////3J09CQn7TAz7t/g/P////////////////////n6/2hq8yQn7SMm5yUgVzwuHTwuHTwuHTwuHTwuHUI3Kdvb2////6+tq8fFw/////Dw8FdNQVVORf///////7q5t7azr////9XU1DwuHVJJPfLy8v///29qZY2FfP////r6+lxUTD0vHj0vHj0vHj0vHj0vHj0vHj0xIsrKyv///5GPjD0vHj0vHj0vHkE1JuXk4v///3dzbn93bf////v7+2NcVT0vHj0vHj0vHlRKP+/v7////46Ni29qZf////b29mhhWT0vHj0vHj0vHj0vHj0vHj0vHjwuHdnY1////6Whm05CM05CM05CM1dMPuvr6////2dgWGdiW/////v7+2xjWIF+ev///9nW0z0vHj0vHj0vHj0vHo2Ig////+rq6kk9LgAAOSwdIyKmJCftJCftJCftJCftJSjtkZP2/v7/////////////////////ubr5JintJintoKL3////////////////////////q6z4JCftJCftHx+ZPC4dPC4dPC4dPC4dPC4dPC4dOy4f1NLQ////5eXl9vb2////t7WzOCscPzIiycnI////+vr629vb////ubm4PC4dUkk98vLy////b2plbmde////////////////////////////////4eHhPTEiysrK////8vLy5OTk5OTk5OTk8fHx////////d3JsY1tR/v7+/////Pz85OTk5OTk5OTk+Pj4////////ioJ5bGRb/v7+////////////////////////////0tLSPTIk2djX////nJaQPC4dPC4dPC4dRjkp6Ojo////Z2BYZ2Jb////+/v7bGNYgX56////+vr65OTk5OTk5OTk5ubm/f39////1NTUQjYnAAA8Lh0nI20kJ+wkJ+0kJ+0kJ+0qLO68vfr////////////////////r6/1ISvAkJ+0pLO7Fxvr////////////////////p6f05PO8kJ+0gI9UqIi08Lh08Lh08Lh08Lh08Lh08Lh08Lh3Bvrv////////////8/Px0bGM8Lh08Lh1/enT///////////////+kop88Lh1SST3y8vL///9vamU9Myjq6ur////////////////////////////U1NQ9MSLKysr////////////////////////////z8/NbUUU/MiPm5ub////////////////////////////09PRORDlKPzHh4N/////////////////////////////S0dA9MSLZ2Nf///+clpA8Lh08Lh08Lh1GOSno6Oj///9nYFhnYlv////7+/tsY1iBfnr///////////////////////////////+hnZk8Lh4AADwuHTAmMSEk2SQn7SQn7SQn7SQn7UpN8Ozt/v////////////7+/4eI9SUo7SQn7SQn7UpN8PPz/v////////////3+/3Z39CQn7SQn6yIeZjwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHailof///////////+Tj4zswIzwuHTwuHUtBNOXl5f///////////52WjjwuHUlANL6+vcjIx1tWUTwuHV9XTru7u+Hh4OPj4uPj4uPj4uPj4tvb2nNxbTovIJ+fnsjIx8jIx8jIx8jIx8jIx8jIx8LCwXl1cDwvHjwuHVtTSri4uOHh4OPj4uPj4uPj4uLi4cPDw21mXTwuHjwuHV1WTbm5uOHh4OPj4uPj4uPj4uPj4tbW1oF7dDwuHauqqMjIx396czwuHTwuHTwuHUM2Jra2tcjIx1dQSFVQSsjIx8XFxF1USWhlYcjIx8jIx8jIx8jIx8jIx8jIx8fHxpqXkkU5LDwuHQAAPC4dPC4dHx6EJCftJCftJCftJCftJCftdHb0/f3/////////yMr7Ky7uJCftJCftJCftJCfte330/Pz/////////u7z6Ki3uJCftISKoOCshPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4djImF////////////lJCLPC4dPC4dPC4dPC4dpqOf////////////gHpyPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh0sIyUgItAkJ+0kJ+0kJ+0kJ+0mKe20tfn////19f5QUvAkJ+0kJ+0kJ+0kJ+0kJ+0pLO2ztPn////r6/1IS/AkJ+0jJdwtJDo8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh14c23////////39/dNRDo8Lh08Lh08Lh08Lh1eVk339/f///////9kXVU8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHTwuHSwlUyMm4yQn7SQn7SQn7SQn7TU47pKT9mRm8iQn7SQn7SQn7SQn7SQn7SQn7SQn7TY574+R9lZY8SQn7SQn7SEfdzwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHU9ENuLi4f39/Zyalz0wHzwuHTwuHTwuHTwuHT0wH6mopv7+/tTU00U5KjwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAAPC4dPC4dPC4dOSscGxlhIiXiJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftHyG7MCUfPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dOi8hPjQpPC4dPC4dPC4dPC4dPC4dPC4dPC4dOy4dOTEnNCoePC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh08Lh08Lh04KxwjH2MiJd8kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0iJeEnIUhKPjBiWExCNyk8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHTwuHTwuHTwuHTwuHSsjRR0gwCQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7CEfiTstH3l3da6urnp0bjwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAAPC4dPC4dPC4dPC4dPC4dPC4dPC4dNiohJyNuIiTJIyboJCftJCftJCftJCftJCftJCftJCftJCftJCftIybpIyS7NioqPC4dcG5qm5ubcWtkPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh01KSQjH1AmJI8dH7ggI9QiJeMkJ+0jJuUgI9cfIb4nJZQmIFI2KSI8Lh08Lh09Lx5COCw6LR08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTUpITcrLjgsNDktOTgsNTgsLzYqJDwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAA</Image>
+      <Image compress="false" dnOrder="3" fileName="AudioMute16_2.bmp" height="25" location="internal" name="AudioMute16_2" width="32">Qk0GAgAAAAAAAHYAAAAoAAAAIAAAABkAAAABAAQAAAAAAJABAAAAAAAAAAAAAAAAAAAQAAAAAAAA/wAAgP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD//////wAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAB/gAAAAAAAAAAAAAAAAAAH//AAAAAAAAAAAAAAAAAAj//wAAAAAAAAAAAAAAAACP//8AAAAAAAAAAAAAAAB4////AAAAAAAAAAAAAAAA/////wARAAAAARAHiIiIj/////8AmRAAABmRD///////////ABmRAAGZEA///////////wABmRAZkQAP//////////8AABmRmRAAD///////////AAAJmZkAAA///////////wAAAZmRAAAP//////////8AAAGZmQAAD///////////AAAZkZkQAA///////////wABmRAZkQAP//////////8AGZEAAZkQB4iIiI//////AJkQAAAZkQAAAAAA/////wARAAAAARAAAAAAAAj///8AAAAAAAAAAAAAAAAAj///AAAAAAAAAAAAAAAAAAf//wAAAAAAAAAAAAAAAAAAf/8AAAAAAAAAAAAAAAAAAAf4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</Image>
+      <Image compress="false" dnOrder="4" fileName="AudioPlay16_2.bmp" height="22" location="internal" name="AudioPlay16_2" width="29">Qk3WAQAAAAAAAHYAAAAoAAAAHQAAABYAAAABAAQAAAAAAGABAAAAAAAAAAAAAAAAAAAQAAAAAAAA/wAAgP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD//////wAAAAAAAAB3AAAABwAAAAAAAAAAAAAI+AAAAA+AAAAAAAAAAAAAj/gAAAAH+AAAAAAAAAAACP/4AAB4AI9wAAAAAAAAB///+AAAf4B/gAAAAAAAAH////gAMAjwCPAAAAiIiIj////4B/cH+Af3AAAP////////+AD4AP8H+AAAD/////////gAj3CPAPgAAA/////////4AH9wf3D/AAAP////////+AA/cH9w/wAAD/////////gAf3B/cP8AAA/////////4AH9wf3D/AAAP////////+ACPAI8A+AAAD/////////gH+AD4B/cAAAeIiIj////4B/cH9wf3AAAAAAAAf///+AAAD/AP8AAAAAAAAACP//gAAH9wf3AAAAAAAAAACP/4AAB4AP8AAAAAAAAAAACP+AAAAAj3AAAAAAAAAAAACPgAAAAPgAAAAAAAAAAAAAB3AAAABwAAAAA=</Image>
+      <Settings bpp="16" dnOrder="5" encoding="ASCII">
+        <MemoryLocations dnOrder="0">
+          <MemoryLocation address="0" dnOrder="0" id="default"/>
+        </MemoryLocations>
+      </Settings>
+    </Assets>
+    <Schemes defaultSchemeName="default" dnOrder="1">
+      <Scheme dnOrder="0" name="default">
+        <Alpha dnOrder="0">100</Alpha>
+        <BackgroundOffset dnOrder="1">0,0</BackgroundOffset>
+        <BackgroundType dnOrder="2">None</BackgroundType>
+        <Colors dnOrder="3">
+          <Background dnOrder="0">000000</Background>
+          <Disabled dnOrder="1">C0C0C0</Disabled>
+          <EmbossDark dnOrder="2">404040</EmbossDark>
+          <EmbossLight dnOrder="3">C0C0C0</EmbossLight>
+          <GradientEnd dnOrder="4">FFFFFF</GradientEnd>
+          <GradientStart dnOrder="5">000000</GradientStart>
+          <Primary dnOrder="6">FFFFFF</Primary>
+          <Secondary dnOrder="7">404040</Secondary>
+          <TextDisabled dnOrder="8">404040</TextDisabled>
+          <TextPrimary dnOrder="9">000000</TextPrimary>
+          <TextSecondary dnOrder="10">FFFFFF</TextSecondary>
+        </Colors>
+        <EmbossSize dnOrder="4">3</EmbossSize>
+        <FillStyle dnOrder="5">Color</FillStyle>
+        <Font dnOrder="6">Arial14pt</Font>
+      </Scheme>
+      <Scheme dnOrder="1" name="GroupScheme">
+        <Alpha dnOrder="0">100</Alpha>
+        <BackgroundOffset dnOrder="1">0,0</BackgroundOffset>
+        <BackgroundType dnOrder="2">None</BackgroundType>
+        <Colors dnOrder="3">
+          <Background dnOrder="0">000000</Background>
+          <Disabled dnOrder="1">C0C0C0</Disabled>
+          <EmbossDark dnOrder="2">E80000</EmbossDark>
+          <EmbossLight dnOrder="3">A01410</EmbossLight>
+          <GradientEnd dnOrder="4">FFFFFF</GradientEnd>
+          <GradientStart dnOrder="5">000000</GradientStart>
+          <Primary dnOrder="6">000000</Primary>
+          <Secondary dnOrder="7">000070</Secondary>
+          <TextDisabled dnOrder="8">404040</TextDisabled>
+          <TextPrimary dnOrder="9">18E0F0</TextPrimary>
+          <TextSecondary dnOrder="10">FFFFFF</TextSecondary>
+        </Colors>
+        <EmbossSize dnOrder="4">3</EmbossSize>
+        <FillStyle dnOrder="5">Color</FillStyle>
+        <Font dnOrder="6">Arial14pt</Font>
+      </Scheme>
+      <Scheme dnOrder="2" name="RadioScheme">
+        <Alpha dnOrder="0">100</Alpha>
+        <BackgroundOffset dnOrder="1">0,0</BackgroundOffset>
+        <BackgroundType dnOrder="2">None</BackgroundType>
+        <Colors dnOrder="3">
+          <Background dnOrder="0">000000</Background>
+          <Disabled dnOrder="1">C0C0C0</Disabled>
+          <EmbossDark dnOrder="2">F0F4F0</EmbossDark>
+          <EmbossLight dnOrder="3">F0F4F0</EmbossLight>
+          <GradientEnd dnOrder="4">FFFFFF</GradientEnd>
+          <GradientStart dnOrder="5">000000</GradientStart>
+          <Primary dnOrder="6">000000</Primary>
+          <Secondary dnOrder="7">000070</Secondary>
+          <TextDisabled dnOrder="8">404040</TextDisabled>
+          <TextPrimary dnOrder="9">E890D8</TextPrimary>
+          <TextSecondary dnOrder="10">FFFFFF</TextSecondary>
+        </Colors>
+        <EmbossSize dnOrder="4">3</EmbossSize>
+        <FillStyle dnOrder="5">Color</FillStyle>
+        <Font dnOrder="6">Arial14pt</Font>
+      </Scheme>
+      <Scheme dnOrder="3" name="TrackListBox">
+        <Alpha dnOrder="0">100</Alpha>
+        <BackgroundOffset dnOrder="1">0,0</BackgroundOffset>
+        <BackgroundType dnOrder="2">None</BackgroundType>
+        <Colors dnOrder="3">
+          <Background dnOrder="0">000000</Background>
+          <Disabled dnOrder="1">282420</Disabled>
+          <EmbossDark dnOrder="2">E80000</EmbossDark>
+          <EmbossLight dnOrder="3">A81818</EmbossLight>
+          <GradientEnd dnOrder="4">FFFFFF</GradientEnd>
+          <GradientStart dnOrder="5">000000</GradientStart>
+          <Primary dnOrder="6">000000</Primary>
+          <Secondary dnOrder="7">C86C78</Secondary>
+          <TextDisabled dnOrder="8">081008</TextDisabled>
+          <TextPrimary dnOrder="9">B0F490</TextPrimary>
+          <TextSecondary dnOrder="10">90F4F0</TextSecondary>
+        </Colors>
+        <EmbossSize dnOrder="4">3</EmbossSize>
+        <FillStyle dnOrder="5">Color</FillStyle>
+        <Font dnOrder="6">Arial14pt</Font>
+      </Scheme>
+      <Scheme dnOrder="4" name="ScrollUpScheme">
+        <Alpha dnOrder="0">100</Alpha>
+        <BackgroundOffset dnOrder="1">0,0</BackgroundOffset>
+        <BackgroundType dnOrder="2">None</BackgroundType>
+        <Colors dnOrder="3">
+          <Background dnOrder="0">000000</Background>
+          <Disabled dnOrder="1">282420</Disabled>
+          <EmbossDark dnOrder="2">E80000</EmbossDark>
+          <EmbossLight dnOrder="3">A81818</EmbossLight>
+          <GradientEnd dnOrder="4">FFFFFF</GradientEnd>
+          <GradientStart dnOrder="5">000000</GradientStart>
+          <Primary dnOrder="6">000000</Primary>
+          <Secondary dnOrder="7">C86C78</Secondary>
+          <TextDisabled dnOrder="8">081008</TextDisabled>
+          <TextPrimary dnOrder="9">B0F490</TextPrimary>
+          <TextSecondary dnOrder="10">90F4F0</TextSecondary>
+        </Colors>
+        <EmbossSize dnOrder="4">3</EmbossSize>
+        <FillStyle dnOrder="5">Color</FillStyle>
+        <Font dnOrder="6">Arial18pt</Font>
+      </Scheme>
+      <Scheme dnOrder="5" name="VolumeButton">
+        <Alpha dnOrder="0">100</Alpha>
+        <BackgroundOffset dnOrder="1">0,0</BackgroundOffset>
+        <BackgroundType dnOrder="2">Color</BackgroundType>
+        <Colors dnOrder="3">
+          <Background dnOrder="0">000000</Background>
+          <Disabled dnOrder="1">000000</Disabled>
+          <EmbossDark dnOrder="2">000000</EmbossDark>
+          <EmbossLight dnOrder="3">000000</EmbossLight>
+          <GradientEnd dnOrder="4">FFFFFF</GradientEnd>
+          <GradientStart dnOrder="5">000000</GradientStart>
+          <Primary dnOrder="6">000000</Primary>
+          <Secondary dnOrder="7">000000</Secondary>
+          <TextDisabled dnOrder="8">404040</TextDisabled>
+          <TextPrimary dnOrder="9">000000</TextPrimary>
+          <TextSecondary dnOrder="10">FFFFFF</TextSecondary>
+        </Colors>
+        <EmbossSize dnOrder="4">3</EmbossSize>
+        <FillStyle dnOrder="5">Color</FillStyle>
+        <Font dnOrder="6">Arial14pt</Font>
+      </Scheme>
+    </Schemes>
+    <Screens dnOrder="2" height="272" width="480">
+      <Screen active="true" background="000000" clearOnShow="true" dnOrder="0" doubleBuffer="false" export="true" name="MchpName" primary="true" visible="true">
+        <Objects dnOrder="0">
+          <Primitive dnOrder="0" type="TextPrimitive">
+            <Color dnOrder="0">FFFFFF</Color>
+            <Enabled dnOrder="1">true</Enabled>
+            <Font dnOrder="2">Arial14pt</Font>
+            <Name dnOrder="3">DemoName</Name>
+            <Origin dnOrder="4">34,38</Origin>
+            <Text dnOrder="5">Harmony Quick Audio Prototyping</Text>
+            <Visible dnOrder="6">true</Visible>
+            <ZOrder dnOrder="7">8</ZOrder>
+          </Primitive>
+          <Primitive dnOrder="1" type="ImagePrimitive">
+            <Enabled dnOrder="0">true</Enabled>
+            <Image dnOrder="1">MCHP_LOGO</Image>
+            <Name dnOrder="2">Image1</Name>
+            <Origin dnOrder="3">1,2</Origin>
+            <TransparencyColor dnOrder="4">1D2E3C</TransparencyColor>
+            <Visible dnOrder="5">true</Visible>
+            <ZOrder dnOrder="6">9</ZOrder>
+          </Primitive>
+          <Primitive dnOrder="2" type="RectanglePrimitive">
+            <Enabled dnOrder="0">true</Enabled>
+            <EndColor dnOrder="1">000000</EndColor>
+            <FillStyle dnOrder="2">Gradient_Down</FillStyle>
+            <LineColor dnOrder="3">000000</LineColor>
+            <LineStyle dnOrder="4">Solid</LineStyle>
+            <LineThickness dnOrder="5">Thin</LineThickness>
+            <Name dnOrder="6">Rectangle1</Name>
+            <Outline dnOrder="7">true</Outline>
+            <Point1 dnOrder="8">0,1</Point1>
+            <Point2 dnOrder="9">479,45</Point2>
+            <StartColor dnOrder="10">FF0000</StartColor>
+            <Visible dnOrder="11">true</Visible>
+            <ZOrder dnOrder="12">10</ZOrder>
+          </Primitive>
+          <Widget dnOrder="3" type="RadioButtonWidget">
+            <Check dnOrder="0">false</Check>
+            <Enabled dnOrder="1">true</Enabled>
+            <Events dnOrder="2">
+              <Event dnOrder="0" enabled="true" name="GFX_GOL_RADIOBUTTON_ACTION_CHECKED" pretty_name="Checked">
+                <Actions count="1" dnOrder="0">
+                  <Action dnOrder="0" name="CustomAction" type="custom">
+                    <Text dnOrder="0">GFX_GOL_ObjectStateSet(GFX_GOL_ObjectFind(GFX_INDEX_0, TrackListBox), GFX_GOL_LISTBOX_DISABLED_STATE|GFX_GOL_LISTBOX_DRAW_STATE);&#13;
+GFX_GOL_ObjectStateSet(GFX_GOL_ObjectFind(GFX_INDEX_0, ScrollUpButton), GFX_GOL_BUTTON_DISABLED_STATE|GFX_GOL_BUTTON_DRAW_STATE);&#13;
+GFX_GOL_ObjectStateSet(GFX_GOL_ObjectFind(GFX_INDEX_0, ScrollDownButton), GFX_GOL_BUTTON_DISABLED_STATE|GFX_GOL_BUTTON_DRAW_STATE);&#13;
+APP_DISPLAY_StreamSourceSet(1);&#13;
+APP_DISPLAY_VolumeMuteSourceSet(1);</Text>
+                  </Action>
+                </Actions>
+              </Event>
+            </Events>
+            <Group dnOrder="3">0</Group>
+            <HAlignment dnOrder="4">Left</HAlignment>
+            <Name dnOrder="5">RadioButtonUSB</Name>
+            <NumGroupsInScreen dnOrder="6">1</NumGroupsInScreen>
+            <Position dnOrder="7">39,167</Position>
+            <Scheme dnOrder="8">RadioScheme</Scheme>
+            <Size dnOrder="9">106,35</Size>
+            <Text dnOrder="10">USB</Text>
+            <VAlignment dnOrder="11">Center</VAlignment>
+            <Visible dnOrder="12">true</Visible>
+            <ZOrder dnOrder="13">0</ZOrder>
+            <firstInGroup dnOrder="14">false</firstInGroup>
+          </Widget>
+          <Widget dnOrder="4" type="ButtonWidget">
+            <Button_Type dnOrder="0">Default</Button_Type>
+            <Enabled dnOrder="1">true</Enabled>
+            <Events dnOrder="2">
+              <Event dnOrder="0" enabled="true" name="GFX_GOL_BUTTON_ACTION_PRESSED" pretty_name="Pressed">
+                <Actions count="1" dnOrder="0">
+                  <Action dnOrder="0" name="CustomAction" type="custom">
+                    <Text dnOrder="0">APP_DISPLAY_VolumeMuteChange(1);</Text>
+                  </Action>
+                </Actions>
+              </Event>
+              <Event dnOrder="1" enabled="false" name="GFX_GOL_BUTTON_ACTION_STILLPRESSED" pretty_name="Still Pressed"/>
+              <Event dnOrder="2" enabled="true" name="GFX_GOL_BUTTON_ACTION_RELEASED" pretty_name="Released">
+                <Actions count="1" dnOrder="0">
+                  <Action dnOrder="0" name="CustomAction" type="custom">
+                    <Text dnOrder="0">APP_DISPLAY_VolumeMuteChange(0);</Text>
+                  </Action>
+                </Actions>
+              </Event>
+              <Event dnOrder="3" enabled="false" name="GFX_GOL_BUTTON_ACTION_CANCELPRESS" pretty_name="Cancel Press"/>
+            </Events>
+            <HAlignment dnOrder="3">Center</HAlignment>
+            <Name dnOrder="4">VolButton</Name>
+            <Position dnOrder="5">401,209</Position>
+            <Press_Image dnOrder="6">AudioPlay16_2</Press_Image>
+            <Pressed dnOrder="7">true</Pressed>
+            <Radius dnOrder="8">0</Radius>
+            <Release_Image dnOrder="9">AudioMute16_2</Release_Image>
+            <Scheme dnOrder="10">VolumeButton</Scheme>
+            <Size dnOrder="11">59,38</Size>
+            <Text dnOrder="12"/>
+            <Toggle dnOrder="13">true</Toggle>
+            <VAlignment dnOrder="14">Center</VAlignment>
+            <Visible dnOrder="15">true</Visible>
+            <ZOrder dnOrder="16">1</ZOrder>
+          </Widget>
+          <Widget dnOrder="5" type="SliderWidget">
+            <Enabled dnOrder="0">true</Enabled>
+            <Events dnOrder="1">
+              <Event dnOrder="0" enabled="true" name="GFX_GOL_SCROLLBAR_ACTION_INC" pretty_name="Incremented">
+                <Actions count="1" dnOrder="0">
+                  <Action dnOrder="0" name="CustomAction" type="custom">
+                    <Text dnOrder="0">APP_DISPLAY_VolumeMuteChange(2);</Text>
+                  </Action>
+                </Actions>
+              </Event>
+              <Event dnOrder="1" enabled="true" name="GFX_GOL_SCROLLBAR_ACTION_DEC" pretty_name="Decremented">
+                <Actions count="1" dnOrder="0">
+                  <Action dnOrder="0" name="CustomAction" type="custom">
+                    <Text dnOrder="0">APP_DISPLAY_VolumeMuteChange(2);</Text>
+                  </Action>
+                </Actions>
+              </Event>
+            </Events>
+            <Name dnOrder="2">VolSlider</Name>
+            <PageSize dnOrder="3">1</PageSize>
+            <Position dnOrder="4">412,69</Position>
+            <Range dnOrder="5">50</Range>
+            <Scheme dnOrder="6">TrackListBox</Scheme>
+            <Size dnOrder="7">36,138</Size>
+            <Visible dnOrder="8">true</Visible>
+            <ZOrder dnOrder="9">2</ZOrder>
+            <orientation dnOrder="10">Vertical</orientation>
+            <pos dnOrder="11">0</pos>
+            <sliderType dnOrder="12">slider</sliderType>
+          </Widget>
+          <Widget dnOrder="6" type="ButtonWidget">
+            <Button_Type dnOrder="0">Default</Button_Type>
+            <Enabled dnOrder="1">true</Enabled>
+            <Events dnOrder="2">
+              <Event dnOrder="0" enabled="false" name="GFX_GOL_BUTTON_ACTION_PRESSED" pretty_name="Pressed"/>
+              <Event dnOrder="1" enabled="false" name="GFX_GOL_BUTTON_ACTION_STILLPRESSED" pretty_name="Still Pressed"/>
+              <Event dnOrder="2" enabled="true" name="GFX_GOL_BUTTON_ACTION_RELEASED" pretty_name="Released">
+                <Actions count="1" dnOrder="0">
+                  <Action dnOrder="0" name="CustomAction" type="custom">
+                    <Text dnOrder="0">GFX_GOL_LISTBOX *pLb = (GFX_GOL_LISTBOX *) GFX_GOL_ObjectFind(GFX_INDEX_0, TrackListBox);&#13;
+GFX_GOL_ListBoxItemFocusSet(pLb, GFX_GOL_ListBoxItemFocusGet(pLb) + 1);&#13;
+GFX_GOL_ObjectStateSet(pLb, GFX_GOL_LISTBOX_DRAW_ITEMS_STATE);</Text>
+                  </Action>
+                </Actions>
+              </Event>
+              <Event dnOrder="3" enabled="false" name="GFX_GOL_BUTTON_ACTION_CANCELPRESS" pretty_name="Cancel Press"/>
+            </Events>
+            <HAlignment dnOrder="3">Center</HAlignment>
+            <Name dnOrder="4">ScrollDownButton</Name>
+            <Position dnOrder="5">324,150</Position>
+            <Pressed dnOrder="6">false</Pressed>
+            <Radius dnOrder="7">0</Radius>
+            <Scheme dnOrder="8">TrackListBox</Scheme>
+            <Size dnOrder="9">38,81</Size>
+            <Text dnOrder="10">v</Text>
+            <Toggle dnOrder="11">false</Toggle>
+            <VAlignment dnOrder="12">Center</VAlignment>
+            <Visible dnOrder="13">true</Visible>
+            <ZOrder dnOrder="14">3</ZOrder>
+          </Widget>
+          <Widget dnOrder="7" type="ButtonWidget">
+            <Button_Type dnOrder="0">Default</Button_Type>
+            <Enabled dnOrder="1">true</Enabled>
+            <Events dnOrder="2">
+              <Event dnOrder="0" enabled="false" name="GFX_GOL_BUTTON_ACTION_PRESSED" pretty_name="Pressed"/>
+              <Event dnOrder="1" enabled="false" name="GFX_GOL_BUTTON_ACTION_STILLPRESSED" pretty_name="Still Pressed"/>
+              <Event dnOrder="2" enabled="true" name="GFX_GOL_BUTTON_ACTION_RELEASED" pretty_name="Released">
+                <Actions count="1" dnOrder="0">
+                  <Action dnOrder="0" name="CustomAction" type="custom">
+                    <Text dnOrder="0">GFX_GOL_LISTBOX *pLb = (GFX_GOL_LISTBOX *) GFX_GOL_ObjectFind(GFX_INDEX_0, TrackListBox);&#13;
+if (GFX_GOL_ListBoxItemFocusGet(pLb) &gt; 0) &#13;
+{&#13;
+	GFX_GOL_ListBoxItemFocusSet(pLb, GFX_GOL_ListBoxItemFocusGet(pLb) - 1);&#13;
+	GFX_GOL_ObjectStateSet(pLb, GFX_GOL_LISTBOX_DRAW_ITEMS_STATE);&#13;
+}</Text>
+                  </Action>
+                </Actions>
+              </Event>
+              <Event dnOrder="3" enabled="false" name="GFX_GOL_BUTTON_ACTION_CANCELPRESS" pretty_name="Cancel Press"/>
+            </Events>
+            <HAlignment dnOrder="3">Center</HAlignment>
+            <Name dnOrder="4">ScrollUpButton</Name>
+            <Position dnOrder="5">324,69</Position>
+            <Pressed dnOrder="6">false</Pressed>
+            <Radius dnOrder="7">0</Radius>
+            <Scheme dnOrder="8">ScrollUpScheme</Scheme>
+            <Size dnOrder="9">38,81</Size>
+            <Text dnOrder="10">^</Text>
+            <Toggle dnOrder="11">false</Toggle>
+            <VAlignment dnOrder="12">Center</VAlignment>
+            <Visible dnOrder="13">true</Visible>
+            <ZOrder dnOrder="14">4</ZOrder>
+          </Widget>
+          <Widget dnOrder="8" type="ListBoxWidget">
+            <Alignment dnOrder="0">Left</Alignment>
+            <Enabled dnOrder="1">true</Enabled>
+            <Events dnOrder="2">
+              <Event dnOrder="0" enabled="true" name="GFX_GOL_LISTBOX_ACTION_TOUCHSCREEN" pretty_name="Touched">
+                <Actions count="1" dnOrder="0">
+                  <Action dnOrder="0" name="CustomAction" type="custom">
+                    <Text dnOrder="0">APP_SDCARD_AUDIO_RandomTrackSet(GFX_GOL_ListBoxItemFocusGet((GFX_GOL_LISTBOX*)pObj));</Text>
+                  </Action>
+                </Actions>
+              </Event>
+              <Event dnOrder="1" enabled="false" name="GFX_GOL_LISTBOX_ACTION_MOVE" pretty_name="Moved"/>
+              <Event dnOrder="2" enabled="false" name="GFX_GOL_LISTBOX_ACTION_SELECTED" pretty_name="Selected"/>
+            </Events>
+            <Name dnOrder="3">TrackListBox</Name>
+            <Position dnOrder="4">173,69</Position>
+            <Scheme dnOrder="5">TrackListBox</Scheme>
+            <Size dnOrder="6">150,162</Size>
+            <Visible dnOrder="7">true</Visible>
+            <ZOrder dnOrder="8">5</ZOrder>
+          </Widget>
+          <Widget dnOrder="9" type="RadioButtonWidget">
+            <Check dnOrder="0">true</Check>
+            <Enabled dnOrder="1">true</Enabled>
+            <Events dnOrder="2">
+              <Event dnOrder="0" enabled="true" name="GFX_GOL_RADIOBUTTON_ACTION_CHECKED" pretty_name="Checked">
+                <Actions count="1" dnOrder="0">
+                  <Action dnOrder="0" name="CustomAction" type="custom">
+                    <Text dnOrder="0">GFX_GOL_ObjectStateClear(GFX_GOL_ObjectFind(GFX_INDEX_0, TrackListBox), GFX_GOL_LISTBOX_DISABLED_STATE);&#13;
+GFX_GOL_ObjectStateSet(GFX_GOL_ObjectFind(GFX_INDEX_0, TrackListBox),GFX_GOL_LISTBOX_SINGLE_SELECT_STATE|GFX_GOL_LISTBOX_DRAW_STATE);&#13;
+GFX_GOL_ListBoxItemFocusSet(hgcObj.pTrackListBoxObj,0);&#13;
+				&#13;
+GFX_GOL_ObjectStateClear(GFX_GOL_ObjectFind(GFX_INDEX_0, ScrollUpButton), GFX_GOL_BUTTON_DISABLED_STATE);&#13;
+GFX_GOL_ObjectStateSet(GFX_GOL_ObjectFind(GFX_INDEX_0, ScrollUpButton), GFX_GOL_BUTTON_DRAW_STATE);&#13;
+GFX_GOL_ObjectStateClear(GFX_GOL_ObjectFind(GFX_INDEX_0, ScrollDownButton), GFX_GOL_BUTTON_DISABLED_STATE);&#13;
+GFX_GOL_ObjectStateSet(GFX_GOL_ObjectFind(GFX_INDEX_0, ScrollDownButton), GFX_GOL_BUTTON_DRAW_STATE);&#13;
+								&#13;
+APP_DISPLAY_StreamSourceSet(0);&#13;
+APP_DISPLAY_VolumeMuteSourceSet(0);</Text>
+                  </Action>
+                </Actions>
+              </Event>
+            </Events>
+            <Group dnOrder="3">0</Group>
+            <HAlignment dnOrder="4">Left</HAlignment>
+            <Name dnOrder="5">RadioButtonSd</Name>
+            <NumGroupsInScreen dnOrder="6">1</NumGroupsInScreen>
+            <Position dnOrder="7">39,105</Position>
+            <Scheme dnOrder="8">RadioScheme</Scheme>
+            <Size dnOrder="9">108,35</Size>
+            <Text dnOrder="10">SD Card</Text>
+            <VAlignment dnOrder="11">Center</VAlignment>
+            <Visible dnOrder="12">true</Visible>
+            <ZOrder dnOrder="13">6</ZOrder>
+            <firstInGroup dnOrder="14">true</firstInGroup>
+          </Widget>
+          <Widget dnOrder="10" type="GroupBoxWidget">
+            <Alignment dnOrder="0">Center</Alignment>
+            <Enabled dnOrder="1">true</Enabled>
+            <Events dnOrder="2">
+              <Event dnOrder="0" enabled="false" name="GFX_GOL_GROUPBOX_ACTION_SELECTED" pretty_name="Selected"/>
+            </Events>
+            <Name dnOrder="3">GroupBox1</Name>
+            <Position dnOrder="4">33,62</Position>
+            <Scheme dnOrder="5">GroupScheme</Scheme>
+            <Size dnOrder="6">120,170</Size>
+            <Text dnOrder="7">Source</Text>
+            <Visible dnOrder="8">true</Visible>
+            <ZOrder dnOrder="9">7</ZOrder>
+          </Widget>
+        </Objects>
+      </Screen>
+    </Screens>
+  </Designer>
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name=""/>
+  </General>
+  <MHGC>
+    <GAC dnOrder="0">
+      <Locations dnOrder="0">
+        <Location dnOrder="0" fileName="gfx_assets" index="0"/>
+      </Locations>
+      <Assets dnOrder="1">
+        <StringTable dnOrder="0" encoding="ASCII" location="0" name="stringTable">
+          <Languages default="0" dnOrder="0">
+            <Language dnOrder="0" enabled="true" name="English"/>
+          </Languages>
+          <Strings dnOrder="1">
+            <String dnOrder="0" name="sd_radio_button_str">
+              <Entries dnOrder="0">
+                <Entry dnOrder="0" index="0">SD Card</Entry>
+              </Entries>
+            </String>
+            <String dnOrder="1" name="usb_radio_button_str">
+              <Entries dnOrder="0">
+                <Entry dnOrder="0" index="0">USB</Entry>
+              </Entries>
+            </String>
+            <String dnOrder="2" name="group_box_str">
+              <Entries dnOrder="0">
+                <Entry dnOrder="0" index="0">Source</Entry>
+              </Entries>
+            </String>
+            <String dnOrder="3" name="demo_title_str">
+              <Entries dnOrder="0">
+                <Entry dnOrder="0" index="0">Harmony Quick Audio Prototyping</Entry>
+              </Entries>
+            </String>
+            <String dnOrder="4" name="volume_up_button_str">
+              <Entries dnOrder="0">
+                <Entry dnOrder="0" index="0">+</Entry>
+              </Entries>
+            </String>
+            <String dnOrder="5" name="volume_down_button_str">
+              <Entries dnOrder="0">
+                <Entry dnOrder="0" index="0">-</Entry>
+              </Entries>
+            </String>
+          </Strings>
+        </StringTable>
+        <Font antialias="false" bold="false" dnOrder="1" italic="false" location="0" name="Arial14pt" size="14" sourceName="Arial">
+          <Ranges dnOrder="0">
+            <Range dnOrder="0" end="126" name="English" start="32"/>
+            <Range dnOrder="1" end="127" name="English" start="32"/>
+          </Ranges>
+          <Strings dnOrder="1">
+            <String dnOrder="0" name="usb_radio_button_str">
+              <Language dnOrder="0" index="0"/>
+            </String>
+            <String dnOrder="1" name="group_box_str">
+              <Language dnOrder="0" index="0"/>
+            </String>
+            <String dnOrder="2" name="sd_radio_button_str">
+              <Language dnOrder="0" index="0"/>
+            </String>
+            <String dnOrder="3" name="demo_title_str">
+              <Language dnOrder="0" index="0"/>
+            </String>
+          </Strings>
+        </Font>
+        <Image dnOrder="2" ext="bmp" height="25" location="0" name="AudioMute16_2" outputColorMode="RGB_888" outputFormat="Raw" outputPixelMode="INDEX_4" rawCompressionType="None" sourceColorMode="RGB_888" sourceFormat="bmp" sourcePixelMode="INDEX_4" width="32">
+          <Data dnOrder="0">Qk0GAgAAAAAAAHYAAAAoAAAAIAAAABkAAAABAAQAAAAAAJABAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAB/gAAAAAAAAAAAAAAAAAAH//AAAAAAAAAAAAAAAAAAj//wAAAAAAAAAAAAAAAACP//8AAAAAAAAAAAAAAAB4////AAAAAAAAAAAAAAAA/////wARAAAAARAHiIiIj/////8AmRAAABmRD///////////ABmRAAGZEA///////////wABmRAZkQAP//////////8AABmRmRAAD///////////AAAJmZkAAA///////////wAAAZmRAAAP//////////8AAAGZmQAAD///////////AAAZkZkQAA///////////wABmRAZkQAP//////////8AGZEAAZkQB4iIiI//////AJkQAAAZkQAAAAAA/////wARAAAAARAAAAAAAAj///8AAAAAAAAAAAAAAAAAj///AAAAAAAAAAAAAAAAAAf//wAAAAAAAAAAAAAAAAAAf/8AAAAAAAAAAAAAAAAAAAf4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</Data>
+          <MaskColor dnOrder="1" enabled="false">
+            <Red dnOrder="0" value="0.0"/>
+            <Green dnOrder="1" value="0.0"/>
+            <Blue dnOrder="2" value="0.0"/>
+            <Alpha dnOrder="3" value="1.0"/>
+          </MaskColor>
+        </Image>
+        <Image dnOrder="3" ext="bmp" height="22" location="0" name="AudioPlay16_2" outputColorMode="RGB_888" outputFormat="Raw" outputPixelMode="INDEX_4" rawCompressionType="None" sourceColorMode="RGB_888" sourceFormat="bmp" sourcePixelMode="INDEX_4" width="29">
+          <Data dnOrder="0">Qk3WAQAAAAAAAHYAAAAoAAAAHQAAABYAAAABAAQAAAAAAGABAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAB3AAAABwAAAAAAAAAAAAAI+AAAAA+AAAAAAAAAAAAAj/gAAAAH+AAAAAAAAAAACP/4AAB4AI9wAAAAAAAAB///+AAAf4B/gAAAAAAAAH////gAMAjwCPAAAAiIiIj////4B/cH+Af3AAAP////////+AD4AP8H+AAAD/////////gAj3CPAPgAAA/////////4AH9wf3D/AAAP////////+AA/cH9w/wAAD/////////gAf3B/cP8AAA/////////4AH9wf3D/AAAP////////+ACPAI8A+AAAD/////////gH+AD4B/cAAAeIiIj////4B/cH9wf3AAAAAAAAf///+AAAD/AP8AAAAAAAAACP//gAAH9wf3AAAAAAAAAACP/4AAB4AP8AAAAAAAAAAACP+AAAAAj3AAAAAAAAAAAACPgAAAAPgAAAAAAAAAAAAAB3AAAABwAAAAA=</Data>
+          <MaskColor dnOrder="1" enabled="false">
+            <Red dnOrder="0" value="0.0"/>
+            <Green dnOrder="1" value="0.0"/>
+            <Blue dnOrder="2" value="0.0"/>
+            <Alpha dnOrder="3" value="1.0"/>
+          </MaskColor>
+        </Image>
+        <Image dnOrder="4" ext="bmp" height="30" location="0" name="MCHP_LOGO" outputColorMode="RGB_888" outputFormat="Raw" outputPixelMode="COLOR" rawCompressionType="None" sourceColorMode="RGB_888" sourceFormat="bmp" sourcePixelMode="COLOR" width="122">
+          <Data dnOrder="0">Qk1WKwAAAAAAADYAAAAoAAAAegAAAB4AAAABABgAAAAAACArAAATCwAAEwsAAAAAAAAAAAAAPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dOSwfPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0zJycpI0wiH3goJp0rKbIlJbUrKbIpJ6UkIoMtJlcuJCo7LR08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHSohKh0chyIk0SMm6CQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn6iAj1iEhly8nQTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAAPC4dPC4dPC4dPC4dPC4dPC4dNionJCJ+IiXiJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftIybnHyCVKyIqPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh08Lh08Lh08Lh0nHy4jJLgkJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0gIsYuJkg8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHTwuHTwuHSwkNCEjySQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7V5f3GZdUzwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAAPC4dPC4dPC4dRjstxsbMZmjyJCftJCftJCftJCftJCftJCftJCftJCftKy7ti431YWPyJSjtJCftJCftJCftJCftJCftJCftNzru4eL96+vrVExBPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh08Lh2op6T////l5v05PO8kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+2OkPb+/v/v8P5TVvEkJ+0kJ+0kJ+0kJ+0kJ+0kJ+2io/f////////Lyso+MyY8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHWRdVvv7+////////7a4+Sgr7SQn7SQn7SQn7SQn7SQn7UpN8O3t/v///////9LT+ysu7SQn7SQn7SQn7SQn7Vha8ff3/v////////7+/o+LhzwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAAPC4dOzAi0NDO/////////////f3/hYb1JSjtJCftJCftJCftLC/uw8T6////////////////nZ73JSjtJCftJCftMTTu09P7////////////////5ubmTUI2PC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dOi0ePTEiPTEiPTEiPTEiPTEiOy8gOy0dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dOi0dPTEiPTEiPTEiPTEiPTEiOy4fPC4dPC4dPC4dPC4dOy8fRDgpRjorRjorRjorRjorPzMkPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh1nX1X4+Pj////////////////x8f5UVvEkJ+0kJ+0kJ+16fPT+/v/////////////////19f5ZW/EkJ+0lKO2OkPb9/f////////////////////94dX07LR08Lh08Lh08Lh2Wj4XIxL+/u7Y9MyY8Lh08Lh06LR1SSDxSRzs8Lh08Lh08Lh1RRDbAvLfIxL9/eXJMQTS/u7bIxL9gWVA8Lh1dV064t7bJycnJycnJycnJycnJycnFxcV8dm88MCGinpnIxL94c2w8Lh08Lh08Lh08Lh2zrqfIxL9mYFc8Lh1ZUkm2tbTJycnJycnJycnJycnJycm+vbxsZl48Lh48Lh1lXVO/vbrW1tbb29vb29vb29vb29vNzcx/enM5LBytqKLIxL+BeW88Lh08Lh08Lh1DNia4tK/IxL9bUkdbU0rIxL/FwbxeVEhuZ2DIxL+spp88Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHYWBnP7+/////////////////////8PE+iYo7SQn7To87+zs/f////////////////////X1/k5Q8SQn7UpM8PHx/v///////////////////+zs/kNFyjotJDwuHTwuHTwuHaWgmv////X19UxDODwuHTwuHXhya+zs7Ozs7GxlXTwuHTwuHWFVSP///////4OAfVJJPfLy8v///29qZT4zJujo6P///////////////////////////+np6T0xIsrKyv///5COjDwuHTwuHTwuHTksHeHg3v///3dzbjouIOTk5P////////////////////////////Pz80M6MEk+Md/e3v///////////////////////////9ra2kQ4K9nY1////5yWkDwuHTwuHTwuHUY5Kejo6P///2dgWGdiW/////v7+2xjWIF+ev///9jW0jwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAANSkjJym/ycr7////////////////////sLL4JSjtKCvttbb5////////////////////////kZP2JCftKSztxsf6/////////////////////f3/hIb1JCftJyBGPC4dPC4dPC4djIeB////+Pj4X1ZLPC4dPzIj19fX////////yMfFOS0fPC4dXVhR/////v7+gXhuUkk98vLy////b2plb2de////////7+/v4+Pj4+Pj4+Pj4+Pj4+Pj4eHgPTEiysrK////nJqYT0M1T0M1T0M1YlpP7u7u////d3JsZ19V/v7+////8PDw4+Pj4+Pj4+Pj7Ozs////////ioJ5aWJa/v7+////7u7u4uDe4+De4+De4+De4+DeycfFRzwu2djX////nJaQPC4dPC4dPC4dRjkp6Ojo////Z2BYZ2Jb////+/v7bGNYgX56////3tzZWE0+WE0+WE0+WE0+WE0+TkIzPC4ePC4dAAA3KzAhI9dHSfDw8f7////////////q6v1GSfAkJ+1sbvP4+P/////////////////////Y2fwvMu4kJ+17ffT9/f/////////////////////Ky/ssL+4kJ+0sJmg8Lh08Lh08Lh1vamT////8/PxwZ108Lh1eV0/////////////09PRdVEk8Lh1xa2X////7+/toX1VSST3y8vL///9vamWLhHr////39/daVEw9Myc9Myc9Myc9Myc9Myc9Myc9MSLKysr////29vbt7e3t7e3t7e329vb////19fVfVUl9dWv////6+vpiXVU9Myc9Myc9MydYT0Tr6+v///+UkY1vamX////09PReWE87LR08Lh08Lh08Lh08Lh08Lh08Lh3Z2Nf///+clpA8Lh08Lh08Lh1GOSno6Oj///9nYFhnYlv////7+/tsY1iBfnr////////////////////////////p6ellXlc8Lh0AADgsNyMm5yQn7Xp89P39//////39/4OE9SUo7TU47t3d/P////////////////////n5/mNl8iQn7UFD7+bm/f////////////////////j4/1FU8SQn7SMm6DEnQjwuHTwuHTwuHV5XTf///////4J5bjwuHamnpf///////////////5aUkTotHYF8dv////n5+VFIPlJJPfLy8v///29qZZaOhf///97e3kY6KzwuHTwuHTwuHTwuHTwuHTwuHT0xIsrKyv///////////////////////////769vDsvIY6Fe////+Tk5EtAMTwuHTwuHTwuHT8zJMvLy////5eWlG9qZf///+vr6z00KDwuHTwuHTwuHTwuHTwuHTwuHTwuHdnY1/////Hw7+Ti3+Ti3+Ti3+Xj4fz8/P///2dgWGdiW/////v7+2xjWIF+ev///////////////////////////////7y7ujwwIAAAOC05JCfrJCftKSztr7D4////xsb6Ky7uJSjtpKb3/////////////////////v7/pKb4JintKSvtsrP4/////////////////////v7/lpj2JSjtJCftIB6EOy0ePC4dPC4dPC4dXFFE9vb2////hIF+SD0v7+/u////4ODg8fHx////4eHhRDgqmZSO////9vb2OzEmUkk98vLy////b2pllo6F////19fXRDgoPC4dPC4dPC4dPC4dPC4dPC4dPTEiysrK////1dXUrKqnrKqnrKqntrWz+Pj4+/v7bmVajoV7////3d3dRzstPC4dPC4dPC4dPDAhw8PD////l5aUb2pl////6+vrPTQoPC4dPC4dPC4dPC4dPC4dPC4dPC4d2djX////////////////////////////////Z2BYZ2Jb////+/v7bGNYgX56////6enokY6MkY6MkY6MkY6M2NfW////4eHhRzorAAA3LDMiJN0kJ+0kJ+08P+/V1/xMTvAkJ+1YW/H6+v7////////////////////j5P08Pu8kJ+1oa/P7+//////////////////////X2Pw2Oe4kJ+0iI8YvJSo8Lh08Lh08Lh08Lh1ORDbo6Oj///+YlZJ9eXP+/v7///+Pi4ejoJ3///////9wamGtqKH////u7u08Lh1SST3y8vL///9vamWWjoX////f399HOis8Lh08Lh08Lh08Lh08Lh08Lh09MSLKysr///+Qjow8Lh08Lh08Lh06LR3h4N7///93c26OhXv////l5eVMQDI8Lh08Lh08Lh0/MyTLy8v///+XlpRvamX////r6+s9NCg8Lh08Lh08Lh08Lh08Lh08Lh08Lh3Z2Nf////29vbs7Ozs7Ozs7Ozt7e39/f3///9nYFhnYlv////7+/tsY1iBfnr////Y1tI8Lh08Lh08Lh08Lh2DfHP////q6upJPS4AADYqKR8hyiQn7SQn7SQn7Tc67iQn7S8y7tHS+////////////////////////3J09CQn7TAz7t/g/P////////////////////n6/2hq8yQn7SMm5yUgVzwuHTwuHTwuHTwuHTwuHUI3Kdvb2////6+tq8fFw/////Dw8FdNQVVORf///////7q5t7azr////9XU1DwuHVJJPfLy8v///29qZY2FfP////r6+lxUTD0vHj0vHj0vHj0vHj0vHj0vHj0xIsrKyv///5GPjD0vHj0vHj0vHkE1JuXk4v///3dzbn93bf////v7+2NcVT0vHj0vHj0vHlRKP+/v7////46Ni29qZf////b29mhhWT0vHj0vHj0vHj0vHj0vHj0vHjwuHdnY1////6Whm05CM05CM05CM1dMPuvr6////2dgWGdiW/////v7+2xjWIF+ev///9nW0z0vHj0vHj0vHj0vHo2Ig////+rq6kk9LgAAOSwdIyKmJCftJCftJCftJCftJSjtkZP2/v7/////////////////////ubr5JintJintoKL3////////////////////////q6z4JCftJCftHx+ZPC4dPC4dPC4dPC4dPC4dPC4dOy4f1NLQ////5eXl9vb2////t7WzOCscPzIiycnI////+vr629vb////ubm4PC4dUkk98vLy////b2plbmde////////////////////////////////4eHhPTEiysrK////8vLy5OTk5OTk5OTk8fHx////////d3JsY1tR/v7+/////Pz85OTk5OTk5OTk+Pj4////////ioJ5bGRb/v7+////////////////////////////0tLSPTIk2djX////nJaQPC4dPC4dPC4dRjkp6Ojo////Z2BYZ2Jb////+/v7bGNYgX56////+vr65OTk5OTk5OTk5ubm/f39////1NTUQjYnAAA8Lh0nI20kJ+wkJ+0kJ+0kJ+0qLO68vfr////////////////////r6/1ISvAkJ+0pLO7Fxvr////////////////////p6f05PO8kJ+0gI9UqIi08Lh08Lh08Lh08Lh08Lh08Lh08Lh3Bvrv////////////8/Px0bGM8Lh08Lh1/enT///////////////+kop88Lh1SST3y8vL///9vamU9Myjq6ur////////////////////////////U1NQ9MSLKysr////////////////////////////z8/NbUUU/MiPm5ub////////////////////////////09PRORDlKPzHh4N/////////////////////////////S0dA9MSLZ2Nf///+clpA8Lh08Lh08Lh1GOSno6Oj///9nYFhnYlv////7+/tsY1iBfnr///////////////////////////////+hnZk8Lh4AADwuHTAmMSEk2SQn7SQn7SQn7SQn7UpN8Ozt/v////////////7+/4eI9SUo7SQn7SQn7UpN8PPz/v////////////3+/3Z39CQn7SQn6yIeZjwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHailof///////////+Tj4zswIzwuHTwuHUtBNOXl5f///////////52WjjwuHUlANL6+vcjIx1tWUTwuHV9XTru7u+Hh4OPj4uPj4uPj4uPj4tvb2nNxbTovIJ+fnsjIx8jIx8jIx8jIx8jIx8jIx8LCwXl1cDwvHjwuHVtTSri4uOHh4OPj4uPj4uPj4uLi4cPDw21mXTwuHjwuHV1WTbm5uOHh4OPj4uPj4uPj4uPj4tbW1oF7dDwuHauqqMjIx396czwuHTwuHTwuHUM2Jra2tcjIx1dQSFVQSsjIx8XFxF1USWhlYcjIx8jIx8jIx8jIx8jIx8jIx8fHxpqXkkU5LDwuHQAAPC4dPC4dHx6EJCftJCftJCftJCftJCftdHb0/f3/////////yMr7Ky7uJCftJCftJCftJCfte330/Pz/////////u7z6Ki3uJCftISKoOCshPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4djImF////////////lJCLPC4dPC4dPC4dPC4dpqOf////////////gHpyPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh0sIyUgItAkJ+0kJ+0kJ+0kJ+0mKe20tfn////19f5QUvAkJ+0kJ+0kJ+0kJ+0kJ+0pLO2ztPn////r6/1IS/AkJ+0jJdwtJDo8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh14c23////////39/dNRDo8Lh08Lh08Lh08Lh1eVk339/f///////9kXVU8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHTwuHSwlUyMm4yQn7SQn7SQn7SQn7TU47pKT9mRm8iQn7SQn7SQn7SQn7SQn7SQn7SQn7TY574+R9lZY8SQn7SQn7SEfdzwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHU9ENuLi4f39/Zyalz0wHzwuHTwuHTwuHTwuHT0wH6mopv7+/tTU00U5KjwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAAPC4dPC4dPC4dOSscGxlhIiXiJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftJCftHyG7MCUfPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dOi8hPjQpPC4dPC4dPC4dPC4dPC4dPC4dPC4dOy4dOTEnNCoePC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh08Lh08Lh04KxwjH2MiJd8kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0kJ+0iJeEnIUhKPjBiWExCNyk8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHTwuHTwuHTwuHTwuHSsjRR0gwCQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7SQn7CEfiTstH3l3da6urnp0bjwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAAPC4dPC4dPC4dPC4dPC4dPC4dPC4dNiohJyNuIiTJIyboJCftJCftJCftJCftJCftJCftJCftJCftJCftIybpIyS7NioqPC4dcG5qm5ubcWtkPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dPC4dAAA8Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh01KSQjH1AmJI8dH7ggI9QiJeMkJ+0jJuUgI9cfIb4nJZQmIFI2KSI8Lh08Lh09Lx5COCw6LR08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh08Lh0AADwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTUpITcrLjgsNDktOTgsNTgsLzYqJDwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHTwuHQAA</Data>
+          <MaskColor dnOrder="1" enabled="false">
+            <Red dnOrder="0" value="0.0"/>
+            <Green dnOrder="1" value="0.0"/>
+            <Blue dnOrder="2" value="0.0"/>
+            <Alpha dnOrder="3" value="1.0"/>
+          </MaskColor>
+        </Image>
+        <Font antialias="false" bold="false" dnOrder="5" italic="false" location="0" name="Arial" size="20" sourceName="Arial">
+          <Strings dnOrder="0">
+            <String dnOrder="0" name="volume_up_button_str">
+              <Language dnOrder="0" index="0"/>
+            </String>
+            <String dnOrder="1" name="volume_down_button_str">
+              <Language dnOrder="0" index="0"/>
+            </String>
+          </Strings>
+        </Font>
+      </Assets>
+    </GAC>
+    <State dnOrder="1">
+      <Properties dnOrder="0">
+        <SNAP_TOGGLED dnOrder="0">false</SNAP_TOGGLED>
+        <GRID_TOGGLED dnOrder="1">false</GRID_TOGGLED>
+        <GRID_X dnOrder="2">10</GRID_X>
+        <GRID_Y dnOrder="3">10</GRID_Y>
+        <GRID_COLOR dnOrder="4">2138552974</GRID_COLOR>
+        <CLIP_TOGGLED dnOrder="5">false</CLIP_TOGGLED>
+        <INFO_TOGGLED dnOrder="6">true</INFO_TOGGLED>
+        <PREVIEW_LANGUAGE dnOrder="7">0</PREVIEW_LANGUAGE>
+        <PROJECT_COLOR_MODE dnOrder="8">RGB_565</PROJECT_COLOR_MODE>
+        <EXTERNAL_ASSET_INTERFACE dnOrder="9"/>
+      </Properties>
+    </State>
+    <Screens dnOrder="2" height="272" width="480">
+      <Screen dnOrder="0">
+        <Properties dnOrder="0">
+          <Name dnOrder="0">MchpName</Name>
+          <Size dnOrder="1">
+            <Width dnOrder="0">480</Width>
+            <Height dnOrder="1">272</Height>
+          </Size>
+          <Orientation dnOrder="2">DEGREES_0</Orientation>
+          <Mirror dnOrder="3">false</Mirror>
+          <Persistent dnOrder="4">false</Persistent>
+          <CreateAtStartup dnOrder="5">false</CreateAtStartup>
+          <ShowEvent dnOrder="6">false</ShowEvent>
+          <HideEvent dnOrder="7">false</HideEvent>
+          <Export dnOrder="8">true</Export>
+          <Primary dnOrder="9">true</Primary>
+          <Active dnOrder="10">true</Active>
+          <Visible dnOrder="11">true</Visible>
+        </Properties>
+        <Events dnOrder="1">
+          <Event dnOrder="0" enabled="false" name="ShowEvent" pretty_name="On Show"/>
+          <Event dnOrder="1" enabled="false" name="HideEvent" pretty_name="On Hide"/>
+        </Events>
+        <Layers dnOrder="2">
+          <Layer dnOrder="0">
+            <Properties dnOrder="0">
+              <Locked dnOrder="0">false</Locked>
+              <Hidden dnOrder="1">false</Hidden>
+              <Active dnOrder="2">true</Active>
+              <LockedToScreen dnOrder="3">true</LockedToScreen>
+              <Name dnOrder="4">Layer0</Name>
+              <Position dnOrder="5">
+                <X dnOrder="0">0</X>
+                <Y dnOrder="1">0</Y>
+              </Position>
+              <Size dnOrder="6">
+                <Width dnOrder="0">480</Width>
+                <Height dnOrder="1">272</Height>
+              </Size>
+              <Enabled dnOrder="7">true</Enabled>
+              <Visible dnOrder="8">true</Visible>
+              <BorderType dnOrder="9">Bevel</BorderType>
+              <MarginLeft dnOrder="10">4</MarginLeft>
+              <MarginTop dnOrder="11">4</MarginTop>
+              <MarginRight dnOrder="12">4</MarginRight>
+              <MarginBottom dnOrder="13">4</MarginBottom>
+              <Scheme dnOrder="14" meta="scheme"/>
+              <DrawBackground dnOrder="15">true</DrawBackground>
+              <AlphaEnable dnOrder="16">false</AlphaEnable>
+              <AlphaAmount dnOrder="17">255</AlphaAmount>
+              <LocalRedraw dnOrder="18">false</LocalRedraw>
+              <BufferCount dnOrder="19">1</BufferCount>
+              <Buffer0CreateMethod dnOrder="20">Auto</Buffer0CreateMethod>
+              <Buffer0Address dnOrder="21">0</Buffer0Address>
+              <Buffer0VariableName dnOrder="22"/>
+              <Buffer1CreateMethod dnOrder="23">Auto</Buffer1CreateMethod>
+              <Buffer1Address dnOrder="24">0</Buffer1Address>
+              <Buffer1VariableName dnOrder="25"/>
+              <ColorMask dnOrder="26">false</ColorMask>
+              <MaskColor dnOrder="27">
+                <ColorSource dnOrder="0">Manual</ColorSource>
+                <ColorScheme dnOrder="1" meta="scheme"/>
+                <Gray dnOrder="2">0.0</Gray>
+                <Red dnOrder="3">0.0</Red>
+                <Green dnOrder="4">0.0</Green>
+                <Blue dnOrder="5">0.0</Blue>
+                <Alpha dnOrder="6">255.0</Alpha>
+              </MaskColor>
+              <VSync dnOrder="28">false</VSync>
+            </Properties>
+            <Children dnOrder="1">
+              <RectangleWidget dnOrder="0">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">Background</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">0</X>
+                    <Y dnOrder="1">1</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">480</Width>
+                    <Height dnOrder="1">271</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">None</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">BackgroundScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">255</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <Thickness dnOrder="17">2</Thickness>
+                </Properties>
+              </RectangleWidget>
+              <GradientWidget dnOrder="1">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">GradientWidget1</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">0</X>
+                    <Y dnOrder="1">0</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">480</Width>
+                    <Height dnOrder="1">48</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">None</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">GradientScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">200</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <Direction dnOrder="17">Down</Direction>
+                </Properties>
+              </GradientWidget>
+              <GroupBoxWidget dnOrder="2">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">GroupBoxWidget1</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">32</X>
+                    <Y dnOrder="1">76</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">120</Width>
+                    <Height dnOrder="1">159</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">None</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">TrackListScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">255</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <StringID dnOrder="17" meta="stringAsset">group_box_str</StringID>
+                  <Alignment dnOrder="18">Left</Alignment>
+                </Properties>
+              </GroupBoxWidget>
+              <LabelWidget dnOrder="3">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">DemoName</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">31</X>
+                    <Y dnOrder="1">51</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">219</Width>
+                    <Height dnOrder="1">25</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">None</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">RadioScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">255</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <StringID dnOrder="17" meta="stringAsset">demo_title_str</StringID>
+                  <HAlignment dnOrder="18">Left</HAlignment>
+                  <VAlignment dnOrder="19">Middle</VAlignment>
+                </Properties>
+              </LabelWidget>
+              <RadioButtonWidget dnOrder="4">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">RadioButtonSd</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">43</X>
+                    <Y dnOrder="1">111</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">101</Width>
+                    <Height dnOrder="1">35</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">None</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">RadioScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">255</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <StringID dnOrder="17" meta="stringAsset">sd_radio_button_str</StringID>
+                  <HAlignment dnOrder="18">Left</HAlignment>
+                  <VAlignment dnOrder="19">Middle</VAlignment>
+                  <Group dnOrder="20">1</Group>
+                  <Selected dnOrder="21">true</Selected>
+                  <SelectedImage dnOrder="22" meta="imageAsset"/>
+                  <UnselectedImage dnOrder="23" meta="imageAsset"/>
+                  <ImagePosition dnOrder="24">LeftOf</ImagePosition>
+                  <ImageMargin dnOrder="25">10</ImageMargin>
+                  <SelectedEvent dnOrder="26">true</SelectedEvent>
+                  <DeselectedEvent dnOrder="27">false</DeselectedEvent>
+                </Properties>
+                <Events dnOrder="1">
+                  <Event dnOrder="0" enabled="true" name="SelectedEvent" pretty_name="Selected">
+                    <Actions dnOrder="0">
+                      <Action dnOrder="0" name="CustomAction" type="custom">
+                        <Text dnOrder="0">laWidget_SetEnabled((laWidget *)TrackListBox, true);
+laListWidget_SetSelectionMode(TrackListBox, LA_LIST_WIDGET_SELECTION_MODE_SINGLE);
+laListWidget_SetItemSelected(TrackListBox, 0, true);
+APP_DISPLAY_StreamSourceSet(0);
+APP_DISPLAY_VolumeMuteSourceSet(0);</Text>
+                      </Action>
+                    </Actions>
+                  </Event>
+                  <Event dnOrder="1" enabled="false" name="DeselectedEvent" pretty_name="Deselected"/>
+                </Events>
+              </RadioButtonWidget>
+              <RadioButtonWidget dnOrder="5">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">RadioButtonUSB</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">43</X>
+                    <Y dnOrder="1">172</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">99</Width>
+                    <Height dnOrder="1">35</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">None</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">RadioScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">255</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <StringID dnOrder="17" meta="stringAsset">usb_radio_button_str</StringID>
+                  <HAlignment dnOrder="18">Left</HAlignment>
+                  <VAlignment dnOrder="19">Middle</VAlignment>
+                  <Group dnOrder="20">1</Group>
+                  <Selected dnOrder="21">false</Selected>
+                  <SelectedImage dnOrder="22" meta="imageAsset"/>
+                  <UnselectedImage dnOrder="23" meta="imageAsset"/>
+                  <ImagePosition dnOrder="24">LeftOf</ImagePosition>
+                  <ImageMargin dnOrder="25">10</ImageMargin>
+                  <SelectedEvent dnOrder="26">true</SelectedEvent>
+                  <DeselectedEvent dnOrder="27">false</DeselectedEvent>
+                </Properties>
+                <Events dnOrder="1">
+                  <Event dnOrder="0" enabled="true" name="SelectedEvent" pretty_name="Selected">
+                    <Actions dnOrder="0">
+                      <Action dnOrder="0" name="CustomAction" type="custom">
+                        <Text dnOrder="0">laWidget_SetEnabled((laWidget *)TrackListBox, false);
+APP_DISPLAY_StreamSourceSet(1);
+APP_DISPLAY_VolumeMuteSourceSet(1);</Text>
+                      </Action>
+                    </Actions>
+                  </Event>
+                  <Event dnOrder="1" enabled="false" name="DeselectedEvent" pretty_name="Deselected"/>
+                </Events>
+              </RadioButtonWidget>
+              <ListWidget dnOrder="6">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">TrackListBox</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">172</X>
+                    <Y dnOrder="1">82</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">192</Width>
+                    <Height dnOrder="1">151</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">Bevel</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">TrackListScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">255</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <SelectionMode dnOrder="17">Single</SelectionMode>
+                  <AllowEmpty dnOrder="18">true</AllowEmpty>
+                  <Alignment dnOrder="19">Left</Alignment>
+                  <IconPosition dnOrder="20">LeftOf</IconPosition>
+                  <IconMargin dnOrder="21">10</IconMargin>
+                  <SelectionChangedEvent dnOrder="22">true</SelectionChangedEvent>
+                </Properties>
+                <List dnOrder="1"/>
+                <Events dnOrder="2">
+                  <Event dnOrder="0" enabled="true" name="SelectionChangedEvent" pretty_name="Selection Changed">
+                    <Actions dnOrder="0">
+                      <Action dnOrder="0" name="CustomAction" type="custom">
+                        <Text dnOrder="0">if (true == selected) 
+{
+	APP_SDCARD_AUDIO_RandomTrackSet(idx);
+}</Text>
+                      </Action>
+                    </Actions>
+                  </Event>
+                </Events>
+              </ListWidget>
+              <ButtonWidget dnOrder="7">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">MuteButton</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">406</X>
+                    <Y dnOrder="1">237</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">42</Width>
+                    <Height dnOrder="1">33</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">Bevel</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">MuteButtonScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">255</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <Toggleable dnOrder="17">true</Toggleable>
+                  <Pressed dnOrder="18">true</Pressed>
+                  <StringID dnOrder="19" meta="stringAsset"/>
+                  <HAlignment dnOrder="20">Center</HAlignment>
+                  <VAlignment dnOrder="21">Middle</VAlignment>
+                  <PressedImage dnOrder="22" meta="imageAsset">AudioPlay16_2</PressedImage>
+                  <ReleasedImage dnOrder="23" meta="imageAsset">AudioMute16_2</ReleasedImage>
+                  <ImagePosition dnOrder="24">LeftOf</ImagePosition>
+                  <ImageMargin dnOrder="25">10</ImageMargin>
+                  <PressedOffset dnOrder="26">1</PressedOffset>
+                  <PressedEvent dnOrder="27">true</PressedEvent>
+                  <ReleasedEvent dnOrder="28">true</ReleasedEvent>
+                </Properties>
+                <Events dnOrder="1">
+                  <Event dnOrder="0" enabled="true" name="PressedEvent" pretty_name="Pressed">
+                    <Actions dnOrder="0">
+                      <Action dnOrder="0" name="CustomAction" type="custom">
+                        <Text dnOrder="0">APP_DISPLAY_VolumeMuteChange(1);</Text>
+                      </Action>
+                    </Actions>
+                  </Event>
+                  <Event dnOrder="1" enabled="true" name="ReleasedEvent" pretty_name="Released">
+                    <Actions dnOrder="0">
+                      <Action dnOrder="0" name="CustomAction" type="custom">
+                        <Text dnOrder="0">APP_DISPLAY_VolumeMuteChange(0);</Text>
+                      </Action>
+                    </Actions>
+                  </Event>
+                </Events>
+              </ButtonWidget>
+              <ImageWidget dnOrder="8">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">MicrochipLogo</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">1</X>
+                    <Y dnOrder="1">2</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">132</Width>
+                    <Height dnOrder="1">44</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">None</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme"/>
+                  <DrawBackground dnOrder="13">false</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">180</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <Image dnOrder="17" meta="imageAsset">MCHP_LOGO</Image>
+                  <HAlignment dnOrder="18">Center</HAlignment>
+                  <VAlignment dnOrder="19">Middle</VAlignment>
+                </Properties>
+              </ImageWidget>
+              <ButtonWidget dnOrder="9">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">VolumeDownButton</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">413</X>
+                    <Y dnOrder="1">200</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">31</Width>
+                    <Height dnOrder="1">31</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">Bevel</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">TrackListScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">255</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <Toggleable dnOrder="17">false</Toggleable>
+                  <Pressed dnOrder="18">false</Pressed>
+                  <StringID dnOrder="19" meta="stringAsset">volume_down_button_str</StringID>
+                  <HAlignment dnOrder="20">Center</HAlignment>
+                  <VAlignment dnOrder="21">Middle</VAlignment>
+                  <PressedImage dnOrder="22" meta="imageAsset"/>
+                  <ReleasedImage dnOrder="23" meta="imageAsset"/>
+                  <ImagePosition dnOrder="24">LeftOf</ImagePosition>
+                  <ImageMargin dnOrder="25">10</ImageMargin>
+                  <PressedOffset dnOrder="26">1</PressedOffset>
+                  <PressedEvent dnOrder="27">false</PressedEvent>
+                  <ReleasedEvent dnOrder="28">true</ReleasedEvent>
+                </Properties>
+                <Events dnOrder="1">
+                  <Event dnOrder="0" enabled="false" name="PressedEvent" pretty_name="Pressed"/>
+                  <Event dnOrder="1" enabled="true" name="ReleasedEvent" pretty_name="Released">
+                    <Actions dnOrder="0">
+                      <Action dnOrder="0" name="CustomAction" type="custom">
+                        <Text dnOrder="0">APP_DISPLAY_VolumeMuteChange(3);</Text>
+                      </Action>
+                    </Actions>
+                  </Event>
+                </Events>
+              </ButtonWidget>
+              <ButtonWidget dnOrder="10">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">VolumeUpButton</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">413</X>
+                    <Y dnOrder="1">82</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">31</Width>
+                    <Height dnOrder="1">31</Height>
+                  </Size>
+                  <Enabled dnOrder="5">true</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">Bevel</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">TrackListScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">255</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <Toggleable dnOrder="17">false</Toggleable>
+                  <Pressed dnOrder="18">false</Pressed>
+                  <StringID dnOrder="19" meta="stringAsset">volume_up_button_str</StringID>
+                  <HAlignment dnOrder="20">Center</HAlignment>
+                  <VAlignment dnOrder="21">Middle</VAlignment>
+                  <PressedImage dnOrder="22" meta="imageAsset"/>
+                  <ReleasedImage dnOrder="23" meta="imageAsset"/>
+                  <ImagePosition dnOrder="24">LeftOf</ImagePosition>
+                  <ImageMargin dnOrder="25">10</ImageMargin>
+                  <PressedOffset dnOrder="26">1</PressedOffset>
+                  <PressedEvent dnOrder="27">false</PressedEvent>
+                  <ReleasedEvent dnOrder="28">true</ReleasedEvent>
+                </Properties>
+                <Events dnOrder="1">
+                  <Event dnOrder="0" enabled="false" name="PressedEvent" pretty_name="Pressed"/>
+                  <Event dnOrder="1" enabled="true" name="ReleasedEvent" pretty_name="Released">
+                    <Actions dnOrder="0">
+                      <Action dnOrder="0" name="CustomAction" type="custom">
+                        <Text dnOrder="0">APP_DISPLAY_VolumeMuteChange(2);</Text>
+                      </Action>
+                    </Actions>
+                  </Event>
+                </Events>
+              </ButtonWidget>
+              <ProgressBarWidget dnOrder="11">
+                <Properties dnOrder="0">
+                  <Locked dnOrder="0">false</Locked>
+                  <Hidden dnOrder="1">false</Hidden>
+                  <Name dnOrder="2">VolumeBar</Name>
+                  <Position dnOrder="3">
+                    <X dnOrder="0">413</X>
+                    <Y dnOrder="1">111</Y>
+                  </Position>
+                  <Size dnOrder="4">
+                    <Width dnOrder="0">31</Width>
+                    <Height dnOrder="1">89</Height>
+                  </Size>
+                  <Enabled dnOrder="5">false</Enabled>
+                  <Visible dnOrder="6">true</Visible>
+                  <BorderType dnOrder="7">Bevel</BorderType>
+                  <MarginLeft dnOrder="8">4</MarginLeft>
+                  <MarginTop dnOrder="9">4</MarginTop>
+                  <MarginRight dnOrder="10">4</MarginRight>
+                  <MarginBottom dnOrder="11">4</MarginBottom>
+                  <Scheme dnOrder="12" meta="scheme">TrackListScheme</Scheme>
+                  <DrawBackground dnOrder="13">true</DrawBackground>
+                  <AlphaEnable dnOrder="14">false</AlphaEnable>
+                  <AlphaAmount dnOrder="15">255</AlphaAmount>
+                  <LocalRedraw dnOrder="16">false</LocalRedraw>
+                  <Direction dnOrder="17">Up</Direction>
+                  <Value dnOrder="18">60</Value>
+                  <ValueChangedEvent dnOrder="19">false</ValueChangedEvent>
+                </Properties>
+                <Events dnOrder="1">
+                  <Event dnOrder="0" enabled="false" name="ValueChangedEvent" pretty_name="Value Changed"/>
+                </Events>
+              </ProgressBarWidget>
+            </Children>
+          </Layer>
+        </Layers>
+        <Macros dnOrder="3"/>
+      </Screen>
+    </Screens>
+    <Schemes dnOrder="3">
+      <Scheme dnOrder="0">
+        <Properties dnOrder="0">
+          <Name dnOrder="0">RadioScheme</Name>
+          <Base dnOrder="1">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Base>
+          <Highlight dnOrder="2">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.7096774</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Highlight>
+          <HighlightLight dnOrder="3">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">0.83870965</Red>
+            <Green dnOrder="2">0.015873017</Green>
+            <Blue dnOrder="3">0.12903225</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </HighlightLight>
+          <Shadow dnOrder="4">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.7096774</Red>
+            <Green dnOrder="2">0.0952381</Green>
+            <Blue dnOrder="3">0.09677419</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Shadow>
+          <ShadowDark dnOrder="5">
+            <Gray dnOrder="0">0.2509804</Gray>
+            <Red dnOrder="1">0.9354839</Red>
+            <Green dnOrder="2">0.015873017</Green>
+            <Blue dnOrder="3">0.19354838</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ShadowDark>
+          <Foreground dnOrder="6">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Foreground>
+          <ForegroundInactive dnOrder="7">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundInactive>
+          <ForegroundDisabled dnOrder="8">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundDisabled>
+          <Background dnOrder="9">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Background>
+          <BackgroundInactive dnOrder="10">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundInactive>
+          <BackgroundDisabled dnOrder="11">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundDisabled>
+          <Text dnOrder="12">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Text>
+          <TextHighlight dnOrder="13">
+            <Gray dnOrder="0">0.0722</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlight>
+          <TextHighlightText dnOrder="14">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlightText>
+          <TextInactive dnOrder="15">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextInactive>
+          <TextDisabled dnOrder="16">
+            <Gray dnOrder="0">0.56811297</Gray>
+            <Red dnOrder="1">0.54901963</Red>
+            <Green dnOrder="2">0.57254905</Green>
+            <Blue dnOrder="3">0.5803922</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextDisabled>
+        </Properties>
+      </Scheme>
+      <Scheme dnOrder="1">
+        <Properties dnOrder="0">
+          <Name dnOrder="0">MuteButtonScheme</Name>
+          <Base dnOrder="1">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Base>
+          <Highlight dnOrder="2">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Highlight>
+          <HighlightLight dnOrder="3">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </HighlightLight>
+          <Shadow dnOrder="4">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Shadow>
+          <ShadowDark dnOrder="5">
+            <Gray dnOrder="0">0.2509804</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ShadowDark>
+          <Foreground dnOrder="6">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Foreground>
+          <ForegroundInactive dnOrder="7">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundInactive>
+          <ForegroundDisabled dnOrder="8">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundDisabled>
+          <Background dnOrder="9">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Background>
+          <BackgroundInactive dnOrder="10">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundInactive>
+          <BackgroundDisabled dnOrder="11">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundDisabled>
+          <Text dnOrder="12">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Text>
+          <TextHighlight dnOrder="13">
+            <Gray dnOrder="0">0.0722</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlight>
+          <TextHighlightText dnOrder="14">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlightText>
+          <TextInactive dnOrder="15">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextInactive>
+          <TextDisabled dnOrder="16">
+            <Gray dnOrder="0">0.56811297</Gray>
+            <Red dnOrder="1">0.54901963</Red>
+            <Green dnOrder="2">0.57254905</Green>
+            <Blue dnOrder="3">0.5803922</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextDisabled>
+        </Properties>
+      </Scheme>
+      <Scheme dnOrder="2">
+        <Properties dnOrder="0">
+          <Name dnOrder="0">BackgroundScheme</Name>
+          <Base dnOrder="1">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Base>
+          <Highlight dnOrder="2">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.78431374</Red>
+            <Green dnOrder="2">0.8156863</Green>
+            <Blue dnOrder="3">0.83137256</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Highlight>
+          <HighlightLight dnOrder="3">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </HighlightLight>
+          <Shadow dnOrder="4">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Shadow>
+          <ShadowDark dnOrder="5">
+            <Gray dnOrder="0">0.2509804</Gray>
+            <Red dnOrder="1">0.2509804</Red>
+            <Green dnOrder="2">0.2509804</Green>
+            <Blue dnOrder="3">0.2509804</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ShadowDark>
+          <Foreground dnOrder="6">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Foreground>
+          <ForegroundInactive dnOrder="7">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundInactive>
+          <ForegroundDisabled dnOrder="8">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundDisabled>
+          <Background dnOrder="9">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Background>
+          <BackgroundInactive dnOrder="10">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundInactive>
+          <BackgroundDisabled dnOrder="11">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.78431374</Red>
+            <Green dnOrder="2">0.8156863</Green>
+            <Blue dnOrder="3">0.83137256</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundDisabled>
+          <Text dnOrder="12">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Text>
+          <TextHighlight dnOrder="13">
+            <Gray dnOrder="0">0.0722</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlight>
+          <TextHighlightText dnOrder="14">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlightText>
+          <TextInactive dnOrder="15">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextInactive>
+          <TextDisabled dnOrder="16">
+            <Gray dnOrder="0">0.56811297</Gray>
+            <Red dnOrder="1">0.54901963</Red>
+            <Green dnOrder="2">0.57254905</Green>
+            <Blue dnOrder="3">0.5803922</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextDisabled>
+        </Properties>
+      </Scheme>
+      <Scheme dnOrder="3">
+        <Properties dnOrder="0">
+          <Name dnOrder="0">TrackListScheme</Name>
+          <Base dnOrder="1">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Base>
+          <Highlight dnOrder="2">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.7419355</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Highlight>
+          <HighlightLight dnOrder="3">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">0.7419355</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </HighlightLight>
+          <Shadow dnOrder="4">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Shadow>
+          <ShadowDark dnOrder="5">
+            <Gray dnOrder="0">0.2509804</Gray>
+            <Red dnOrder="1">0.7096774</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ShadowDark>
+          <Foreground dnOrder="6">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Foreground>
+          <ForegroundInactive dnOrder="7">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundInactive>
+          <ForegroundDisabled dnOrder="8">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundDisabled>
+          <Background dnOrder="9">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Background>
+          <BackgroundInactive dnOrder="10">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundInactive>
+          <BackgroundDisabled dnOrder="11">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundDisabled>
+          <Text dnOrder="12">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Text>
+          <TextHighlight dnOrder="13">
+            <Gray dnOrder="0">0.0722</Gray>
+            <Red dnOrder="1">0.7096774</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlight>
+          <TextHighlightText dnOrder="14">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlightText>
+          <TextInactive dnOrder="15">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextInactive>
+          <TextDisabled dnOrder="16">
+            <Gray dnOrder="0">0.56811297</Gray>
+            <Red dnOrder="1">0.54901963</Red>
+            <Green dnOrder="2">0.57254905</Green>
+            <Blue dnOrder="3">0.5803922</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextDisabled>
+        </Properties>
+      </Scheme>
+      <Scheme dnOrder="4">
+        <Properties dnOrder="0">
+          <Name dnOrder="0">GradientScheme</Name>
+          <Base dnOrder="1">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Base>
+          <Highlight dnOrder="2">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.78431374</Red>
+            <Green dnOrder="2">0.8156863</Green>
+            <Blue dnOrder="3">0.83137256</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Highlight>
+          <HighlightLight dnOrder="3">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </HighlightLight>
+          <Shadow dnOrder="4">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Shadow>
+          <ShadowDark dnOrder="5">
+            <Gray dnOrder="0">0.2509804</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ShadowDark>
+          <Foreground dnOrder="6">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Foreground>
+          <ForegroundInactive dnOrder="7">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundInactive>
+          <ForegroundDisabled dnOrder="8">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundDisabled>
+          <Background dnOrder="9">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Background>
+          <BackgroundInactive dnOrder="10">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundInactive>
+          <BackgroundDisabled dnOrder="11">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.78431374</Red>
+            <Green dnOrder="2">0.8156863</Green>
+            <Blue dnOrder="3">0.83137256</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundDisabled>
+          <Text dnOrder="12">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Text>
+          <TextHighlight dnOrder="13">
+            <Gray dnOrder="0">0.0722</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlight>
+          <TextHighlightText dnOrder="14">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlightText>
+          <TextInactive dnOrder="15">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextInactive>
+          <TextDisabled dnOrder="16">
+            <Gray dnOrder="0">0.56811297</Gray>
+            <Red dnOrder="1">0.54901963</Red>
+            <Green dnOrder="2">0.57254905</Green>
+            <Blue dnOrder="3">0.5803922</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextDisabled>
+        </Properties>
+      </Scheme>
+    </Schemes>
+  </MHGC>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="C:\microchip\harmony\btaudio\apps\audio\sdcard_usb_audio\firmware\src"/>
+        <Include dnOrder="1" value="C:\microchip\harmony\btaudio\apps\audio\sdcard_usb_audio\firmware\src\system_config\pic32mz_ef_sk_meb2"/>
+        <Include dnOrder="2" value="C:\microchip\harmony\btaudio\framework"/>
+        <Include dnOrder="3" value="C:\microchip\harmony\btaudio\apps\audio\sdcard_usb_audio\firmware\src\system_config\pic32mz_ef_sk_meb2\framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32mz_ef_sk_meb2/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">drv_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">sys_clk_pic32mz.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">adpcm.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">gfx_gol_picture.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">gfx_gol_progress_bar.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">gfx_gol_static_text.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_fs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/src</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">drv_spi_sys_queue_fifo.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">drv_usbhs.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbhs</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">usb_device_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">gfx.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_fs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">flac.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">gfx_gol_window.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">usb_chapter_9.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">mp3.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">drv_spi.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">drv_mtch6301.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/touch/mtch6301</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">sys_devcon_cache.h</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">gfx_gol_digital_meter.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">gfx_gol.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">drv_codec_i2c_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/codec/ak4953</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">gfx_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/gfx</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">usb_device.c</Name>
+        <Path dnOrder="1">Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">wma.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">sys_touch.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/touch/src</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">speex.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">drv_touch.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/touch</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">usb_device_audio_read_write.c</Name>
+        <Path dnOrder="1">Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">gfx_primitive.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">usb_device_audio_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">gfx_types_image.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">drv_i2s_dma.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/i2s/src/dynamic</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">gfx_gol_edit_box.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">drv_i2c.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">drv_gfx_controller.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/gfx/controller</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">sys_fs_media_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="38">
+        <Name dnOrder="0">drv_spi_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="39">
+        <Name dnOrder="0">sys_dma.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="40">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="41">
+        <Name dnOrder="0">sys_touch_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/touch/src</Path>
+      </File>
+      <File dnOrder="42">
+        <Name dnOrder="0">drv_sdcard.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/sdcard/src/dynamic</Path>
+      </File>
+      <File dnOrder="43">
+        <Name dnOrder="0">gfx_gol_list_box.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="44">
+        <Name dnOrder="0">drv_i2s.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2s</Path>
+      </File>
+      <File dnOrder="45">
+        <Name dnOrder="0">drv_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="46">
+        <Name dnOrder="0">gfx_gol_scroll_bar.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="47">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="48">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="49">
+        <Name dnOrder="0">gfx_gol_radio_button.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="50">
+        <Name dnOrder="0">sys_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr</Path>
+      </File>
+      <File dnOrder="51">
+        <Name dnOrder="0">usb_host.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="52">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="53">
+        <Name dnOrder="0">sys_dma_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma/src</Path>
+      </File>
+      <File dnOrder="54">
+        <Name dnOrder="0">drv_i2s_dma_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2s/src</Path>
+      </File>
+      <File dnOrder="55">
+        <Name dnOrder="0">gfx_types_resource.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="56">
+        <Name dnOrder="0">gfx_types_palette.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="57">
+        <Name dnOrder="0">gfx_gol_scan_codes.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="58">
+        <Name dnOrder="0">gfx_types_font.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="59">
+        <Name dnOrder="0">sys_clk_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="60">
+        <Name dnOrder="0">diskio.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/hardware_access</Path>
+      </File>
+      <File dnOrder="61">
+        <Name dnOrder="0">sys_touch.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/touch</Path>
+      </File>
+      <File dnOrder="62">
+        <Name dnOrder="0">flac.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="63">
+        <Name dnOrder="0">drv_spi_sys_queue_local_fifo.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="64">
+        <Name dnOrder="0">drv_i2c_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="65">
+        <Name dnOrder="0">wma.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="66">
+        <Name dnOrder="0">usb_host_hub.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="67">
+        <Name dnOrder="0">aac.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="68">
+        <Name dnOrder="0">gfx_gol_surface.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="69">
+        <Name dnOrder="0">mp3.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="70">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="71">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="72">
+        <Name dnOrder="0">drv_spi_internal.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src/dynamic</Path>
+      </File>
+      <File dnOrder="73">
+        <Name dnOrder="0">ff.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="74">
+        <Name dnOrder="0">sys_msg.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/msg</Path>
+      </File>
+      <File dnOrder="75">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="76">
+        <Name dnOrder="0">speex.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="77">
+        <Name dnOrder="0">gfx_gol_scheme_default.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="78">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="79">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="80">
+        <Name dnOrder="0">opus_support.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="81">
+        <Name dnOrder="0">drv_ak4953_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/codec/ak4953</Path>
+      </File>
+      <File dnOrder="82">
+        <Name dnOrder="0">drv_tmr_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="83">
+        <Name dnOrder="0">usb_audio_v1_0.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="84">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="85">
+        <Name dnOrder="0">gfx_gol_text_entry.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="86">
+        <Name dnOrder="0">drv_spi.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/spi/src/dynamic</Path>
+      </File>
+      <File dnOrder="87">
+        <Name dnOrder="0">gfx_colors.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="88">
+        <Name dnOrder="0">sys_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="89">
+        <Name dnOrder="0">ff.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/file_system</Path>
+      </File>
+      <File dnOrder="90">
+        <Name dnOrder="0">drv_usbhs.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usb/usbhs/src/dynamic</Path>
+      </File>
+      <File dnOrder="91">
+        <Name dnOrder="0">gfx_primitive.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="92">
+        <Name dnOrder="0">gfx_gol_button.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="93">
+        <Name dnOrder="0">sys_fs_media_manager.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs/src/dynamic</Path>
+      </File>
+      <File dnOrder="94">
+        <Name dnOrder="0">drv_mtch6301.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/touch/mtch6301/src</Path>
+      </File>
+      <File dnOrder="95">
+        <Name dnOrder="0">gfx_gol_group_box.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="96">
+        <Name dnOrder="0">gfx_gol_scroll_bar.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="97">
+        <Name dnOrder="0">drv_i2c.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/i2c/src/dynamic</Path>
+      </File>
+      <File dnOrder="98">
+        <Name dnOrder="0">usb_device_audio_v1_0.c</Name>
+        <Path dnOrder="1">Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="99">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="100">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="101">
+        <Name dnOrder="0">mpfs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/mpfs</Path>
+      </File>
+      <File dnOrder="102">
+        <Name dnOrder="0">gfx_gol_button.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="103">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="104">
+        <Name dnOrder="0">drv_spi_sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="105">
+        <Name dnOrder="0">sys_msg.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/msg/src</Path>
+      </File>
+      <File dnOrder="106">
+        <Name dnOrder="0">drv_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/tmr/src/dynamic</Path>
+      </File>
+      <File dnOrder="107">
+        <Name dnOrder="0">usb_device.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="108">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="109">
+        <Name dnOrder="0">drv_tmr_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="110">
+        <Name dnOrder="0">sys_clk.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="111">
+        <Name dnOrder="0">sys_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="112">
+        <Name dnOrder="0">gfx_gol.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="113">
+        <Name dnOrder="0">ffconf.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/file_system</Path>
+      </File>
+      <File dnOrder="114">
+        <Name dnOrder="0">adpcm.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="115">
+        <Name dnOrder="0">mpfs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/mpfs/src</Path>
+      </File>
+      <File dnOrder="116">
+        <Name dnOrder="0">sys_fs.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs/src/dynamic</Path>
+      </File>
+      <File dnOrder="117">
+        <Name dnOrder="0">drv_i2s_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2s/src</Path>
+      </File>
+      <File dnOrder="118">
+        <Name dnOrder="0">gfx_gol_check_box.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="119">
+        <Name dnOrder="0">gfx_types_macros.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="120">
+        <Name dnOrder="0">sys_msg_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/msg/src</Path>
+      </File>
+      <File dnOrder="121">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="122">
+        <Name dnOrder="0">drv_usb.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb</Path>
+      </File>
+      <File dnOrder="123">
+        <Name dnOrder="0">drv_sdcard_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdcard/src</Path>
+      </File>
+      <File dnOrder="124">
+        <Name dnOrder="0">drv_tmr_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="125">
+        <Name dnOrder="0">sys_clk_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="126">
+        <Name dnOrder="0">drv_ak4953.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/codec/ak4953</Path>
+      </File>
+      <File dnOrder="127">
+        <Name dnOrder="0">usb_billboard.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="128">
+        <Name dnOrder="0">drv_sdcard_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdcard/src</Path>
+      </File>
+      <File dnOrder="129">
+        <Name dnOrder="0">drv_usbhs_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbhs/src</Path>
+      </File>
+      <File dnOrder="130">
+        <Name dnOrder="0">opus_support.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="131">
+        <Name dnOrder="0">wav.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/wav/support</Path>
+      </File>
+      <File dnOrder="132">
+        <Name dnOrder="0">gfx.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="133">
+        <Name dnOrder="0">usb_host_hub_interface.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="134">
+        <Name dnOrder="0">usb_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="135">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="136">
+        <Name dnOrder="0">gfx_gol_list_box.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="137">
+        <Name dnOrder="0">usb_hub.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="138">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="139">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="140">
+        <Name dnOrder="0">usb_device_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="141">
+        <Name dnOrder="0">drv_sdcard.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdcard</Path>
+      </File>
+      <File dnOrder="142">
+        <Name dnOrder="0">usb_device_audio_v1_0.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="143">
+        <Name dnOrder="0">gfx_gol_meter.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="144">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="145">
+        <Name dnOrder="0">drv_ak4953.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/codec/ak4953/src/dynamic</Path>
+      </File>
+      <File dnOrder="146">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="147">
+        <Name dnOrder="0">gfx_gol_custom_control.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="148">
+        <Name dnOrder="0">drv_i2c_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c/src</Path>
+      </File>
+      <File dnOrder="149">
+        <Name dnOrder="0">sys_devcon_cache_pic32mz.S</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="150">
+        <Name dnOrder="0">gfx_gol_scheme.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="151">
+        <Name dnOrder="0">drv_usbhs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbhs/src</Path>
+      </File>
+      <File dnOrder="152">
+        <Name dnOrder="0">drv_usbhs_device.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usb/usbhs/src/dynamic</Path>
+      </File>
+      <File dnOrder="153">
+        <Name dnOrder="0">gfx_palette.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="154">
+        <Name dnOrder="0">gfx_gol_group_box.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="155">
+        <Name dnOrder="0">drv_i2c_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c/src</Path>
+      </File>
+      <File dnOrder="156">
+        <Name dnOrder="0">drv_sdcard_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdcard</Path>
+      </File>
+      <File dnOrder="157">
+        <Name dnOrder="0">wav.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/wav/support</Path>
+      </File>
+      <File dnOrder="158">
+        <Name dnOrder="0">sys_msg_config.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/msg/config</Path>
+      </File>
+      <File dnOrder="159">
+        <Name dnOrder="0">gfx_gol_radio_button.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="160">
+        <Name dnOrder="0">sys_clk_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="161">
+        <Name dnOrder="0">aac.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="162">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="163">
+        <Name dnOrder="0">diskio.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="164">
+        <Name dnOrder="0">drv_i2c_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="165">
+        <Name dnOrder="0">sys_devcon_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="166">
+        <Name dnOrder="0">sys_fs_media_manager_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/src</Path>
+      </File>
+      <File dnOrder="167">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="168">
+        <Name dnOrder="0">usb_host_client_driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="169">
+        <Name dnOrder="0">drv_i2c_forced.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/i2c/src/dynamic</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../bin/framework/peripheral/PIC32MZ2048EFH144_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">C7B1F59B5848E11C38DD9705446CA260</Checksum>
+        <Name dnOrder="1">gfx_resources_int.S</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">296E6D940E608D31FFE722704D0C688E</Checksum>
+        <Name dnOrder="1">gfx_resources_int_reference.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">615D0B3998780D1680273302CCF44179</Checksum>
+        <Name dnOrder="1">drv_spi_api.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">890E2914C19846645294A329D49A4226</Checksum>
+        <Name dnOrder="1">gfx_resources_int.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">5AC7D7324A7BEB9ED6FFF066F86D8BF7</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+        <ProjectFileChecksum dnOrder="3">C8D6B12941D5854A5BE2B732C9317DFF</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">A33D1A29F51C3768D566526B7108B3CB</Checksum>
+        <Name dnOrder="1">gfx_hgc_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">3BFBFEB4F1A360D835F66B9C25B42462</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">B00B90E021F15FFD6B0B1B7F2D0650A5</Checksum>
+        <Name dnOrder="1">nvm_disk_images.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/framework/system/fs</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">E2A2C01A99DC9B72F09E50427C89103E</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/framework/system/ports/src</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">E0A5E2B1626FAC727726E6DF2410700F</Checksum>
+        <Name dnOrder="1">gfx_hgc_definitions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+        <ProjectFileChecksum dnOrder="3">B4C03C54902D50436B8AE36AAB11E9DD</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">43202FF875E91AE678E480419B7F819E</Checksum>
+        <Name dnOrder="1">drv_gfx_lcc_generic.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/framework/driver/gfx/controller/lcc</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">449767E833CB555DDE7952B337494E13</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">898BCEECF935F85E8AB6B45B42726658</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="15">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="16">
+        <Checksum dnOrder="0">0CE14BBEB78DCA8EA4AE6AABF57ACD8D</Checksum>
+        <Name dnOrder="1">sys_dma_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/framework/system/dma</Path>
+      </Template>
+      <Template dnOrder="17">
+        <Checksum dnOrder="0">5376DF3455399E72B1ED1D3FBB4AEDA8</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_meb2/bsp</Path>
+      </Template>
+      <Template dnOrder="18">
+        <Checksum dnOrder="0">01FDB7AA1F703F4B8126F30E907BE813</Checksum>
+        <Name dnOrder="1">drv_gfx_lcc_generic.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/framework/driver/gfx/controller/lcc</Path>
+      </Template>
+      <Template dnOrder="19">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="20">
+        <Checksum dnOrder="0">4C2C868738FD74E2D6A3C8A8FD6B1381</Checksum>
+        <Name dnOrder="1">drv_spi_master_ebm_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="21">
+        <Checksum dnOrder="0">B8D534FC99E9DAC9CE3CE2AFE17C3907</Checksum>
+        <Name dnOrder="1">drv_spi_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="22">
+        <Checksum dnOrder="0">3CCE9C3A6F38DD2C0DC0213508A8D7D4</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2</Path>
+      </Template>
+      <Template dnOrder="23">
+        <Checksum dnOrder="0">B981C89EBDF6C4B47D58B857C85B59C0</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_meb2/bsp</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

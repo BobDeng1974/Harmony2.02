@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../.."/>
+    <MergeStrategy dnOrder="3" flag="ALL"/>
+    <Processor dnOrder="4" name="PIC32MX470F512L"/>
+  </General>
+  <MHGC>
+    <GAC dnOrder="0">
+      <Locations dnOrder="0">
+        <Location dnOrder="0" fileName="gfx_assets" index="0"/>
+      </Locations>
+      <Assets dnOrder="1">
+        <StringTable dnOrder="0" encoding="ASCII" location="0" name="stringTable">
+          <Languages default="0" dnOrder="0">
+            <Language dnOrder="0" enabled="true" name="default"/>
+          </Languages>
+        </StringTable>
+      </Assets>
+    </GAC>
+    <State dnOrder="1">
+      <Properties dnOrder="0">
+        <SNAP_TOGGLED dnOrder="0">false</SNAP_TOGGLED>
+        <GRID_TOGGLED dnOrder="1">true</GRID_TOGGLED>
+        <GRID_X dnOrder="2">10</GRID_X>
+        <GRID_Y dnOrder="3">10</GRID_Y>
+        <GRID_COLOR dnOrder="4">2138552974</GRID_COLOR>
+        <CLIP_TOGGLED dnOrder="5">false</CLIP_TOGGLED>
+        <INFO_TOGGLED dnOrder="6">true</INFO_TOGGLED>
+        <PREVIEW_LANGUAGE dnOrder="7">0</PREVIEW_LANGUAGE>
+        <PROJECT_COLOR_MODE dnOrder="8">RGB_565</PROJECT_COLOR_MODE>
+        <EXTERNAL_ASSET_INTERFACE dnOrder="9"/>
+      </Properties>
+    </State>
+    <Screens dnOrder="2" height="220" width="172">
+      <Screen dnOrder="0">
+        <Properties dnOrder="0">
+          <Name dnOrder="0">default</Name>
+          <Size dnOrder="1">
+            <Width dnOrder="0">172</Width>
+            <Height dnOrder="1">220</Height>
+          </Size>
+          <Orientation dnOrder="2">DEGREES_0</Orientation>
+          <Mirror dnOrder="3">false</Mirror>
+          <Persistent dnOrder="4">false</Persistent>
+          <CreateAtStartup dnOrder="5">false</CreateAtStartup>
+          <ShowEvent dnOrder="6">false</ShowEvent>
+          <HideEvent dnOrder="7">false</HideEvent>
+          <Export dnOrder="8">true</Export>
+          <Primary dnOrder="9">true</Primary>
+          <Active dnOrder="10">true</Active>
+          <Visible dnOrder="11">true</Visible>
+        </Properties>
+        <Events dnOrder="1">
+          <Event dnOrder="0" enabled="false" name="ShowEvent" pretty_name="On Show"/>
+          <Event dnOrder="1" enabled="false" name="HideEvent" pretty_name="On Hide"/>
+        </Events>
+        <Layers dnOrder="2">
+          <Layer dnOrder="0">
+            <Properties dnOrder="0">
+              <Locked dnOrder="0">false</Locked>
+              <Hidden dnOrder="1">false</Hidden>
+              <Active dnOrder="2">true</Active>
+              <LockedToScreen dnOrder="3">true</LockedToScreen>
+              <Name dnOrder="4">Layer0</Name>
+              <Position dnOrder="5">
+                <X dnOrder="0">0</X>
+                <Y dnOrder="1">0</Y>
+              </Position>
+              <Size dnOrder="6">
+                <Width dnOrder="0">172</Width>
+                <Height dnOrder="1">220</Height>
+              </Size>
+              <Enabled dnOrder="7">true</Enabled>
+              <Visible dnOrder="8">true</Visible>
+              <BorderType dnOrder="9">Bevel</BorderType>
+              <MarginLeft dnOrder="10">4</MarginLeft>
+              <MarginTop dnOrder="11">4</MarginTop>
+              <MarginRight dnOrder="12">4</MarginRight>
+              <MarginBottom dnOrder="13">4</MarginBottom>
+              <Scheme dnOrder="14" meta="scheme"/>
+              <DrawBackground dnOrder="15">true</DrawBackground>
+              <AlphaEnable dnOrder="16">false</AlphaEnable>
+              <AlphaAmount dnOrder="17">255</AlphaAmount>
+              <LocalRedraw dnOrder="18">false</LocalRedraw>
+              <BufferCount dnOrder="19">1</BufferCount>
+              <Buffer0CreateMethod dnOrder="20">Auto</Buffer0CreateMethod>
+              <Buffer0Address dnOrder="21">0</Buffer0Address>
+              <Buffer0VariableName dnOrder="22"/>
+              <Buffer1CreateMethod dnOrder="23">Auto</Buffer1CreateMethod>
+              <Buffer1Address dnOrder="24">0</Buffer1Address>
+              <Buffer1VariableName dnOrder="25"/>
+              <ColorMask dnOrder="26">false</ColorMask>
+              <MaskColor dnOrder="27">
+                <ColorSource dnOrder="0">Manual</ColorSource>
+                <ColorScheme dnOrder="1" meta="scheme"/>
+                <Gray dnOrder="2">0.0</Gray>
+                <Red dnOrder="3">0.0</Red>
+                <Green dnOrder="4">0.0</Green>
+                <Blue dnOrder="5">0.0</Blue>
+                <Alpha dnOrder="6">255.0</Alpha>
+              </MaskColor>
+              <VSync dnOrder="28">false</VSync>
+            </Properties>
+          </Layer>
+        </Layers>
+        <Macros dnOrder="3"/>
+      </Screen>
+    </Screens>
+    <Schemes dnOrder="3">
+      <Scheme dnOrder="0">
+        <Properties dnOrder="0">
+          <Name dnOrder="0">defaultScheme</Name>
+          <Base dnOrder="1">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.78431374</Red>
+            <Green dnOrder="2">0.8156863</Green>
+            <Blue dnOrder="3">0.83137256</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Base>
+          <Highlight dnOrder="2">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.78431374</Red>
+            <Green dnOrder="2">0.8156863</Green>
+            <Blue dnOrder="3">0.83137256</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Highlight>
+          <HighlightLight dnOrder="3">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </HighlightLight>
+          <Shadow dnOrder="4">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Shadow>
+          <ShadowDark dnOrder="5">
+            <Gray dnOrder="0">0.2509804</Gray>
+            <Red dnOrder="1">0.2509804</Red>
+            <Green dnOrder="2">0.2509804</Green>
+            <Blue dnOrder="3">0.2509804</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ShadowDark>
+          <Foreground dnOrder="6">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Foreground>
+          <ForegroundInactive dnOrder="7">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundInactive>
+          <ForegroundDisabled dnOrder="8">
+            <Gray dnOrder="0">0.5019608</Gray>
+            <Red dnOrder="1">0.5019608</Red>
+            <Green dnOrder="2">0.5019608</Green>
+            <Blue dnOrder="3">0.5019608</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </ForegroundDisabled>
+          <Background dnOrder="9">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Background>
+          <BackgroundInactive dnOrder="10">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundInactive>
+          <BackgroundDisabled dnOrder="11">
+            <Gray dnOrder="0">0.8101491</Gray>
+            <Red dnOrder="1">0.78431374</Red>
+            <Green dnOrder="2">0.8156863</Green>
+            <Blue dnOrder="3">0.83137256</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </BackgroundDisabled>
+          <Text dnOrder="12">
+            <Gray dnOrder="0">0.0</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">0.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </Text>
+          <TextHighlight dnOrder="13">
+            <Gray dnOrder="0">0.0722</Gray>
+            <Red dnOrder="1">0.0</Red>
+            <Green dnOrder="2">0.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlight>
+          <TextHighlightText dnOrder="14">
+            <Gray dnOrder="0">1.0</Gray>
+            <Red dnOrder="1">1.0</Red>
+            <Green dnOrder="2">1.0</Green>
+            <Blue dnOrder="3">1.0</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextHighlightText>
+          <TextInactive dnOrder="15">
+            <Gray dnOrder="0">0.88049024</Gray>
+            <Red dnOrder="1">0.8392157</Red>
+            <Green dnOrder="2">0.8901961</Green>
+            <Blue dnOrder="3">0.90588236</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextInactive>
+          <TextDisabled dnOrder="16">
+            <Gray dnOrder="0">0.56811297</Gray>
+            <Red dnOrder="1">0.54901963</Red>
+            <Green dnOrder="2">0.57254905</Green>
+            <Blue dnOrder="3">0.5803922</Blue>
+            <Alpha dnOrder="4">1.0</Alpha>
+          </TextDisabled>
+        </Properties>
+      </Scheme>
+    </Schemes>
+  </MHGC>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="C:/Git Repo/personal repo/btaudio/apps/audio/universal_audio_decoders/firmware/src"/>
+        <Include dnOrder="1" value="C:/Git Repo/personal repo/btaudio/apps/audio/universal_audio_decoders/firmware/src/system_config/bt_audio_dk"/>
+        <Include dnOrder="2" value="C:/Git Repo/personal repo/btaudio/framework"/>
+        <Include dnOrder="3" value="C:/Git Repo/personal repo/btaudio/apps/audio/universal_audio_decoders/firmware/src/system_config/bt_audio_dk/framework"/>
+        <Include dnOrder="4" value="../src/system_config/bt_audio_dk/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">drv_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">adpcm.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">gfx_gol_picture.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">gfx_gol_progress_bar.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">gfx_gol_static_text.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">drv_pmp_config.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/pmp/config</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_fs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/src</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">drv_ak4384.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/codec/ak4384</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">gfx.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">sys_fs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">flac.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">gfx_gol_window.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">usb_chapter_9.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">mp3.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">drv_gfx_otm2201a.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/gfx/controller/otm2201a</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">drv_pmp_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/pmp/src</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">gfx_gol_digital_meter.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">gfx_gol.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">gfx_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/gfx</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">wma.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">speex.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">gfx_primitive.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">gfx_types_image.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">drv_gfx_otm2201a.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/gfx/controller/otm2201a/src</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">drv_i2s_dma.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/i2s/src/dynamic</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">gfx_gol_edit_box.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">drv_gfx_controller.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/gfx/controller</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">sys_fs_media_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">drv_usbfs.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbfs</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">sys_dma.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">drv_usbfs_host.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usb/usbfs/src/dynamic</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">usb_host_scsi_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">drv_pmp.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/pmp</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">usb_host_scsi.c</Name>
+        <Path dnOrder="1">Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">gfx_gol_list_box.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">sys_clk_pic32mx.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="38">
+        <Name dnOrder="0">drv_i2s.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2s</Path>
+      </File>
+      <File dnOrder="39">
+        <Name dnOrder="0">drv_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="40">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="41">
+        <Name dnOrder="0">usb_host_msd.c</Name>
+        <Path dnOrder="1">Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="42">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="43">
+        <Name dnOrder="0">sys_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr</Path>
+      </File>
+      <File dnOrder="44">
+        <Name dnOrder="0">usb_host.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="45">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="46">
+        <Name dnOrder="0">sys_dma_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma/src</Path>
+      </File>
+      <File dnOrder="47">
+        <Name dnOrder="0">usb_msd.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="48">
+        <Name dnOrder="0">drv_i2s_dma_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2s/src</Path>
+      </File>
+      <File dnOrder="49">
+        <Name dnOrder="0">gfx_types_resource.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="50">
+        <Name dnOrder="0">gfx_types_palette.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="51">
+        <Name dnOrder="0">gfx_types_font.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="52">
+        <Name dnOrder="0">sys_clk_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="53">
+        <Name dnOrder="0">diskio.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/hardware_access</Path>
+      </File>
+      <File dnOrder="54">
+        <Name dnOrder="0">flac.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="55">
+        <Name dnOrder="0">wma.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="56">
+        <Name dnOrder="0">usb_host_hub.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="57">
+        <Name dnOrder="0">aac.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="58">
+        <Name dnOrder="0">gfx_gol_surface.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="59">
+        <Name dnOrder="0">scsi.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="60">
+        <Name dnOrder="0">mp3.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="61">
+        <Name dnOrder="0">usb_host_scsi.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="62">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="63">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="64">
+        <Name dnOrder="0">ff.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="65">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="66">
+        <Name dnOrder="0">speex.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="67">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="68">
+        <Name dnOrder="0">sys_devcon_pic32mx.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="69">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="70">
+        <Name dnOrder="0">drv_usbfs_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbfs/src</Path>
+      </File>
+      <File dnOrder="71">
+        <Name dnOrder="0">usb_host_msd_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="72">
+        <Name dnOrder="0">opus_support.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="73">
+        <Name dnOrder="0">drv_ak4384_bit_banged_control_interface.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/codec/ak4384/src/dynamic</Path>
+      </File>
+      <File dnOrder="74">
+        <Name dnOrder="0">drv_tmr_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="75">
+        <Name dnOrder="0">drv_usbfs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbfs/src</Path>
+      </File>
+      <File dnOrder="76">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="77">
+        <Name dnOrder="0">sys_clk_pic32mx.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="78">
+        <Name dnOrder="0">gfx_gol_text_entry.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="79">
+        <Name dnOrder="0">usb_host_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="80">
+        <Name dnOrder="0">gfx_colors.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="81">
+        <Name dnOrder="0">sys_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="82">
+        <Name dnOrder="0">ff.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/file_system</Path>
+      </File>
+      <File dnOrder="83">
+        <Name dnOrder="0">gfx_primitive.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="84">
+        <Name dnOrder="0">sys_fs_media_manager.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs/src/dynamic</Path>
+      </File>
+      <File dnOrder="85">
+        <Name dnOrder="0">gfx_gol_group_box.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="86">
+        <Name dnOrder="0">drv_usbfs_static.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbfs</Path>
+      </File>
+      <File dnOrder="87">
+        <Name dnOrder="0">drv_ak4384_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/codec/ak4384</Path>
+      </File>
+      <File dnOrder="88">
+        <Name dnOrder="0">gfx_gol_scroll_bar.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="89">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="90">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="91">
+        <Name dnOrder="0">usb_host.c</Name>
+        <Path dnOrder="1">Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="92">
+        <Name dnOrder="0">mpfs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/mpfs</Path>
+      </File>
+      <File dnOrder="93">
+        <Name dnOrder="0">gfx_gol_button.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="94">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="95">
+        <Name dnOrder="0">drv_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/tmr/src/dynamic</Path>
+      </File>
+      <File dnOrder="96">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="97">
+        <Name dnOrder="0">drv_tmr_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="98">
+        <Name dnOrder="0">sys_clk.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="99">
+        <Name dnOrder="0">sys_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="100">
+        <Name dnOrder="0">ffconf.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/file_system</Path>
+      </File>
+      <File dnOrder="101">
+        <Name dnOrder="0">adpcm.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="102">
+        <Name dnOrder="0">mpfs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/mpfs/src</Path>
+      </File>
+      <File dnOrder="103">
+        <Name dnOrder="0">sys_fs.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs/src/dynamic</Path>
+      </File>
+      <File dnOrder="104">
+        <Name dnOrder="0">drv_i2s_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2s/src</Path>
+      </File>
+      <File dnOrder="105">
+        <Name dnOrder="0">gfx_gol_check_box.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="106">
+        <Name dnOrder="0">gfx_types_macros.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="107">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="108">
+        <Name dnOrder="0">drv_usb.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb</Path>
+      </File>
+      <File dnOrder="109">
+        <Name dnOrder="0">drv_tmr_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="110">
+        <Name dnOrder="0">drv_usbfs.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usb/usbfs/src/dynamic</Path>
+      </File>
+      <File dnOrder="111">
+        <Name dnOrder="0">opus_support.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="112">
+        <Name dnOrder="0">wav.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/wav/support</Path>
+      </File>
+      <File dnOrder="113">
+        <Name dnOrder="0">gfx.c</Name>
+        <Path dnOrder="1">Source Files/framework/gfx/src</Path>
+      </File>
+      <File dnOrder="114">
+        <Name dnOrder="0">usb_host_hub_interface.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="115">
+        <Name dnOrder="0">usb_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="116">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="117">
+        <Name dnOrder="0">usb_hub.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="118">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="119">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="120">
+        <Name dnOrder="0">gfx_gol_meter.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="121">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="122">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="123">
+        <Name dnOrder="0">usb_host_hub_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="124">
+        <Name dnOrder="0">gfx_gol_custom_control.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="125">
+        <Name dnOrder="0">gfx_palette.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="126">
+        <Name dnOrder="0">wav.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/wav/support</Path>
+      </File>
+      <File dnOrder="127">
+        <Name dnOrder="0">usb_host_msd.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+      <File dnOrder="128">
+        <Name dnOrder="0">gfx_gol_radio_button.h</Name>
+        <Path dnOrder="1">Header Files/framework/gfx</Path>
+      </File>
+      <File dnOrder="129">
+        <Name dnOrder="0">sys_clk_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="130">
+        <Name dnOrder="0">aac.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="131">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="132">
+        <Name dnOrder="0">diskio.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="133">
+        <Name dnOrder="0">sys_fs_media_manager_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/src</Path>
+      </File>
+      <File dnOrder="134">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="135">
+        <Name dnOrder="0">drv_usbfs_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usb/usbfs</Path>
+      </File>
+      <File dnOrder="136">
+        <Name dnOrder="0">usb_host_client_driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/usb</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../bin/framework/peripheral/PIC32MX470F512L_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">A14D66F7B6ABC00AE2DF91FD2D1F6B57</Checksum>
+        <Name dnOrder="1">gfx_resources_int_reference.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">6306FA3AA2E8E5D02F29D465112271C4</Checksum>
+        <Name dnOrder="1">drv_adc_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/bt_audio_dk/framework/driver/adc</Path>
+        <ProjectFileChecksum dnOrder="3">BB44B9ED437ADAFCC452E79C6461FD22</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">11A35BAB5BD48A931279A83D23FCCA7B</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk</Path>
+        <ProjectFileChecksum dnOrder="3">C1174A75C020863F0DB4B6592EFFE8CE</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">F3A6F2766BC93C5E3C607E442CD9A603</Checksum>
+        <Name dnOrder="1">drv_adc_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk/framework/driver/adc/src</Path>
+        <ProjectFileChecksum dnOrder="3">2DCE9D9692F4EF72D6650598FDBBC93E</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">7057CA8FD44C14AD18C23E3C945F1B0F</Checksum>
+        <Name dnOrder="1">gfx_hgc_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/bt_audio_dk</Path>
+        <ProjectFileChecksum dnOrder="3">850469CBA7339F0707B780171083E6BA</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="6">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">9CFA229DD4C5AD1E4739B3938601488D</Checksum>
+        <Name dnOrder="1">gfx_hgc_definitions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk</Path>
+        <ProjectFileChecksum dnOrder="3">FA4D32095A06DAFAE32D52D2A914D154</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">50665A37873737D7242C7D516906366F</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk/bsp</Path>
+        <ProjectFileChecksum dnOrder="3">9EE638167800FD88854B80709A5BC44F</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">799BFBF404CEF514B5929A7011B8FCD7</Checksum>
+        <Name dnOrder="1">drv_pmp_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/bt_audio_dk/framework/driver/pmp</Path>
+        <ProjectFileChecksum dnOrder="3">2154C6AF62C07EBF4E50A280767D8835</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">4317AECBC042202EF39A9F69F06585B5</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/bt_audio_dk</Path>
+        <ProjectFileChecksum dnOrder="3">CF33BFD2BAAF4C779CD5EAE0EB0DBDA2</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">9A26C3AF9E7D5B62A677F494D6C7C53A</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk</Path>
+        <ProjectFileChecksum dnOrder="3">9D59543B609A9FAD192AE52440991E15</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">0CE14BBEB78DCA8EA4AE6AABF57ACD8D</Checksum>
+        <Name dnOrder="1">sys_dma_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/bt_audio_dk/framework/system/dma</Path>
+        <ProjectFileChecksum dnOrder="3">7453DFBF360150C3018F9ECB58A8A99A</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">5108277334B7F835879EE52BAFD32DE4</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk</Path>
+        <ProjectFileChecksum dnOrder="3">F8BC7EE28DAF1C4814E3457C3DE8819A</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">B00B90E021F15FFD6B0B1B7F2D0650A5</Checksum>
+        <Name dnOrder="1">nvm_disk_images.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/bt_audio_dk/framework/system/fs</Path>
+        <ProjectFileChecksum dnOrder="3">567B85D48B40BC10E43F639E5B136D53</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="15">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="16">
+        <Checksum dnOrder="0">9ACEDE669CE2239C5BC72353E497302D</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk/framework/system/ports/src</Path>
+        <ProjectFileChecksum dnOrder="3">FA1D84E601F160DFC6C35D573FE6BBE6</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="17">
+        <Checksum dnOrder="0">CF713CB0FA7E90612D4CBE5A88709156</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/bt_audio_dk</Path>
+        <ProjectFileChecksum dnOrder="3">15332E7C22A04DD6A9104D1876F93B2E</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="18">
+        <Checksum dnOrder="0">F0B7285E927B3C3A9FCE02CFEC0FF719</Checksum>
+        <Name dnOrder="1">gfx_resources_int.S</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk</Path>
+      </Template>
+      <Template dnOrder="19">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk</Path>
+        <ProjectFileChecksum dnOrder="3">00354AF8994401517AF32D551D6194E2</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="20">
+        <Checksum dnOrder="0">EAC0647432AD1F5479737B8EFFE48639</Checksum>
+        <Name dnOrder="1">gfx_resources_int.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/bt_audio_dk</Path>
+      </Template>
+      <Template dnOrder="21">
+        <Checksum dnOrder="0">EBA6F2FDB6E29B656D510A05D6EBFA29</Checksum>
+        <Name dnOrder="1">drv_pmp_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/bt_audio_dk/framework/driver/pmp/src</Path>
+        <ProjectFileChecksum dnOrder="3">F8D131F20CE1999E695E8643CCD692CE</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="22">
+        <Checksum dnOrder="0">6C27001AD5C4526C15064459F08B4CF4</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/bt_audio_dk/bsp</Path>
+        <ProjectFileChecksum dnOrder="3">0C387AEF575B8D871147D05DF13742E5</ProjectFileChecksum>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

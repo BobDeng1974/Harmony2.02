@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <Designer>
+    <Assets dnOrder="0">
+      <Settings bpp="16" dnOrder="0">
+        <MemoryLocations dnOrder="0">
+          <MemoryLocation address="0" dnOrder="0" id="default"/>
+        </MemoryLocations>
+      </Settings>
+    </Assets>
+    <Schemes defaultSchemeName="default" dnOrder="1">
+      <Scheme dnOrder="0" name="default">
+        <Alpha dnOrder="0">100</Alpha>
+        <BackgroundOffset dnOrder="1">0,0</BackgroundOffset>
+        <BackgroundType dnOrder="2">None</BackgroundType>
+        <Colors dnOrder="3">
+          <Background dnOrder="0">000000</Background>
+          <Disabled dnOrder="1">C0C0C0</Disabled>
+          <EmbossDark dnOrder="2">404040</EmbossDark>
+          <EmbossLight dnOrder="3">C0C0C0</EmbossLight>
+          <GradientEnd dnOrder="4">FFFFFF</GradientEnd>
+          <GradientStart dnOrder="5">000000</GradientStart>
+          <Primary dnOrder="6">FFFFFF</Primary>
+          <Secondary dnOrder="7">404040</Secondary>
+          <TextDisabled dnOrder="8">404040</TextDisabled>
+          <TextPrimary dnOrder="9">000000</TextPrimary>
+          <TextSecondary dnOrder="10">FFFFFF</TextSecondary>
+        </Colors>
+        <EmbossSize dnOrder="4">3</EmbossSize>
+        <FillStyle dnOrder="5">Color</FillStyle>
+      </Scheme>
+    </Schemes>
+    <Screens dnOrder="2" height="200" width="320">
+      <Screen active="true" background="000000" clearOnShow="true" dnOrder="0" doubleBuffer="false" export="true" name="Untitled" primary="true" visible="true">
+        <Objects dnOrder="0"/>
+      </Screen>
+    </Screens>
+  </Designer>
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <Files>
+    <Entry dnOrder="0">
+      <Checksum dnOrder="0">132DC66A02CAE8C9623A91DF536B8902</Checksum>
+      <Name dnOrder="1">system_definitions.h</Name>
+    </Entry>
+    <Entry dnOrder="1">
+      <Checksum dnOrder="0">5136E2C3EE2A15E666B1927251CBCEAA</Checksum>
+      <Name dnOrder="1">sys_clk_static.h</Name>
+    </Entry>
+    <Entry dnOrder="2">
+      <Checksum dnOrder="0">AE6A10F3BB0125BD4DE048BDD2E947EE</Checksum>
+      <Name dnOrder="1">system_init.c</Name>
+    </Entry>
+    <Entry dnOrder="3">
+      <Checksum dnOrder="0">C1E3FF9C42C260B098DE686E0175F30D</Checksum>
+      <Name dnOrder="1">system_tasks.c</Name>
+    </Entry>
+    <Entry dnOrder="4">
+      <Checksum dnOrder="0">E750BA70B362DDDE19F2C842D1F51724</Checksum>
+      <Name dnOrder="1">sys_clk_static.c</Name>
+    </Entry>
+    <Entry dnOrder="5">
+      <Checksum dnOrder="0">9B5F4BDA6F0C4A7CC54CA06F94AE3682</Checksum>
+      <Name dnOrder="1">system_config.h</Name>
+    </Entry>
+    <Entry dnOrder="6">
+      <Checksum dnOrder="0">1808F1263088EB851C3FDC1641314CBB</Checksum>
+      <Name dnOrder="1">sys_ports_static.c</Name>
+    </Entry>
+    <Entry dnOrder="7">
+      <Checksum dnOrder="0">C8C4E46EE87D2D41D500AA4E3B0D4A12</Checksum>
+      <Name dnOrder="1">system_interrupt.c</Name>
+    </Entry>
+  </Files>
+  <ForceOptimization flag="true"/>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name="PIC32MX795F512L"/>
+  </General>
+  <HarmonyPath path="../../../../.."/>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="/home/vikasnan/GIT_Coredev/core/apps/examples/system/devcon/devcon_sys_config_perf/firmware/src"/>
+        <Include dnOrder="1" value="/home/vikasnan/GIT_Coredev/core/apps/examples/system/devcon/devcon_sys_config_perf/firmware/src/system_config/pic32mx_eth_sk"/>
+        <Include dnOrder="2" value="/home/vikasnan/GIT_Coredev/core/framework"/>
+        <Include dnOrder="3" value="/home/vikasnan/GIT_Coredev/core/apps/examples/system/devcon/devcon_sys_config_perf/firmware/src/system_config/pic32mx_eth_sk/framework"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">sys_devcon_pic32mx.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../../../bin/framework/peripheral/PIC32MX795F512L_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">1A84B77978027DEBFEFF3A613BAC7F3C</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_eth_sk</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">C934CFD980878E57EE336D976F540A07</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_eth_sk</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">810F692A508112FD7B1C78F2F25EF9BE</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_eth_sk/framework/system/clk/src</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">B97193DE6B09F780EF25D561B65CE1F1</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_eth_sk</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_eth_sk</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">BE644D0142ACA48D9CA2E6255A02CDBA</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_eth_sk</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">E988A97EABA1FD430A42ED40A4616EB3</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_eth_sk</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">83E28A9509BFB1178054925FE7ED2D75</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_eth_sk/framework/system/ports/src</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <CompilerItems>
+    <C32 dnOrder="0">
+      <Include dnOrder="0" value="..\..\..\..\..\..\bsp\pic32mx_usb_sk2"/>
+    </C32>
+  </CompilerItems>
+  <Designer>
+    <Assets dnOrder="0">
+      <Settings bpp="16" dnOrder="0">
+        <MemoryLocations dnOrder="0">
+          <MemoryLocation address="0" dnOrder="0" id="default"/>
+        </MemoryLocations>
+      </Settings>
+    </Assets>
+    <Schemes defaultSchemeName="default" dnOrder="1">
+      <Scheme dnOrder="0" name="default">
+        <Alpha dnOrder="0">100</Alpha>
+        <BackgroundOffset dnOrder="1">0,0</BackgroundOffset>
+        <BackgroundType dnOrder="2">None</BackgroundType>
+        <Colors dnOrder="3">
+          <Background dnOrder="0">000000</Background>
+          <Disabled dnOrder="1">C0C0C0</Disabled>
+          <EmbossDark dnOrder="2">404040</EmbossDark>
+          <EmbossLight dnOrder="3">C0C0C0</EmbossLight>
+          <GradientEnd dnOrder="4">FFFFFF</GradientEnd>
+          <GradientStart dnOrder="5">000000</GradientStart>
+          <Primary dnOrder="6">FFFFFF</Primary>
+          <Secondary dnOrder="7">404040</Secondary>
+          <TextDisabled dnOrder="8">404040</TextDisabled>
+          <TextPrimary dnOrder="9">000000</TextPrimary>
+          <TextSecondary dnOrder="10">FFFFFF</TextSecondary>
+        </Colors>
+        <EmbossSize dnOrder="4">3</EmbossSize>
+        <FillStyle dnOrder="5">Color</FillStyle>
+      </Scheme>
+    </Schemes>
+    <Screens dnOrder="2" height="200" width="320">
+      <Screen active="true" background="000000" clearOnShow="true" dnOrder="0" export="true" name="Untitled" primary="true" visible="true">
+        <Objects dnOrder="0"/>
+      </Screen>
+    </Screens>
+  </Designer>
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <Files>
+    <File dnOrder="0">
+      <Name dnOrder="0">drv_spi_sys_queue.h</Name>
+      <Path dnOrder="1">/framework/driver/spi/private</Path>
+    </File>
+    <File dnOrder="1">
+      <Name dnOrder="0">drv_spi_api.c</Name>
+      <Path dnOrder="1">/framework/driver/spi/dynamic</Path>
+    </File>
+    <File dnOrder="2">
+      <Name dnOrder="0">drv_spi_sys_queue_fifo.c</Name>
+      <Path dnOrder="1">/framework/driver/spi</Path>
+    </File>
+    <File dnOrder="3">
+      <Name dnOrder="0">drv_spi.h</Name>
+      <Path dnOrder="1">/framework/driver/spi</Path>
+    </File>
+    <File dnOrder="4">
+      <Name dnOrder="0">sys_devcon.h</Name>
+      <Path dnOrder="1">/framework/system/devcon</Path>
+    </File>
+    <File dnOrder="5">
+      <Name dnOrder="0">sys_module.h</Name>
+      <Path dnOrder="1">/framework/system/common</Path>
+    </File>
+    <File dnOrder="6">
+      <Name dnOrder="0">bsp_config.h</Name>
+      <Path dnOrder="1">/bsp/pic32mx_usb_sk2</Path>
+    </File>
+    <File dnOrder="7">
+      <Name dnOrder="0">sys_ports.c</Name>
+      <Path dnOrder="1">/framework/system/ports/src</Path>
+    </File>
+    <File dnOrder="8">
+      <Name dnOrder="0">sys_ports.h</Name>
+      <Path dnOrder="1">/framework/system/ports</Path>
+    </File>
+    <File dnOrder="9">
+      <Name dnOrder="0">sys_devcon.c</Name>
+      <Path dnOrder="1">/framework/system/devcon/src</Path>
+    </File>
+    <File dnOrder="10">
+      <Name dnOrder="0">sys_devcon_pic32mx.c</Name>
+      <Path dnOrder="1">/framework/system/devcon/src</Path>
+    </File>
+    <File dnOrder="11">
+      <Name dnOrder="0">sys_int.h</Name>
+      <Path dnOrder="1">/framework/system/int</Path>
+    </File>
+    <File dnOrder="12">
+      <Name dnOrder="0">drv_spi_sys_queue_local_fifo.h</Name>
+      <Path dnOrder="1">/framework/driver/spi/private</Path>
+    </File>
+    <File dnOrder="13">
+      <Name dnOrder="0">bsp_sys_init.c</Name>
+      <Path dnOrder="1">/bsp/pic32mx_usb_sk2</Path>
+    </File>
+    <File dnOrder="14">
+      <Name dnOrder="0">system.h</Name>
+      <Path dnOrder="1">/framework/system</Path>
+    </File>
+    <File dnOrder="15">
+      <Name dnOrder="0">sys_common.h</Name>
+      <Path dnOrder="1">/framework/system/common</Path>
+    </File>
+    <File dnOrder="16">
+      <Name dnOrder="0">drv_spi_internal.h</Name>
+      <Path dnOrder="1">/framework/driver/spi/private/dynamic</Path>
+    </File>
+    <File dnOrder="17">
+      <Name dnOrder="0">drv_spi.c</Name>
+      <Path dnOrder="1">/framework/driver/spi/dynamic</Path>
+    </File>
+    <File dnOrder="18">
+      <Name dnOrder="0">sys_int_pic32.c</Name>
+      <Path dnOrder="1">/framework/system/int/src</Path>
+    </File>
+  </Files>
+  <ForceOptimization flag="true"/>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name="PIC32MX795F512L"/>
+  </General>
+  <HarmonyPath path="../../../.."/>
+  <Libraries>
+    <Library dnOrder="0" value="..\..\..\..\..\..\bin\framework\peripheral\PIC32MX795F512L_peripherals.a"/>
+  </Libraries>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="E:/official/git/core/apps/driver/spi/spi_loopback/firmware/src"/>
+        <Include dnOrder="1" value="E:/official/git/core/apps/driver/spi/spi_loopback/firmware/src/system_config/pic32mx_usb_sk2_poll_dyn"/>
+        <Include dnOrder="2" value="E:/official/git/core/framework"/>
+        <Include dnOrder="3" value="E:/official/git/core/apps/driver/spi/spi_loopback/firmware/src/system_config/pic32mx_usb_sk2_poll_dyn/framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32mx_usb_sk2_poll_dyn/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">drv_spi.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/spi/src/dynamic</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">drv_spi_sys_queue_fifo.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">drv_spi.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">drv_spi_sys_queue_local_fifo.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">drv_spi_sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">drv_spi_internal.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src/dynamic</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">sys_devcon_pic32mx.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">drv_spi_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../../bin/framework/peripheral/PIC32MX795F512L_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">8D9B6FD5EDAD3B05D63E546CA7D5022B</Checksum>
+        <Name dnOrder="1">drv_spi_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">C7E530D77AE913BF702B5C37D7E5CBF8</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">150BE0AD1FA70119ADE6EC549BB07DE3</Checksum>
+        <Name dnOrder="1">drv_spi_api.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">8A927633BC2D46F21D1335A09FE558B1</Checksum>
+        <Name dnOrder="1">drv_spi_master_rm_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">4BFD4ADFBD1349338DAF5682785F28A5</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_usb_sk2_poll_dyn/bsp</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">7384D72BC3509CDC0C17DA5F809501E1</Checksum>
+        <Name dnOrder="1">drv_spi_slave_rm_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">D98BF06DE2384C667B1216850F415DCE</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/system/clk/src</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">13105A2EA4197BA6ED37EC35570DF96E</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn/bsp</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">A23F64965FCCE2E8C34DF24FB4F35D99</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">83E28A9509BFB1178054925FE7ED2D75</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/system/ports/src</Path>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">CA2AF6297DE479D013EA2AB5FC5ADA43</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+      </Template>
+      <Template dnOrder="15">
+        <Checksum dnOrder="0">C934CFD980878E57EE336D976F540A07</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+      </Template>
+      <Template dnOrder="16">
+        <Checksum dnOrder="0">AD0675C3EFF4E13E621340F1BF4B8DDD</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+        <ProjectFileChecksum dnOrder="3">8BB91762CAA4328ADF85A3A2718F73C2</ProjectFileChecksum>
+      </Template>
+    </Templates>
+  </Manifest>
+  <Templates>
+    <Template dnOrder="0">
+      <Checksum dnOrder="0">9ADEA995E83F711E351E848D67DF548C</Checksum>
+      <Name dnOrder="1">system_definitions.h</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+    </Template>
+    <Template dnOrder="1">
+      <Checksum dnOrder="0">3F36E052EC61DC11B0FFD706A447C27C</Checksum>
+      <Name dnOrder="1">system_config.h</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+    </Template>
+    <Template dnOrder="2">
+      <Checksum dnOrder="0">1B968DA82B5DD869A6119C3B7628D753</Checksum>
+      <Name dnOrder="1">sys_clk_static.c</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/system/clk/src</Path>
+    </Template>
+    <Template dnOrder="3">
+      <Checksum dnOrder="0">8A927633BC2D46F21D1335A09FE558B1</Checksum>
+      <Name dnOrder="1">drv_spi_master_rm_tasks.c</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/driver/spi/dynamic</Path>
+    </Template>
+    <Template dnOrder="4">
+      <Checksum dnOrder="0">4A5EAC52260282C2561EB94A2C932E64</Checksum>
+      <Name dnOrder="1">sys_ports_static.c</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/system/ports/src</Path>
+    </Template>
+    <Template dnOrder="5">
+      <Checksum dnOrder="0">09AEFA9AB4836AAEE6C6C323459C5A0B</Checksum>
+      <Name dnOrder="1">drv_spi_slave_rm_tasks.c</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/driver/spi/dynamic</Path>
+    </Template>
+    <Template dnOrder="6">
+      <Name dnOrder="0">main.c</Name>
+      <Path dnOrder="1">/app</Path>
+    </Template>
+    <Template dnOrder="7">
+      <Checksum dnOrder="0">9AC33B2960C8DF72C5EB0E3662303FF4</Checksum>
+      <Name dnOrder="1">system_interrupt.c</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+    </Template>
+    <Template dnOrder="8">
+      <Checksum dnOrder="0">999179DADE9ECD59953526F5E9F83ACC</Checksum>
+      <Name dnOrder="1">sys_clk_static.h</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/system/clk</Path>
+    </Template>
+    <Template dnOrder="9">
+      <Checksum dnOrder="0">AEA5710DB7CDD370FAADBC0A1F9B8890</Checksum>
+      <Name dnOrder="1">drv_spi_tasks.c</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn/framework/driver/spi/dynamic</Path>
+    </Template>
+    <Template dnOrder="10">
+      <Checksum dnOrder="0">219674F711EA3720AC0FAE4EBC8E42BF</Checksum>
+      <Name dnOrder="1">system_tasks.c</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+    </Template>
+    <Template dnOrder="11">
+      <Checksum dnOrder="0">65C8D500DE028A698F6F0B000D0CC382</Checksum>
+      <Name dnOrder="1">system_init.c</Name>
+      <Path dnOrder="2">/app/system_config/pic32mx_usb_sk2_poll_dyn</Path>
+    </Template>
+  </Templates>
+</Configuration>

@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name="PIC32MZ2048EFH144"/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="C:\microchip\harmony\core_v2xx\apps\crypto\large_hash\firmware\src"/>
+        <Include dnOrder="1" value="C:\microchip\harmony\core_v2xx\apps\crypto\large_hash\firmware\src\system_config\pic32mz_ef_sk_sw"/>
+        <Include dnOrder="2" value="C:\microchip\harmony\core_v2xx\framework"/>
+        <Include dnOrder="3" value="C:\microchip\harmony\core_v2xx\apps\crypto\large_hash\firmware\src\system_config\pic32mz_ef_sk_sw\framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32mz_ef_sk_sw/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">sha.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">camellia.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">infback.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">ecc.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">aes.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">asn_public.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_console_uart.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">inftrees.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">certs_test.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">sys_devcon_cache.h</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">zlib.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">gzguts.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">dh.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sha512.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_console.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">inflate.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">port.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">trees.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">rsa.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">internal.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">compress.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">deflate.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">zconf.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">sha256.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">error.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">hash.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">hc128.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">sys_console_uart.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">logging.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">uncompr.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">logging.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="38">
+        <Name dnOrder="0">md4.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="39">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="40">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="41">
+        <Name dnOrder="0">inflate.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="42">
+        <Name dnOrder="0">drv_usart_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="43">
+        <Name dnOrder="0">misc.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="44">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="45">
+        <Name dnOrder="0">inffast.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="46">
+        <Name dnOrder="0">adler32.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="47">
+        <Name dnOrder="0">crypto.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="48">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="49">
+        <Name dnOrder="0">crypto.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto</Path>
+      </File>
+      <File dnOrder="50">
+        <Name dnOrder="0">settings.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="51">
+        <Name dnOrder="0">mpi_superclass.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="52">
+        <Name dnOrder="0">ec.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="53">
+        <Name dnOrder="0">memory.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="54">
+        <Name dnOrder="0">asn.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="55">
+        <Name dnOrder="0">visibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="56">
+        <Name dnOrder="0">des3.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="57">
+        <Name dnOrder="0">tfm.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="58">
+        <Name dnOrder="0">deflate.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="59">
+        <Name dnOrder="0">drv_usart_buffer_queue.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="60">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="61">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="62">
+        <Name dnOrder="0">coding.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="63">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="64">
+        <Name dnOrder="0">inffast.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="65">
+        <Name dnOrder="0">ecc.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="66">
+        <Name dnOrder="0">rsa.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="67">
+        <Name dnOrder="0">hmac.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="68">
+        <Name dnOrder="0">arc4.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="69">
+        <Name dnOrder="0">ssl.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="70">
+        <Name dnOrder="0">aes.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="71">
+        <Name dnOrder="0">md5.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="72">
+        <Name dnOrder="0">types.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="73">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="74">
+        <Name dnOrder="0">drv_usart.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart</Path>
+      </File>
+      <File dnOrder="75">
+        <Name dnOrder="0">inftrees.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="76">
+        <Name dnOrder="0">zutil.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="77">
+        <Name dnOrder="0">trees.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="78">
+        <Name dnOrder="0">gzlog.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7/examples</Path>
+      </File>
+      <File dnOrder="79">
+        <Name dnOrder="0">port.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="80">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="81">
+        <Name dnOrder="0">compress.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="82">
+        <Name dnOrder="0">memory.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="83">
+        <Name dnOrder="0">arc4.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="84">
+        <Name dnOrder="0">sys_console.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="85">
+        <Name dnOrder="0">integer.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="86">
+        <Name dnOrder="0">tfm.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="87">
+        <Name dnOrder="0">sha512.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="88">
+        <Name dnOrder="0">drv_usart_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="89">
+        <Name dnOrder="0">asm.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="90">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="91">
+        <Name dnOrder="0">integer.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="92">
+        <Name dnOrder="0">asn.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="93">
+        <Name dnOrder="0">hmac.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="94">
+        <Name dnOrder="0">drv_usart_read_write.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="95">
+        <Name dnOrder="0">des3.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="96">
+        <Name dnOrder="0">rabbit.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="97">
+        <Name dnOrder="0">drv_usart.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="98">
+        <Name dnOrder="0">hash.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="99">
+        <Name dnOrder="0">sys_debug_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug/src</Path>
+      </File>
+      <File dnOrder="100">
+        <Name dnOrder="0">crc32.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="101">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="102">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="103">
+        <Name dnOrder="0">error-crypt.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="104">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="105">
+        <Name dnOrder="0">version.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="106">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="107">
+        <Name dnOrder="0">misc.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="108">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="109">
+        <Name dnOrder="0">sys_devcon_cache_pic32mz.S</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="110">
+        <Name dnOrder="0">crc32.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="111">
+        <Name dnOrder="0">md2.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="112">
+        <Name dnOrder="0">pwdbased.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="113">
+        <Name dnOrder="0">pwdbased.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="114">
+        <Name dnOrder="0">inffixed.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="115">
+        <Name dnOrder="0">mpi_class.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="116">
+        <Name dnOrder="0">md5.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="117">
+        <Name dnOrder="0">ripemd.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="118">
+        <Name dnOrder="0">sys_debug.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/debug/src</Path>
+      </File>
+      <File dnOrder="119">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="120">
+        <Name dnOrder="0">sys_devcon_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="121">
+        <Name dnOrder="0">zutil.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="122">
+        <Name dnOrder="0">dsa.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="123">
+        <Name dnOrder="0">sha.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="124">
+        <Name dnOrder="0">coding.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="125">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="126">
+        <Name dnOrder="0">sys_console_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="127">
+        <Name dnOrder="0">compress.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src/zlib-1.2.7</Path>
+      </File>
+      <File dnOrder="128">
+        <Name dnOrder="0">sha256.c</Name>
+        <Path dnOrder="1">Source Files/framework/crypto/src</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../bin/framework/peripheral/PIC32MZ2048EFH144_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">6C91C2159095A99989FABFF2A007DF8F</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_sw</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">994D63C3860F27A698058E9AD86A6D73</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_sw</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">F17134C042B81B3876554237536D7229</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_sw/bsp</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">73BC6C99CB617F76D852197BF7AEC2CF</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_sw</Path>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_sw</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">EF6A1EA773876274C506C1EFCE818CA2</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_sw</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">8405F93FE0218536B85400099346BEF4</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_sw/bsp</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">DE624A86BE8B2E85441CE1A49BEBFF51</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_sw</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">A1731E4019AE3037833CE2E94F06A134</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_sw/framework/system/ports/src</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">CC45A61DC821F2A45FBFD5EB0F76DD59</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_sw/framework/system/clk/src</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

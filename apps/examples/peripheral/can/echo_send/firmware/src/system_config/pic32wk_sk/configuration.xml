@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../../../.."/>
+    <MergeStrategy dnOrder="3" flag="ALL"/>
+    <Processor dnOrder="4" name=""/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="F:\CodeBase\GIT\WSG\wsg\apps\examples\peripheral\can\echo_send\firmware\src"/>
+        <Include dnOrder="1" value="F:\CodeBase\GIT\WSG\wsg\apps\examples\peripheral\can\echo_send\firmware\src\system_config\pic32wk_sk"/>
+        <Include dnOrder="2" value="F:\CodeBase\GIT\WSG\wsg\framework"/>
+        <Include dnOrder="3" value="F:\CodeBase\GIT\WSG\wsg\apps\examples\peripheral\can\echo_send\firmware\src\system_config\pic32wk_sk\framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32wk_sk/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">drv_can.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/can</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../../../bin/framework/peripheral/PIC32WK2057GPD132_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">D3F56B5AA587284969E8FA6426E77B30</Checksum>
+        <Name dnOrder="1">drv_can_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32wk_sk/framework/driver/can</Path>
+        <ProjectFileChecksum dnOrder="3">4E90F63564B2F3207DAD2F4F492F8B5D</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="1">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">1CFA6D37C62E49F0E26BEE18DE23EC40</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32wk_sk</Path>
+        <ProjectFileChecksum dnOrder="3">211D5465BCCA83CDDFF70C5252D8DD40</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">AF8524934A0D2E7AF8CA9C230025814A</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32wk_sk/framework/system/ports/src</Path>
+        <ProjectFileChecksum dnOrder="3">901B045D8FE1FA16373D61E547B5723F</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">B28D34F2F6074A12493157972EA57849</Checksum>
+        <Name dnOrder="1">drv_can_mapping.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32wk_sk/framework/driver/can/src</Path>
+        <ProjectFileChecksum dnOrder="3">140F5D68EF6DCD9947E1612FBAB13098</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32wk_sk</Path>
+        <ProjectFileChecksum dnOrder="3">C2C6A1A4284DF3A5861CA6C57E286B5F</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="6">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">DD040A3AFCC7285F602084616A14852D</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32wk_sk</Path>
+        <ProjectFileChecksum dnOrder="3">656DB006B01CF73DC3E8DBB46B4DAE55</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">BE644D0142ACA48D9CA2E6255A02CDBA</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32wk_sk</Path>
+        <ProjectFileChecksum dnOrder="3">BD73D3C58C03D5C996080C8458830EA1</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">044608305E60164031B4C079AE383FA1</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32wk_sk/bsp</Path>
+        <ProjectFileChecksum dnOrder="3">FBB1861C84E89D5B35D1036A9B92E206</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">038FEAB57B5B8E6E1B6AE3A45A3F7F80</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32wk_sk</Path>
+        <ProjectFileChecksum dnOrder="3">9A487EF0936B7E6AD235B4D0F3703FB3</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">567767CC87EDC74F976A8E3D7371F6CA</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32wk_sk/bsp</Path>
+        <ProjectFileChecksum dnOrder="3">BD106DC0B326906D9819F00E8BBCC113</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="12">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">64BA150E88FA9131D4BD8D749A8EC478</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32wk_sk</Path>
+        <ProjectFileChecksum dnOrder="3">1A5055D42746C0210400877A37A3E27D</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">9628E1F2383A3FF772221CB8FBCBF08C</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32wk_sk/framework/system/clk/src</Path>
+        <ProjectFileChecksum dnOrder="3">A9C62CE0BC6EEC6FFC966FD4A1DD8F08</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="15">
+        <Checksum dnOrder="0">4BE8473563B164149D6BF96916D6E78C</Checksum>
+        <Name dnOrder="1">drv_can_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32wk_sk/framework/driver/can/src</Path>
+        <ProjectFileChecksum dnOrder="3">A363FD88B75FD7911891711E063E1038</ProjectFileChecksum>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

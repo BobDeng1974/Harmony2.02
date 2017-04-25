@@ -1,0 +1,40 @@
+ifblock BSP_WIFI_G_DB
+
+menu "Select BSP Features"
+    depends on USE_BSP
+    depends on BSP_WIFI_G_DB
+
+config BSP_CONFIGURE_WIFI_G_DB
+    depends on USE_BSP
+    select BSP_TRIGGER
+    select BSP_POSC_8MHz
+    set BSP_PIN_69_FUNCTION_NAME to "BSP_SWITCH_0" 
+    set BSP_PIN_69_FUNCTION_TYPE to "SWITCH" 
+    set BSP_PIN_93_FUNCTION_NAME to "BSP_LED_0" 
+    set BSP_PIN_93_FUNCTION_TYPE to "LED_AH" 
+    set BSP_PIN_88_FUNCTION_NAME to "BSP_LED_1" 
+    set BSP_PIN_88_FUNCTION_TYPE to "LED_AH" 
+    set BSP_PIN_87_FUNCTION_NAME to "BSP_LED_2" 
+    set BSP_PIN_87_FUNCTION_TYPE to "LED_AH" 	
+    bool
+    ---help---
+    IDH_HTML_BSP_wifi_g_db
+    ---endhelp---
+endmenu
+
+menu "Custom Board Configurations for Wi-Fi (G) Development Board"
+    depends on USE_BSP
+
+import WIFI_G_DB_IMPORT_ICB "Select Custom Configuration To Import" 
+    default "../*/*.mhc"
+    ---help---
+    IDH_HTML_Board_Support_Package_Help
+    ---endhelp---
+
+template BSP_wifi_g_db_H "$HARMONY_VERSION_PATH/bsp/wifi_g_db/templates/bsp.h.ftl" to "$PROJECT_HEADER_FILES/app/system_config/$CONFIGURATION/bsp/bsp.h"
+template BSP_wifi_g_db_C "$HARMONY_VERSION_PATH/bsp/wifi_g_db/templates/bsp.c.ftl" to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/bsp/bsp.c"
+
+compiler BSP_COMPILER_INCLUDE_wifi_g_db includepath "$PROJECT_HEADER_FILES/system_config/$CONFIGURATION/bsp"
+endmenu
+
+endif

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../../.."/>
+    <MergeStrategy dnOrder="3" flag="ALL"/>
+    <Processor dnOrder="4" name="PIC32MZ2064DAB288"/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="/home/vikasnan/GITDevRTOS/rtos/apps/rtos/openrtos/basic/firmware/src"/>
+        <Include dnOrder="1" value="/home/vikasnan/GITDevRTOS/rtos/apps/rtos/openrtos/basic/firmware/src/system_config/pic32mz_da_sk"/>
+        <Include dnOrder="2" value="/home/vikasnan/GITDevRTOS/rtos/framework"/>
+        <Include dnOrder="3" value="/home/vikasnan/GITDevRTOS/rtos/apps/rtos/openrtos/basic/firmware/src/system_config/pic32mz_da_sk/framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32mz_da_sk/bsp"/>
+        <Include dnOrder="5" value="../../../../../../third_party/rtos/OpenRTOS/Source/portable/MPLAB/PIC32MZ"/>
+        <Include dnOrder="6" value="../../../../../../third_party/rtos/OpenRTOS/Source/include"/>
+        <Include dnOrder="7" value="../src/system_config/pic32mz_da_sk"/>
+      </C32>
+      <C32-AS dnOrder="1">
+        <Include dnOrder="0" value="../../../../../../third_party/rtos/OpenRTOS/Source/portable/MPLAB/PIC32MZ"/>
+        <Include dnOrder="1" value="../../../../../../third_party/rtos/OpenRTOS/Source/include"/>
+        <Include dnOrder="2" value="../src/system_config/pic32mz_da_sk"/>
+      </C32-AS>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_openrtos.c</Name>
+        <Path dnOrder="1">Source Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">port.c</Name>
+        <Path dnOrder="1">Source Files/OpenRTOS/portable/MPLAB/PIC32MZ</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">task.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">sys_devcon_cache.h</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">port_asm.S</Name>
+        <Path dnOrder="1">Source Files/OpenRTOS/portable/MPLAB/PIC32MZ</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">StackMacros.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">timers.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">event_groups.c</Name>
+        <Path dnOrder="1">Source Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">mpu_wrappers.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">heap_1.c</Name>
+        <Path dnOrder="1">Source Files/OpenRTOS/portable/MemMang</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">osal_openrtos.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">list.c</Name>
+        <Path dnOrder="1">Source Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">croutine.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">projdefs.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">portmacro.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS/portable/MPLAB/PIC32MZ</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">semphr.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">ISR_Support.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS/portable/MPLAB/PIC32MZ</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">queue.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">queue.c</Name>
+        <Path dnOrder="1">Source Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">list.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">portable.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">sys_devcon_cache_pic32mz.S</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">event_groups.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="38">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="39">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="40">
+        <Name dnOrder="0">croutine.c</Name>
+        <Path dnOrder="1">Source Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="41">
+        <Name dnOrder="0">timers.c</Name>
+        <Path dnOrder="1">Source Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="42">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="43">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="44">
+        <Name dnOrder="0">tasks.c</Name>
+        <Path dnOrder="1">Source Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="45">
+        <Name dnOrder="0">FreeRTOS.h</Name>
+        <Path dnOrder="1">Header Files/OpenRTOS</Path>
+      </File>
+      <File dnOrder="46">
+        <Name dnOrder="0">sys_devcon_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="47">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="48">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../../bin/framework/peripheral/PIC32MZ2064DAB288_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">98940CD3A7F5158855860EF5DC3D6D19</Checksum>
+        <Name dnOrder="1">FreeRTOSConfig.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk</Path>
+        <ProjectFileChecksum dnOrder="3">1651E1F7ECC14B3C22695162DC0B8FD4</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="1">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Name dnOrder="0">app3.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">3104398CAD6019C2CE52FA74FD7487E8</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk</Path>
+        <ProjectFileChecksum dnOrder="3">6EABADED494F156672A3169CB1271CE7</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">10319457C23D78575D114DD4C2B98599</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk</Path>
+        <ProjectFileChecksum dnOrder="3">3EFE6EC5E71A45F76239061DE7987286</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="5">
+        <Name dnOrder="0">app1.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Name dnOrder="0">app2.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Name dnOrder="0">app2.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Name dnOrder="0">app3.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">5DEC6FBF578D0F2E0CFD7A4E273CFADC</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk/framework/system/clk/src</Path>
+        <ProjectFileChecksum dnOrder="3">FA7166EB7D9E2A657D977917DE82138D</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="10">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Name dnOrder="0">app1.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">018D32CE8E3A3DAB4E198AC0EF77984D</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk/bsp</Path>
+        <ProjectFileChecksum dnOrder="3">E1A4122D54778CF46DC5B8C87AF43ED1</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk</Path>
+        <ProjectFileChecksum dnOrder="3">7F83065CA434CBE286FBA68669240F0A</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">AC621656A8B12A918B9C08B644A75095</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk</Path>
+        <ProjectFileChecksum dnOrder="3">2742FB45C6CE049F6116D212A7640E78</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="15">
+        <Checksum dnOrder="0">3DFB0BC56732FDD6D5377CC83C754517</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk/framework/system/ports/src</Path>
+        <ProjectFileChecksum dnOrder="3">D6955269092962EC9D9E29FC78C6266F</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="16">
+        <Checksum dnOrder="0">914FC2BE401FA23CB2222F82EA045345</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_da_sk</Path>
+        <ProjectFileChecksum dnOrder="3">09330CB99F8C2CD3DFF4C6B33DF0BE75</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="17">
+        <Checksum dnOrder="0">F8E29721D7D91213A568F3DC060408EC</Checksum>
+        <Name dnOrder="1">system_interrupt_a.S</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk</Path>
+        <ProjectFileChecksum dnOrder="3">839A3EAB901818009256528431615769</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="18">
+        <Checksum dnOrder="0">6D0961160B9CA04B50D20493874A5D26</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk/bsp</Path>
+        <ProjectFileChecksum dnOrder="3">39F4B1960EB54FE42D47C94E92B5471C</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="19">
+        <Checksum dnOrder="0">89A2A88BFA33FB7AE5EF2B4A1395528B</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk</Path>
+        <ProjectFileChecksum dnOrder="3">F3102EE9D9F1888FC53803B9CACEA330</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="20">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="21">
+        <Checksum dnOrder="0">1B1A60B954C976ED9682C9D68D82942F</Checksum>
+        <Name dnOrder="1">rtos_hooks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_da_sk</Path>
+        <ProjectFileChecksum dnOrder="3">31740FC56B6EDE54797B63E4F95B1C7B</ProjectFileChecksum>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

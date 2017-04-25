@@ -1,0 +1,5 @@
+# Default BSP Configuration
+#     Harmony version: 2.00
+#
+CONFIG_USE_BSP=y
+BSP_ATSAMV71_XULT=y

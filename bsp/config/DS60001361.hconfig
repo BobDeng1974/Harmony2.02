@@ -1,0 +1,97 @@
+ifblock DS60001361
+
+choice
+    prompt "Select BSP To Use For $DEVICE Device"
+    depends on USE_BSP
+    default BSP_PIC32MZ_DA_SK
+    ---help---
+    IDH_HTML_BSP_Board_Support_Packages
+    ---endhelp---
+
+
+config BSP_PIC32MZ_DA_SK
+    depends on USE_BSP
+    bool "PIC32MZ DA Starter Kit"
+    ---help---
+    IDH_HTML_BSP_pic32mz_da_sk
+    ---endhelp---
+
+config BSP_PIC32MZ_DA_SK_MEB2
+    depends on USE_BSP
+    bool "PIC32MZ DA Starter Kit w/ Multimedia Expansion Board (MEB) II"
+    ---help---
+    IDH_HTML_BSP_pic32mz_da_sk_meb2
+    ---endhelp---
+
+config BSP_PIC32MZ_DA_SK_MEB2_WVGA
+    depends on USE_BSP
+    bool "PIC32MZ DA Starter Kit w/ Multimedia Expansion Board (MEB) II and WVGA glass"
+    ---help---
+    IDH_HTML_BSP_pic32mz_da_sk_meb2_wvga
+    ---endhelp---
+
+config BSP_PIC32MZ_DA_SK_MMC_EVK
+    depends on USE_BSP
+    bool "PIC32MZ DA Starter Kit w/ Multimedia Connection and Expansion Kit"
+    ---help---
+    IDH_HTML_BSP_pic32mz_da_sk_mmc_evk
+    ---endhelp---
+
+config BSP_PIC32MZ_DA_SK_169LFBGA_CPU
+    depends on USE_BSP
+    bool "PIC32MZ DA Starter Kit w/ 169lfbga CPU daughter card"
+    ---help---
+    IDH_HTML_BSP_pic32mz_da_sk_169lfbga_cpu
+    ---endhelp---
+
+config BSP_PIC32MZ_DA_SK_169LFBGA_CPU_MEB2_WVGA
+    depends on USE_BSP
+    bool "PIC32MZ DA Starter Kit w/ 169lfbga CPU daughter card w/ Multimedia Expansion Board (MEB) II and WVGA glass"
+    ---help---
+    IDH_HTML_BSP_pic32mz_da_sk_169lfbga_cpu_meb2_wvga
+    ---endhelp---
+
+config BSP_PIC32MZ_DA_SK_169LFBGA_CPU_MMC_EVK
+    depends on USE_BSP
+    bool "PIC32MZ DA Starter Kit w/ 169lfbga CPU daughter card w/ Multimedia Connection and Expansion Kit"
+    ---help---
+    IDH_HTML_BSP_pic32mz_da_sk_169lfbga_cpu_mmc_evk
+    ---endhelp---
+
+
+    
+endchoice
+
+
+source "$HARMONY_VERSION_PATH/bsp/pic32mz_da_sk/config/bsp.hconfig"
+source "$HARMONY_VERSION_PATH/bsp/pic32mz_da_sk+meb2/config/bsp.hconfig"
+source "$HARMONY_VERSION_PATH/bsp/pic32mz_da_sk+meb2+wvga/config/bsp.hconfig"
+source "$HARMONY_VERSION_PATH/bsp/pic32mz_da_sk+mmc_evk/config/bsp.hconfig"
+source "$HARMONY_VERSION_PATH/bsp/pic32mz_da_sk+169lfbga_cpu/config/bsp.hconfig"
+source "$HARMONY_VERSION_PATH/bsp/pic32mz_da_sk+169lfbga_cpu+meb2+wvga/config/bsp.hconfig"
+source "$HARMONY_VERSION_PATH/bsp/pic32mz_da_sk+169lfbga_cpu+mmc_evk/config/bsp.hconfig"
+
+config BSP_DS60001361_COMMON
+    set JTAGEN optionally to "OFF"
+    set POSCMOD optionally to "EC" if USE_BSP
+    set DSWDTEN optionally to "OFF"
+    set TRCEN optionally to "OFF"
+    set ICESEL optionally to "ICS_PGx2" if USE_BSP
+    set FNOSC optionally to "SPLL"
+    set FWDTEN optionally to "OFF"
+    set FDMTEN optionally to "OFF"
+    set FPLLRNG optionally to "RANGE_5_10_MHZ"
+    set FPLLICLK optionally to "PLL_POSC" if USE_BSP
+    set FPLLICLK optionally to "PLL_FRC" if !USE_BSP
+    set FPLLIDIV optionally to "DIV_3" if USE_BSP
+    set FPLLIDIV optionally to "DIV_1" if !USE_BSP
+    set FPLLMULT optionally to "MUL_50"
+    set FPLLODIV optionally to "DIV_2"
+    set FMIIEN optionally to "OFF" if USE_BSP
+    set TSEQ optionally to "0x0000"
+    set CSEQ optionally to "0xffff"
+    bool
+    default y if USE_BSP
+
+endif
+

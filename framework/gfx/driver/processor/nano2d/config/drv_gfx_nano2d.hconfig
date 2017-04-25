@@ -1,0 +1,15 @@
+config DRV_GFX_NANO2D_ENABLE_ALL_RGB_PINS
+    bool "Use All RGB Pins?"
+    default y
+    ---help---
+    IDH_HTML_Graphics_Driver_Library
+    ---endhelp---
+
+ifblock USE_DRV_GFX_NANO2D
+template DRV_GFX_NANO2D_C "$HARMONY_VERSION_PATH/framework/gfx/driver/processor/nano2d/templates/drv_gfx_nano2d.c.ftl" to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/framework/gfx/driver/processor/nano2d/src/drv_gfx_nano2d.c"
+template DRV_GFX_NANO2D_H "$HARMONY_VERSION_PATH/framework/gfx/driver/processor/nano2d/templates/drv_gfx_nano2d.h.ftl" to "$PROJECT_HEADER_FILES/app/system_config/$CONFIGURATION/framework/gfx/driver/processor/nano2d/drv_gfx_nano2d.h"
+template LIBNANO2D_H "$HARMONY_VERSION_PATH/framework/gfx/driver/processor/nano2d/templates/libnano2D.h.ftl" to "$PROJECT_HEADER_FILES/app/system_config/$CONFIGURATION/framework/gfx/driver/processor/nano2d/libnano2D.h"
+template LIBNANO2D_DISPATCH_H "$HARMONY_VERSION_PATH/framework/gfx/driver/processor/nano2d/templates/libnano2D_dispatch.h.ftl" to "$PROJECT_HEADER_FILES/app/system_config/$CONFIGURATION/framework/gfx/driver/processor/nano2d/libnano2D_dispatch.h"
+template LIBNANO2D_TYPES_H "$HARMONY_VERSION_PATH/framework/gfx/driver/processor/nano2d/templates/libnano2D_types.h.ftl" to "$PROJECT_HEADER_FILES/app/system_config/$CONFIGURATION/framework/gfx/driver/processor/nano2d/libnano2D_types.h"
+template LIBNANO2D_USER_H "$HARMONY_VERSION_PATH/framework/gfx/driver/processor/nano2d/templates/libnano2D_user.h.ftl" to "$PROJECT_HEADER_FILES/app/system_config/$CONFIGURATION/framework/gfx/driver/processor/nano2d/libnano2D_user.h"
+endif

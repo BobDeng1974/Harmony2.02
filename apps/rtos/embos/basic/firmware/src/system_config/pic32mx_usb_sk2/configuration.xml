@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <Designer>
+    <Assets dnOrder="0">
+      <Settings bpp="16" dnOrder="0">
+        <MemoryLocations dnOrder="0">
+          <MemoryLocation address="0" dnOrder="0" id="default"/>
+        </MemoryLocations>
+      </Settings>
+    </Assets>
+    <Schemes defaultSchemeName="default" dnOrder="1">
+      <Scheme dnOrder="0" name="default">
+        <Alpha dnOrder="0">100</Alpha>
+        <BackgroundOffset dnOrder="1">0,0</BackgroundOffset>
+        <BackgroundType dnOrder="2">None</BackgroundType>
+        <Colors dnOrder="3">
+          <Background dnOrder="0">000000</Background>
+          <Disabled dnOrder="1">C0C0C0</Disabled>
+          <EmbossDark dnOrder="2">404040</EmbossDark>
+          <EmbossLight dnOrder="3">C0C0C0</EmbossLight>
+          <GradientEnd dnOrder="4">FFFFFF</GradientEnd>
+          <GradientStart dnOrder="5">000000</GradientStart>
+          <Primary dnOrder="6">FFFFFF</Primary>
+          <Secondary dnOrder="7">404040</Secondary>
+          <TextDisabled dnOrder="8">404040</TextDisabled>
+          <TextPrimary dnOrder="9">000000</TextPrimary>
+          <TextSecondary dnOrder="10">FFFFFF</TextSecondary>
+        </Colors>
+        <EmbossSize dnOrder="4">3</EmbossSize>
+        <FillStyle dnOrder="5">Color</FillStyle>
+      </Scheme>
+    </Schemes>
+    <Screens dnOrder="2" height="200" width="320">
+      <Screen active="true" background="000000" clearOnShow="true" dnOrder="0" doubleBuffer="false" export="true" name="Untitled" primary="true" visible="true">
+        <Objects dnOrder="0"/>
+      </Screen>
+    </Screens>
+  </Designer>
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../../.."/>
+    <MergeStrategy dnOrder="3" flag="ALL"/>
+    <Processor dnOrder="4" name="PIC32MX795F512L"/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Define dnOrder="0" value="OS_LIBMODE_DP"/>
+        <Include dnOrder="1" value="/home/vikasnan/GITDevRTOS/rtos/apps/rtos/embos/basic/firmware/src"/>
+        <Include dnOrder="2" value="/home/vikasnan/GITDevRTOS/rtos/apps/rtos/embos/basic/firmware/src/system_config/pic32mx_usb_sk2"/>
+        <Include dnOrder="3" value="/home/vikasnan/GITDevRTOS/rtos/framework"/>
+        <Include dnOrder="4" value="/home/vikasnan/GITDevRTOS/rtos/apps/rtos/embos/basic/firmware/src/system_config/pic32mx_usb_sk2/framework"/>
+        <Include dnOrder="5" value="../src/system_config/pic32mx_usb_sk2/bsp"/>
+        <Include dnOrder="6" value="../../../../../../third_party/rtos/embOS/GenOSSrc"/>
+        <Include dnOrder="7" value="../../../../../../third_party/rtos/embOS/CPU"/>
+        <Include dnOrder="8" value="../src/rtos_config/pic32mx_usb_sk2"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">OSCHIP.h</Name>
+        <Path dnOrder="1">Header Files/embOS</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">osal_embos.c</Name>
+        <Path dnOrder="1">Source Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">OS_Priv.h</Name>
+        <Path dnOrder="1">Header Files/embOS</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">OSInt.h</Name>
+        <Path dnOrder="1">Header Files/embOS</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">osal_embos.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">sys_devcon_pic32mx.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../../bin/framework/peripheral/PIC32MX795F512L_peripherals.a"/>
+      <Library dnOrder="1" value="../../../../../../third_party/rtos/embOS/Start/Lib/RtosMips32DP.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">52E789FD6CCBA112B7B0278FA8C23C6A</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">5EE013B210F5F61A0B5DE6B377A3C32A</Checksum>
+        <Name dnOrder="1">RTOS.h</Name>
+        <Path dnOrder="2">Header Files/app/rtos_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">55F2FDE1F0F95EC21FF89134E93C3378</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="2">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">13105A2EA4197BA6ED37EC35570DF96E</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2/bsp</Path>
+        <ProjectFileChecksum dnOrder="3">CD2F4BFE124C89FFD0D8CFB1600E107A</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">C934CFD980878E57EE336D976F540A07</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">A1D1B6A0DD14D3C2962868575D681EEB</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">B90C38D0534E50ED1F12503829C27C7F</Checksum>
+        <Name dnOrder="1">OS_Error.c</Name>
+        <Path dnOrder="2">Source Files/app/rtos_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">42223F05A4BA51810EA3CCBDFD240461</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="6">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">15F409CC0B594731EF19E3F08888FB0A</Checksum>
+        <Name dnOrder="1">RTOSInit.c</Name>
+        <Path dnOrder="2">Source Files/app/rtos_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">5BFF2378E4C2B1DFE084F4BC12CE4D9C</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">EABABE6F6504F002BE5D5D186F6DB9FA</Checksum>
+        <Name dnOrder="1">rtos_hooks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">224BE7CE2289C822EEFB758A6E9419DF</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">C9F0A768F905EC0A0A12A0C3B3628D00</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">B1AAFC04984D0F8BA453BE3BECF7C139</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">FDF6C8068CFFAEEC5F8537A8D6514230</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2/framework/system/clk/src</Path>
+        <ProjectFileChecksum dnOrder="3">FA0C1561306EA10A891FA4C386991BBC</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">1CA736C3B840FBA2764EFAC0581B040F</Checksum>
+        <Name dnOrder="1">system_interrupt_a.S</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">BF71857CEFB312067726E20DEC47E5CF</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">754A481FEB719B0201577A03FD62B292</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">48230D95C7D230AA5FF25A40B9FEF628</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">097CADE990B17F89B8C343083556879D</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">A2CACB4CDBE3E489D177380771604303</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">4BFD4ADFBD1349338DAF5682785F28A5</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mx_usb_sk2/bsp</Path>
+        <ProjectFileChecksum dnOrder="3">24E318572BB730A57D7BA1EF0013B78B</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="15">
+        <Checksum dnOrder="0">EFA5A59C52E964562280B35FC4C85CB5</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2</Path>
+        <ProjectFileChecksum dnOrder="3">99041188A6DEFCCED9FFA33DA5C91F2E</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="16">
+        <Checksum dnOrder="0">83E28A9509BFB1178054925FE7ED2D75</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mx_usb_sk2/framework/system/ports/src</Path>
+        <ProjectFileChecksum dnOrder="3">742DDA17331F289D8A1CC7C47A25191C</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="17">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

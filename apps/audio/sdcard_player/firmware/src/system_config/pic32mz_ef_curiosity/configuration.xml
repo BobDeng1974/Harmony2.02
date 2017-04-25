@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../.."/>
+    <MergeStrategy dnOrder="3" flag="USER_ALL"/>
+    <Processor dnOrder="4" name=""/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="D:/GIT_TeamBranch/v2.02b/btaudio/apps/audio/sdcard_player/firmware/src"/>
+        <Include dnOrder="1" value="D:/GIT_TeamBranch/v2.02b/btaudio/apps/audio/sdcard_player/firmware/src/system_config/pic32mz_ef_curiosity"/>
+        <Include dnOrder="2" value="D:/GIT_TeamBranch/v2.02b/btaudio/framework"/>
+        <Include dnOrder="3" value="D:/GIT_TeamBranch/v2.02b/btaudio/apps/audio/sdcard_player/firmware/src/system_config/pic32mz_ef_curiosity/framework"/>
+        <Include dnOrder="4" value="../src/system_config/pic32mz_ef_curiosity/bsp"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">drv_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">sys_clk_pic32mz.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">adpcm.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">sys_fs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/src</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">drv_spi_sys_queue_fifo.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">sys_fs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">flac.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">mp3.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">drv_spi.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">sys_devcon_cache.h</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">wma.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">speex.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">drv_i2s_dma.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/i2s/src/dynamic</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">drv_i2c.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_fs_media_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">drv_spi_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_dma.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">drv_ak4642.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/codec/ak4642</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">drv_sdcard.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/sdcard/src/dynamic</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">drv_i2s.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2s</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">drv_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">sys_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">sys_dma_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma/src</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">drv_i2s_dma_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2s/src</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">sys_clk_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">diskio.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/hardware_access</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">flac.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">drv_spi_sys_queue_local_fifo.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">drv_i2c_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">wma.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">aac.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">mp3.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="38">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="39">
+        <Name dnOrder="0">drv_spi_internal.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src/dynamic</Path>
+      </File>
+      <File dnOrder="40">
+        <Name dnOrder="0">ff.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="41">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="42">
+        <Name dnOrder="0">speex.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="43">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="44">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="45">
+        <Name dnOrder="0">drv_ak4642.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/codec/ak4642/src/dynamic</Path>
+      </File>
+      <File dnOrder="46">
+        <Name dnOrder="0">opus_support.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="47">
+        <Name dnOrder="0">drv_tmr_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="48">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="49">
+        <Name dnOrder="0">drv_spi.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/spi/src/dynamic</Path>
+      </File>
+      <File dnOrder="50">
+        <Name dnOrder="0">sys_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="51">
+        <Name dnOrder="0">ff.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/file_system</Path>
+      </File>
+      <File dnOrder="52">
+        <Name dnOrder="0">sys_fs_media_manager.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs/src/dynamic</Path>
+      </File>
+      <File dnOrder="53">
+        <Name dnOrder="0">drv_i2c.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/i2c/src/dynamic</Path>
+      </File>
+      <File dnOrder="54">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="55">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="56">
+        <Name dnOrder="0">mpfs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/mpfs</Path>
+      </File>
+      <File dnOrder="57">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="58">
+        <Name dnOrder="0">drv_spi_sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
+      </File>
+      <File dnOrder="59">
+        <Name dnOrder="0">drv_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/tmr/src/dynamic</Path>
+      </File>
+      <File dnOrder="60">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="61">
+        <Name dnOrder="0">drv_tmr_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="62">
+        <Name dnOrder="0">sys_clk.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="63">
+        <Name dnOrder="0">sys_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="64">
+        <Name dnOrder="0">ffconf.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/fat_fs/src/file_system</Path>
+      </File>
+      <File dnOrder="65">
+        <Name dnOrder="0">adpcm.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="66">
+        <Name dnOrder="0">mpfs_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/mpfs/src</Path>
+      </File>
+      <File dnOrder="67">
+        <Name dnOrder="0">sys_fs.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs/src/dynamic</Path>
+      </File>
+      <File dnOrder="68">
+        <Name dnOrder="0">drv_i2s_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2s/src</Path>
+      </File>
+      <File dnOrder="69">
+        <Name dnOrder="0">drv_codec_i2c_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/codec/ak4642</Path>
+      </File>
+      <File dnOrder="70">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="71">
+        <Name dnOrder="0">drv_sdcard_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdcard/src</Path>
+      </File>
+      <File dnOrder="72">
+        <Name dnOrder="0">drv_tmr_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="73">
+        <Name dnOrder="0">sys_clk_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="74">
+        <Name dnOrder="0">drv_sdcard_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdcard/src</Path>
+      </File>
+      <File dnOrder="75">
+        <Name dnOrder="0">opus_support.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="76">
+        <Name dnOrder="0">wav.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/wav/support</Path>
+      </File>
+      <File dnOrder="77">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="78">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="79">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="80">
+        <Name dnOrder="0">drv_sdcard.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdcard</Path>
+      </File>
+      <File dnOrder="81">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="82">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="83">
+        <Name dnOrder="0">drv_i2c_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c/src</Path>
+      </File>
+      <File dnOrder="84">
+        <Name dnOrder="0">sys_devcon_cache_pic32mz.S</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="85">
+        <Name dnOrder="0">drv_ak4642_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/codec/ak4642</Path>
+      </File>
+      <File dnOrder="86">
+        <Name dnOrder="0">drv_i2c_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c/src</Path>
+      </File>
+      <File dnOrder="87">
+        <Name dnOrder="0">drv_sdcard_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/sdcard</Path>
+      </File>
+      <File dnOrder="88">
+        <Name dnOrder="0">wav.h</Name>
+        <Path dnOrder="1">Header Files/framework/decoder/default/wav/support</Path>
+      </File>
+      <File dnOrder="89">
+        <Name dnOrder="0">sys_clk_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
+      </File>
+      <File dnOrder="90">
+        <Name dnOrder="0">aac.c</Name>
+        <Path dnOrder="1">Source Files/framework/decoder/default/stubs</Path>
+      </File>
+      <File dnOrder="91">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="92">
+        <Name dnOrder="0">diskio.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="93">
+        <Name dnOrder="0">drv_i2c_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/i2c</Path>
+      </File>
+      <File dnOrder="94">
+        <Name dnOrder="0">sys_devcon_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="95">
+        <Name dnOrder="0">sys_fs_media_manager_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs/src</Path>
+      </File>
+      <File dnOrder="96">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../bin/framework/peripheral/PIC32MZ2048EFM100_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Checksum dnOrder="0">615D0B3998780D1680273302CCF44179</Checksum>
+        <Name dnOrder="1">drv_spi_api.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_curiosity/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">B0BF1C6D9D29CFE91EBB156AF7DF0714</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_curiosity/bsp</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">5B89B1166E9D37D61684033C9492B5E7</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_curiosity</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">294ADD66C55F51FD9A759B9B625FB636</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_curiosity</Path>
+        <ProjectFileChecksum dnOrder="3">E397B3242A45A003236C570280BDD569</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">97A9DC8B21F4C412F292C5E4898E3790</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_curiosity</Path>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">A98436CDBDD55019A4AE99FF4E257AE4</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_curiosity/bsp</Path>
+      </Template>
+      <Template dnOrder="7">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">4C2C868738FD74E2D6A3C8A8FD6B1381</Checksum>
+        <Name dnOrder="1">drv_spi_master_ebm_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_curiosity/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">B00B90E021F15FFD6B0B1B7F2D0650A5</Checksum>
+        <Name dnOrder="1">nvm_disk_images.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_curiosity/framework/system/fs</Path>
+      </Template>
+      <Template dnOrder="10">
+        <Checksum dnOrder="0">6C7D9EFFC61CCE401727EE7D9E0F35B8</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_curiosity</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">0CE14BBEB78DCA8EA4AE6AABF57ACD8D</Checksum>
+        <Name dnOrder="1">sys_dma_static.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_curiosity/framework/system/dma</Path>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_curiosity</Path>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">B8D534FC99E9DAC9CE3CE2AFE17C3907</Checksum>
+        <Name dnOrder="1">drv_spi_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_curiosity/framework/driver/spi/dynamic</Path>
+      </Template>
+      <Template dnOrder="14">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="15">
+        <Checksum dnOrder="0">EDF4A8FF8839736D18F1242970FE101B</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_curiosity/framework/system/ports/src</Path>
+      </Template>
+      <Template dnOrder="16">
+        <Checksum dnOrder="0">79C337921FA98D49C407BAAEDBE56A68</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_curiosity</Path>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

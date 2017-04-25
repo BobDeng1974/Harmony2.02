@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration version="2.0.0.12">
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <Board dnOrder="0" name=""/>
+    <ForceOptimization dnOrder="1" flag="true"/>
+    <HarmonyPath dnOrder="2" path="../../../.."/>
+    <MergeStrategy dnOrder="3" flag="ALL"/>
+    <Processor dnOrder="4" name="PIC32MZ2048EFM144"/>
+  </General>
+  <Manifest>
+    <CompilerItems dnOrder="0">
+      <C32 dnOrder="0">
+        <Define dnOrder="0" value="OS_LIBMODE_DP"/>
+        <Include dnOrder="1" value="/home/vikasnan/GITDevRTOS/rtos/apps/rtos/embos/basic/firmware/src"/>
+        <Include dnOrder="2" value="/home/vikasnan/GITDevRTOS/rtos/apps/rtos/embos/basic/firmware/src/system_config/pic32mz_ef_sk_micromips"/>
+        <Include dnOrder="3" value="/home/vikasnan/GITDevRTOS/rtos/framework"/>
+        <Include dnOrder="4" value="/home/vikasnan/GITDevRTOS/rtos/apps/rtos/embos/basic/firmware/src/system_config/pic32mz_ef_sk_micromips/framework"/>
+        <Include dnOrder="5" value="../src/system_config/pic32mz_ef_sk_micromips/bsp"/>
+        <Include dnOrder="6" value="../../../../../../third_party/rtos/embOS/GenOSSrc"/>
+        <Include dnOrder="7" value="../../../../../../third_party/rtos/embOS/CPU"/>
+        <Include dnOrder="8" value="../src/rtos_config/pic32mz_ef_sk_micromips"/>
+      </C32>
+    </CompilerItems>
+    <Files dnOrder="1">
+      <File dnOrder="0">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">OSCHIP.h</Name>
+        <Path dnOrder="1">Header Files/embOS</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">sys_devcon_cache.h</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">osal_embos.c</Name>
+        <Path dnOrder="1">Source Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">OS_Priv.h</Name>
+        <Path dnOrder="1">Header Files/embOS</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">osal_impl_none.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_devcon_cache_pic32mz.S</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">OSInt.h</Name>
+        <Path dnOrder="1">Header Files/embOS</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">osal_embos.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal/src</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">sys_devcon_pic32mz.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+    </Files>
+    <Libraries dnOrder="2">
+      <Library dnOrder="0" value="../../../../../../third_party/rtos/embOS/Start/Lib/RtosMicroMipsfpuDP.a"/>
+      <Library dnOrder="1" value="../../../../../../bin/framework/peripheral/16bit/PIC32MZ2048EFM144_peripherals.a"/>
+    </Libraries>
+    <Templates dnOrder="3">
+      <Template dnOrder="0">
+        <Checksum dnOrder="0">3DFB0BC56732FDD6D5377CC83C754517</Checksum>
+        <Name dnOrder="1">sys_ports_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_micromips/framework/system/ports/src</Path>
+        <ProjectFileChecksum dnOrder="3">D48204FE3280BAF2C1764F2A6CBB6AE1</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="1">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="2">
+        <Checksum dnOrder="0">5EE013B210F5F61A0B5DE6B377A3C32A</Checksum>
+        <Name dnOrder="1">RTOS.h</Name>
+        <Path dnOrder="2">Header Files/app/rtos_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">148BE025E82F1189EF6528EA66B86AC9</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="3">
+        <Checksum dnOrder="0">0269135996D3B3B1B14E72D37F417239</Checksum>
+        <Name dnOrder="1">system_interrupt_a.S</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">162DDC03B53296BC7EA1F9260B91221E</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="4">
+        <Checksum dnOrder="0">F740DA09253C01A3D03B3FD6565F5267</Checksum>
+        <Name dnOrder="1">bsp.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_micromips/bsp</Path>
+        <ProjectFileChecksum dnOrder="3">AA9C18CAF8967C3499BFE91376D40E99</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="5">
+        <Checksum dnOrder="0">091679006649FD2C1F94CE9EF4A2F7B6</Checksum>
+        <Name dnOrder="1">sys_clk_static.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_micromips/framework/system/clk/src</Path>
+        <ProjectFileChecksum dnOrder="3">89B063AB4D0284247B00D0D207FE4A47</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="6">
+        <Checksum dnOrder="0">097CADE990B17F89B8C343083556879D</Checksum>
+        <Name dnOrder="1">system_definitions.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">9B2822525B2850B946E64AD344457742</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="7">
+        <Checksum dnOrder="0">7432E24A386A828CEDDB3D118AAB7FBC</Checksum>
+        <Name dnOrder="1">system_tasks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">AC04E451F7F2A76B0CE3613C2C57B579</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="8">
+        <Checksum dnOrder="0">13FB8422ED753D86F7146E935C766EDE</Checksum>
+        <Name dnOrder="1">system_config.h</Name>
+        <Path dnOrder="2">Header Files/app/system_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">C07E3AEC7307C30766DB2F7726E83074</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="9">
+        <Checksum dnOrder="0">C934CFD980878E57EE336D976F540A07</Checksum>
+        <Name dnOrder="1">system_interrupt.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">A595D57CFB3A3A9EBF10197249C703B3</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="10">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="11">
+        <Checksum dnOrder="0">EABABE6F6504F002BE5D5D186F6DB9FA</Checksum>
+        <Name dnOrder="1">rtos_hooks.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">D31E926629014334C6A4FC4BADA91254</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="12">
+        <Checksum dnOrder="0">B90C38D0534E50ED1F12503829C27C7F</Checksum>
+        <Name dnOrder="1">OS_Error.c</Name>
+        <Path dnOrder="2">Source Files/app/rtos_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">7EBB22AAFA11A29C926C6B2EFED72A1C</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="13">
+        <Checksum dnOrder="0">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+        <Name dnOrder="1">system_exceptions.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">8A98F825D4664086F0C1CCBE41DE145F</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="14">
+        <Checksum dnOrder="0">7C3C5370FDD01E69F593A516163C4D65</Checksum>
+        <Name dnOrder="1">RTOSInit.c</Name>
+        <Path dnOrder="2">Source Files/app/rtos_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">EE81118638E22F24719D7B50ADFABBF9</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="15">
+        <Checksum dnOrder="0">B207152D092232269632CAC6DEB13EBC</Checksum>
+        <Name dnOrder="1">system_init.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_micromips</Path>
+        <ProjectFileChecksum dnOrder="3">BA25C6968DE8E195282DFFC78D431459</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="16">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="17">
+        <Checksum dnOrder="0">DD885EBE1893567826AD0E35E9F24594</Checksum>
+        <Name dnOrder="1">bsp.c</Name>
+        <Path dnOrder="2">Source Files/app/system_config/pic32mz_ef_sk_micromips/bsp</Path>
+        <ProjectFileChecksum dnOrder="3">BF1E02490A707A5C3543ADAF953FC215</ProjectFileChecksum>
+      </Template>
+    </Templates>
+  </Manifest>
+</Configuration>

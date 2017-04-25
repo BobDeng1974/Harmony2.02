@@ -1,0 +1,5 @@
+# Default BSP Configuration
+#     Harmony version: 1.07
+#
+CONFIG_USE_BSP=y
+BSP_PIC32WK_GPB_GPD_SK_MODULE=y

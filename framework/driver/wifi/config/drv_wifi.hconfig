@@ -1,0 +1,185 @@
+menu "Wi-Fi"
+
+ifblock PIC32WK
+source "$HARMONY_VERSION_PATH/framework/driver/wifi/config/drv_wifi_pic32wk.hconfig"
+endif
+
+ifblock !PIC32WK
+
+enum DRV_WIFI_DEVICE_LIST
+    "MRF24WG" || "MRF24WN" || "WINC1500"
+
+enum DRV_WIFI_HTTP_CUSTOM_TEMPLATE_LIST
+    "Web Server Demo" || "Easy Configuration Demo" || "Wi-Fi G Demo"
+
+enum DRV_WIFI_INTERRUPT_PROVIDER_LIST
+    "External Interrupt" || "Change Notification"
+
+enum DRV_WIFI_PORT_CHANNEL_LIST
+# This list should be synced with sys_ports_idx.ftl.
+    'A' || 'B' || 'C' || 'D' || 'E' || 'F' || 'G' || 'H' || 'J' || 'K'
+
+enum DRV_WIFI_RTOS_CONFIRMATION
+    "Confirm"
+
+config USE_DRV_WIFI_NEEDED
+    bool
+    default n
+
+config DRV_WIFI_DISABLE_LIBS
+    bool
+    default y if USE_DRV_WIFI && !USE_3RDPARTY_RTOS
+
+config USE_DRV_WIFI
+    bool "Use Wi-Fi Driver?"
+    default n if !USE_DRV_WIFI_NEEDED
+    default y if USE_DRV_WIFI_NEEDED
+        select USE_SYS_INT_NEEDED
+        select DRV_SPI_USE_DRIVER_NEEDED
+        # TODO: Something like TCPIP_STACK_NEEDED may be needed.
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config DRV_WIFI_DEVICE
+    string "Wi-Fi Device"
+    depends on USE_DRV_WIFI
+    range DRV_WIFI_DEVICE_LIST
+    default "MRF24WG"
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+comment "MRF24WN only works in FreeRTOS V8.x.x or above and is only configurable with MHC in the latest FreeRTOS version comes with Harmony."
+    depends on DRV_WIFI_DEVICE = "MRF24WN"
+
+comment "WINC1500 only works in FreeRTOS V8.x.x or above and is only configurable with MHC in the latest FreeRTOS version comes with Harmony."
+    depends on DRV_WIFI_DEVICE = "WINC1500"
+
+config DRV_WIFI_RTOS_CHECK
+    string "No RTOS Confirmation"
+    depends on DRV_WIFI_DISABLE_LIBS
+    range DRV_WIFI_RTOS_CONFIRMATION
+
+comment "**** Warning: Use of Wi-Fi driver without RTOS is not recommended. Some modules and libraries, like USB, GFX, etc. may not function properly. ****"
+    depends on DRV_WIFI_DISABLE_LIBS
+
+comment "**** Warning: Please enable RTOS or confirm no RTOS configuration above. ****"
+    depends on DRV_WIFI_DISABLE_LIBS
+
+config DRV_WIFI_INTERRUPT_SYSTEM_SERVICE
+    string "Use External Interrupt or Use Interrupt for Change Notification?"
+    depends on USE_DRV_WIFI
+    range DRV_WIFI_INTERRUPT_PROVIDER_LIST
+    default "External Interrupt"
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+# Select "Use External Interrupts?" in System Services -> Interrupts.
+ifblock DRV_WIFI_INTERRUPT_SYSTEM_SERVICE = "External Interrupt"
+config DRV_WIFI_USE_EXT_INT
+    bool
+    depends on USE_DRV_WIFI
+    default y
+    select USE_EXT_INT_NEEDED
+endif
+
+# Select "Use Interrupt for Change Notification?" in System Services -> Ports.
+ifblock DRV_WIFI_INTERRUPT_SYSTEM_SERVICE = "Change Notification"
+config DRV_WIFI_USE_CN_INT
+    bool
+    depends on USE_DRV_WIFI
+    default y
+    select USE_SYS_PORTS_CN_INTERRUPT
+endif
+
+config DRV_WIFI_EXT_INT_INSTANCE_INDEX
+    int "Wi-Fi Driver External Interrupt Instance Index"
+    depends on USE_DRV_WIFI && DRV_WIFI_INTERRUPT_SYSTEM_SERVICE = "External Interrupt"
+    range 0 0 if EXT_INT_INSTANCES_NUMBER = 1
+    range 0 1 if EXT_INT_INSTANCES_NUMBER = 2
+    range 0 2 if EXT_INT_INSTANCES_NUMBER = 3
+    range 0 3 if EXT_INT_INSTANCES_NUMBER = 4
+    range 0 4 if EXT_INT_INSTANCES_NUMBER = 5
+    default 0
+    ---help---
+    Please configure Wi-Fi Driver External Interrupt in corresponding External
+    Interrupt Instance located in MPLAB Harmony & Application Configuration ->
+    Harmony Framework Configuration -> System Services -> Interrupts
+    ---endhelp---
+
+config DRV_WIFI_SPI_INSTANCE_INDEX
+    int "Wi-Fi Driver SPI Instance Index"
+    depends on USE_DRV_WIFI
+    range 0 0 if DRV_SPI_INSTANCES_NUMBER = 1
+    range 0 1 if DRV_SPI_INSTANCES_NUMBER = 2
+    range 0 2 if DRV_SPI_INSTANCES_NUMBER = 3
+    range 0 3 if DRV_SPI_INSTANCES_NUMBER = 4
+    range 0 4 if DRV_SPI_INSTANCES_NUMBER = 5
+    range 0 5 if DRV_SPI_INSTANCES_NUMBER = 6
+    default 0
+    ---help---
+    Please configure Wi-Fi Driver SPI Instance in corresponding SPI Driver
+    Instance located in MPLAB Harmony & Application Configuration ->
+    Harmony Framework Configuration -> Drivers -> SPI
+    ---endhelp---
+
+config DRV_WIFI_USE_SPI_DMA
+    bool "Use SPI with DMA in Wi-Fi driver?"
+    depends on USE_DRV_WIFI && USE_3RDPARTY_RTOS
+    default n
+        select USE_SYS_DMA_NEEDED
+        select DRV_SPI_USE_DMA
+    ---help---
+    IDH_HTML_MRF24W_Wi_Fi_Driver_Library
+    ---endhelp---
+
+config DRV_WIFI_STORE_CONFIG_IN_NVM
+    bool "Store Wi-Fi Configuration Information in NVM"
+    depends on USE_DRV_WIFI
+        #Should not select DRV_NVM_NEEDED here!
+    default n
+    ---help---
+NVM Driver is a must for this option. If NVM Driver already has an existing client other than Wi-Fi driver, the NVM Clients Number should also be increased.
+    ---endhelp---
+
+config DRV_WIFI_NVM_START_ADDRESS
+    int "NVM Start Address in Kilo Bytes for Wi-Fi Configuration Information Storage"
+    depends on USE_DRV_WIFI && DRV_WIFI_STORE_CONFIG_IN_NVM
+    default 48 if TCPIP_HTTP_CUSTOM_TEMPLATE && TCPIP_HTTP_CUSTOM_TEMPLATE_SL
+    default 0
+    ---help---
+It defines the start address for Wi-Fi driver to use in NVM. It should not be changed if you are not familiar with NVM Driver.
+    ---endhelp---
+
+config DRV_WIFI_HTTP_CUSTOM_TEMPLATE
+    string "Select a HTTP Custom Template"
+    depends on USE_DRV_WIFI &&
+               ((TCPIP_HTTP_CUSTOM_TEMPLATE && TCPIP_HTTP_CUSTOM_TEMPLATE_SL) ||
+                (TCPIP_HTTP_NET_CUSTOM_TEMPLATE && TCPIP_HTTP_NET_CUSTOM_TEMPLATE_SL))
+    range DRV_WIFI_HTTP_CUSTOM_TEMPLATE_LIST
+    default "Web Server Demo"
+    ---help---
+If you don't want to use any HTTP custom templates at all, please go to TCP/IP Stack and unselect "Include HTTP Custom Template".
+So far, only following combinations are guaranteed to work:
+Infrastructure + Web Server Demo + Supported BSPs;
+Ad-Hoc or Soft AP + Easy Configuration Demo + Supported BSPs;
+Ad-Hoc or Soft AP + Wi-Fi G Demo + wifi_g_db BSP.
+    ---endhelp---
+
+ifblock DRV_WIFI_DEVICE = "MRF24WG"
+source "$HARMONY_VERSION_PATH/framework/driver/wifi/config/drv_wifi_mrf24w.hconfig"
+endif
+
+ifblock DRV_WIFI_DEVICE = "MRF24WN"
+source "$HARMONY_VERSION_PATH/framework/driver/wifi/config/drv_wifi_mrf24wn.hconfig"
+endif
+
+ifblock DRV_WIFI_DEVICE = "WINC1500"
+source "$HARMONY_VERSION_PATH/framework/driver/wifi/config/drv_wifi_winc1500.hconfig"
+endif
+
+endif
+
+endmenu

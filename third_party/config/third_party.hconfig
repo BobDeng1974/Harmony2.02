@@ -1,0 +1,7 @@
+menu "Third Party Libraries"
+
+source  "$HARMONY_VERSION_PATH/third_party/rtos/config/rtos.hconfig"
+source  "$HARMONY_VERSION_PATH/third_party/tcpip/config/tcpip.hconfig"
+source  "$HARMONY_VERSION_PATH/third_party/gfx/config/gfxtp.hconfig"
+
+endmenu

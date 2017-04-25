@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<family>
+    <groups>
+        <group id="1">
+            <pin name="none1" value="0"/>
+            <pin name="none2" value="1"/>
+            <function name="NONE" direction="in"/>
+        </group>
+    </groups>
+    <modules>
+        <module name="BSP" desc="Board Support Package">
+            <constraint type="enable">
+                <pair key="USE_BSP" value="y"/>
+            </constraint>
+            <function name="RESERVED" />
+        </module>
+    </modules>
+</family>
+

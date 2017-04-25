@@ -1,0 +1,55 @@
+#Created by hand - Bud Caldwell
+#Updated by hand - Thibaut VIARD - 2016/09/29
+
+config FAMILY
+    bool
+    select ATSAMx7x
+    select ATSAMV71
+    select HAVE_JTAG
+    select HAVE_SWD
+    select HAVE_INT
+    default y
+
+config SRAM_ADDR_START
+    string
+    default "0x20400000"
+config SRAM_ADDR_END
+    string
+    default "0x2045ffff"
+config SRAM_ADDR_SIZE
+    string
+    default "0x00060000"
+
+config BOOT_ADDR_START
+    string
+    default "0x00000000"
+config BOOT_ADDR_END
+    string
+    default "0x001FFFFF"
+# Needed by <root>/framework/bootloader/config/bootloader.hconfig.
+config BOOT_ADDR_SIZE
+    string
+    default "0x00200000"
+
+# Needed by <root>/framework/driver/spi/config/drv_spi_idx.ftl.
+config BOOTSEL
+    string
+# Needed by <root>/framework/driver/usart/config/drv_usart_idx.ftl.
+config HSUARTEN
+    string
+
+# Needed by <root>/framework/system/clk/config/sys_clk.hconfig
+config SOSCSEL
+    string
+
+# Needed by <root>/framework/tcpip/config/tcpip_mac.hconfig
+config FMIIEN
+	string
+
+# Needed by <root>/framework/tcpip/config/tcpip_mac.hconfig
+config FETHIO
+	string
+
+
+
+

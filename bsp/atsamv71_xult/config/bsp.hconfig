@@ -1,0 +1,8 @@
+ifblock BSP_ATSAMV71_XULT
+
+menu "Select BSP Features"
+    depends on USE_BSP
+    depends on BSP_ATSAMV71_XULT
+endmenu
+
+endif

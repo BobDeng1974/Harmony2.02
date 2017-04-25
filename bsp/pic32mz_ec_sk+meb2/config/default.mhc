@@ -1,0 +1,5 @@
+# Default BSP Configuration
+#     Harmony version: 1.07
+#
+CONFIG_USE_BSP=y
+CONFIG_PIC32MZ_EC_SK_MEB2=y
